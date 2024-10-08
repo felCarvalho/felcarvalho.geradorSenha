@@ -1,4 +1,4 @@
-GEARADOR DE SENHA
+GERADOR DE SENHA
 
 Feito somente para estudar alguns poucos conceitos de strings, manipulação de array, loops e manipulação do DOM.
 
