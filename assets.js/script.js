@@ -1,4 +1,3 @@
-
 //todos os elementos intertivos do HTML
 const newPassword = document.querySelector(".btn-password");
 const ToggleOne = document.querySelector(".checked-one");
@@ -11,7 +10,6 @@ const modalError = document.querySelector(".modal-error");
 const mensagemError = document.querySelector(".mensage-error");
 const btnClosed = document.querySelector(".modal-closed");
 
-
 //variaveis de dados a serem manipulados
 const minuscula = "abcdefghijklmnopqrstuvwxyz";
 const maiuscula = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
@@ -22,10 +20,32 @@ const simbolos = '!@#$%^&*()_-+={}[];:"<>,.?/\\|~`';
 let caracteresPassword = [];
 console.log(caracteresPassword);
 
-//função para o btn closed do modal
-const closed = () => {
-  modalError.classList.add("display-none");
-  btnClosed.classList.add("display-none");
+const modalAnimationAtivado = () => {
+  modalError.style.display = "block";
+
+  gsap.to(modalError, {
+    y: 25,
+    ease: "linear",
+    duration: 0.2,
+    opacity: 1,
+    onComplete: () => {
+      modalError.style.display = "block";
+    },
+  });
+};
+
+const modalAnimationDesativado = () => {
+  modalError.style.display = "block";
+
+  gsap.to(modalError, {
+    y: -25,
+    ease: "linear",
+    duration: 0.2,
+    opacity: 0,
+    onComplete: () => {
+      modalError.style.display = "none";
+    },
+  });
 };
 
 //função fundo com efeito desfocado do modal
@@ -36,6 +56,7 @@ const fundoBlurOn = () => {
 //função modal sendo ativado
 const popUpOn = () => {
   modalError.classList.remove("display-none");
+  modalAnimationAtivado();
 };
 
 //função de desativar fundo de efeito dessfocado
@@ -46,13 +67,20 @@ const fundoBlurOff = () => {
 //função de desativar o modal
 const popUpOff = () => {
   modalError.classList.add("display-none");
+  modalAnimationDesativado();
+};
+
+//função btn-closed para desativar modal
+const closed = () => {
+  modalError.classList.add("display-none");
+  btnClosed.classList.add("display-none");
+  fundoBlurOff();
 };
 
 //função para mensagem de error presente no modal
 const mensageUpdate = (updateError) => {
   mensagemError.textContent = updateError;
 };
-
 
 //função para criar a logica de armazenamento e de caracteres aleátorios para a senha de 20 caracteres
 const senhaGerada = () => {
@@ -96,7 +124,6 @@ window.addEventListener("load", () => {
 
   senhaGerada();
 });
-
 
 //evento de click para deixarmos o usuario selecionar quantos vezes ele vai querer geraruma senha nova
 newPassword.addEventListener("click", () => {

@@ -32,6 +32,10 @@
   display: none;
 }
 
+.display-block {
+  display: block;
+}
+
 @media (max-width: 321px) {
   .borda {
     @include borderSolid();
@@ -250,9 +254,10 @@
   .fundo-blur {
     position: fixed;
     top: 0px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     height: 100%;
     width: 100%;
+    transition: all .2s ease-in-out
   }
 
   .content-tag-name {
@@ -481,9 +486,10 @@
   .fundo-blur {
     position: fixed;
     top: 0px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     height: 100%;
     width: 100%;
+    transition: all .2s ease-in-out
   }
 
   .content-tag-name {
@@ -719,9 +725,10 @@
   .fundo-blur {
     position: fixed;
     top: 0px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     height: 100%;
     width: 100%;
+    transition: all .2s ease-in-out
   }
   .content-tag-name {
     text-align: center;
@@ -917,7 +924,6 @@
     padding: 20px;
     z-index: 100;
     background-color: #fff;
-    transform: translate();
 
     .content-closed {
       text-align: end;
@@ -962,7 +968,7 @@
   .fundo-blur {
     position: fixed;
     top: 0px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     height: 100%;
     width: 100%;
   }
