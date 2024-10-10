@@ -73,7 +73,6 @@ const popUpOff = () => {
 //função btn-closed para desativar modal
 const closed = () => {
   modalError.classList.add("display-none");
-  btnClosed.classList.add("display-none");
   fundoBlurOff();
 };
 
@@ -118,6 +117,8 @@ const senhaGerada = () => {
   const senhaOriginal = passwordInsert.textContent;
   passwordInsert.textContent = "";
 
+
+ 
   gsap.to(passwordInsert, {
     duration: 0.1,
     text: senhaOriginal,
