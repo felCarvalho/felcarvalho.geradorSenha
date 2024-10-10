@@ -14,7 +14,7 @@ const btnClosed = document.querySelector(".modal-closed");
 const minuscula = "abcdefghijklmnopqrstuvwxyz";
 const maiuscula = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
 const numeros = "12345679";
-const simbolos = '!@#$%&*0+, :210]^><';
+const simbolos = '!@#$%&*0+,:210]^><';
 
 //array para armazenar os ddados selecionados pelo usuario
 let caracteresPassword = [];
