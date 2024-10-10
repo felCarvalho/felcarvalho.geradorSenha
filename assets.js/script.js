@@ -14,7 +14,7 @@ const btnClosed = document.querySelector(".modal-closed");
 const minuscula = "abcdefghijklmnopqrstuvwxyz";
 const maiuscula = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
 const numeros = "12345679";
-const simbolos = '!@#$%^&*()_-+={}[];:"<>,.?/\\|~`';
+const simbolos = '!@#$%^&*()_-+={}[];:\\"<>,.?/\\\\|~`';
 
 //array para armazenar os ddados selecionados pelo usuario
 let caracteresPassword = [];
@@ -171,7 +171,7 @@ newPassword.addEventListener("click", () => {
     ? caracteresPassword.push(simbolos)
     : console.log("error-toogle-four");
 
-    //funçaõ de gerar senha só será executada após as verificações de botões.
+  //funçaõ de gerar senha só será executada após as verificações de botões.
   senhaGerada();
 });
 
