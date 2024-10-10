@@ -87,36 +87,46 @@ const senhaGerada = () => {
   let passwordOnly = "";
   const passwordLength = 20;
 
-  //usamos .join() para fazer a array com caracteres selecionados serem tranformados em string
-  let password = caracteresPassword.join("");
+  //array para armazenar os caracteres gerados
+  let passwordArray = [];
+
+  //usando join() para criar um string com a array de caracteres.
+  let password = caracteresPassword.join();
+  if (!password || password.length === 0) {
+    passwordInsert.textContent = "ERROR[404]";
+    return;
+  }
 
   //loop for para percorre toda a array de string para pegar os caracteres pelo  seu indice.
   for (let i = 0; i < passwordLength; i++) {
-    const randonPassword = Math.trunc(Math.random() * password.length);
-    passwordOnly += password[randonPassword];
-    console.log(passwordOnly);
-
-    //verificação de segurança para apresentarmos um erro no container de passwordInsert para orientação mais detalhada.
-    if (!password) {
-      return (passwordInsert.textContent = "ERROR[404]");
-    } else {
-      //usando .length para contar todas as letras inseridas no passwordInsert, e para consertar o bug da animção cortar o ao selecionar os toggle rapidamente.
-      passwordInsert.textContent = passwordOnly.length;
-
-      //animação para faer o texto ter uma aparência de está sendo digitado
-      gsap.registerPlugin(TextPlugin);
-
-      const senha = document.querySelector(".senha-gerada");
-      const senhaOriginal = passwordOnly;
-      senha.textContent = "";
-
-      gsap.to(senha, {
-        duration: 1,
-        text: senhaOriginal,
-        ease: "linear",
-      });
-    }
+    const randonPassword = Math.floor(Math.random() * password.length);
+    console.log(randonPassword);
+    //inserindo cracteres da array vazia
+    passwordArray.push(password[randonPassword]);
   }
+
+  //tranformando caracteres da array vazia em string.
+  passwordOnly = passwordArray.join("");
+  console.log(passwordOnly);
+
+  //inserindo string no DOM
+  passwordInsert.textContent = passwordOnly;
+
+  //animação de exibição da senha
+  gsap.registerPlugin(TextPlugin);
+
+  const senhaOriginal = passwordInsert.textContent;
+  passwordInsert.textContent = "";
+
+  gsap.to(passwordInsert, {
+    duration: 0.1,
+    text: senhaOriginal,
+    ease: "linear",
+    //evita que a senha seja inserida pela metade
+    onComplete: () => {
+      passwordInsert.textContent = passwordOnly;
+    },
+  });
 };
 
 //senha sendo executada ao carregar o object window
@@ -133,6 +143,7 @@ newPassword.addEventListener("click", () => {
   caracteresPassword = [];
   console.log(caracteresPassword);
 
+  //verificando se os botões estão checked
   if (
     !ToggleOne.checked &&
     !ToggleTwo.checked &&
@@ -160,6 +171,7 @@ newPassword.addEventListener("click", () => {
     ? caracteresPassword.push(simbolos)
     : console.log("error-toogle-four");
 
+    //funçaõ de gerar senha só será executada após as verificações de botões.
   senhaGerada();
 });
 
@@ -189,4 +201,17 @@ backdropBlur.addEventListener("click", () => {
   }
   if (ToggleFour.checked) {
     caracteresPassword.push(simbolos);
-  }*/
+  }
+    
+  
+  gsap.registerPlugin(TextPlugin);
+
+  const senha = document.querySelector(".senha-gerada");
+  const senhaOriginal = passwordOnly;
+  senha.textContent = "";
+
+  gsap.to(senha, {
+    duration: 1,
+    text: senhaOriginal,
+    ease: "linear",
+  });*/
