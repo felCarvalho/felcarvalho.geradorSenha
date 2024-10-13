@@ -14,7 +14,7 @@ const btnClosed = document.querySelector(".modal-closed");
 const minuscula = "abcdefghijklmnopqrstuvwxyz";
 const maiuscula = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
 const numeros = "12345679";
-const simbolos = '!@#$%&*0+,:210]^><';
+const simbolos = "!@#$%&*0+,:210]^><";
 
 //array para armazenar os ddados selecionados pelo usuario
 let caracteresPassword = [];
@@ -86,21 +86,23 @@ const senhaGerada = () => {
   let passwordOnly = "";
   const passwordLength = 20;
 
+  //usando join() para criar um string com a array de caracteres.
+  let password = caracteresPassword.join("");
+
   //array para armazenar os caracteres gerados
   let passwordArray = [];
 
-  //usando join() para criar um string com a array de caracteres.
-  let password = caracteresPassword.join();
+  //verificando se password tem algum valor para proseguir com a geração da senha.
   if (!password || password.length === 0) {
     passwordInsert.textContent = "ERROR[404]";
     return;
   }
 
-  //loop for para percorre toda a array de string para pegar os caracteres pelo  seu indice.
+  //loop for para percorre toda a array de string para pegar os caracteres pelo seu indice.
   for (let i = 0; i < passwordLength; i++) {
     const randonPassword = Math.floor(Math.random() * password.length);
     console.log(randonPassword);
-    //inserindo cracteres da array vazia
+    //inserindo caracteres da array vazia
     passwordArray.push(password[randonPassword]);
   }
 
@@ -117,8 +119,6 @@ const senhaGerada = () => {
   const senhaOriginal = passwordInsert.textContent;
   passwordInsert.textContent = "";
 
-
- 
   gsap.to(passwordInsert, {
     duration: 0.15,
     text: senhaOriginal,
