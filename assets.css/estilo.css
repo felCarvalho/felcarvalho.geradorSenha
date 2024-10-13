@@ -312,7 +312,7 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    gap: 20px;
+    gap: 24.5px;
     margin-top: 25px;
   }
   .borda .flex-row .align-center .content-option .sub-content-option {
@@ -516,7 +516,7 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    gap: 58px;
+    gap: 57px;
     margin-top: 45px;
   }
   .borda .flex-row .align-center .content-option .sub-content-option {
@@ -682,7 +682,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 32px;
     color: blueviolet;
     margin-top: 60px;
     width: 100%;
@@ -706,7 +706,7 @@
   }
   .borda .flex-row .align-center .content-senha-gerada .icon-key {
     background-color: blueviolet;
-    padding: 5px 20px;
+    padding: 6.5px 20px;
     color: white;
     font-size: 20px;
     border-radius: 15%;
@@ -716,7 +716,7 @@
   }
   .borda .flex-row .align-center .content-senha-gerada .icon-copy {
     background-color: blueviolet;
-    padding: 5px 20px;
+    padding: 6.5px 20px;
     color: white;
     font-size: 20px;
     border-radius: 15%;
@@ -726,7 +726,7 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    gap: 54px;
+    gap: 53px;
     margin-top: 45px;
   }
   .borda .flex-row .align-center .content-option .sub-content-option {
