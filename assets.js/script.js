@@ -120,7 +120,7 @@ const senhaGerada = () => {
 
  
   gsap.to(passwordInsert, {
-    duration: 0.3,
+    duration: 0.15,
     text: senhaOriginal,
     ease: "linear",
     //evita que a senha seja inserida pela metade
