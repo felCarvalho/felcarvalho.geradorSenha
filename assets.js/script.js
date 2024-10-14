@@ -9,6 +9,9 @@ const backdropBlur = document.querySelector(".fundo-blur");
 const modalError = document.querySelector(".modal-error");
 const mensagemError = document.querySelector(".mensage-error");
 const btnClosed = document.querySelector(".modal-closed");
+const btnDarkMode = document.querySelector(".button-dark");
+const iconDark = document.querySelector(".dark-mode");
+const iconSun = document.querySelector(".sun-mode");
 
 //variaveis de dados a serem manipulados
 const minuscula = "abcdefghijklmnopqrstuvwxyz";
@@ -188,6 +191,35 @@ backdropBlur.addEventListener("click", () => {
   closed();
   fundoBlurOff();
   popUpOff();
+});
+
+//function de ativar animação de button modo escuro e claro
+const darkModeAtivado = () => {
+  gsap.to(iconDark, {
+    rotate: 180,
+    ease: "power2.oout",
+  });
+};
+
+//function de desativar animação de button modo escuro e claro
+const darkModeDesativado = () => {
+  gsap.to(iconDark, {
+    rotate: -180,
+    ease: "power2.oout",
+  });
+};
+
+//variavel para pegar todos os elementos do DOM
+const body = document.body;
+
+btnDarkMode.addEventListener("click", () => {
+  if (body.classList.contains("darkmode")) {
+    darkModeAtivado();
+    body.classList.remove("darkmode");
+  } else {
+    darkModeDesativado();
+    body.classList.add("darkmode");
+  }
 });
 
 //trocado pelo operador tenario.
