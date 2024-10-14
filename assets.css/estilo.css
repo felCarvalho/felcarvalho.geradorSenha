@@ -1002,6 +1002,11 @@ body.darkmode {
     font-size: 20px;
     color: #fff;
   }
+  .borda .content-dark .button-dark .sun-mode {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #fff;
+  }
   .borda .flex-row {
     padding: 50px 100px;
     display: flex;
@@ -1208,6 +1213,9 @@ body.darkmode {
     background-color: rgba(106, 105, 105, 0.788);
   }
   body.darkmode .content-dark .button-dark .dark-mode {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .content-dark .button-dark .sun-mode {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .borda {

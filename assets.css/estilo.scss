@@ -160,7 +160,7 @@ body.darkmode {
 
           .icon-key {
             background-color: blueviolet;
-            padding:5px 10px;
+            padding: 5px 10px;
             color: white;
             @include border(15%);
 
@@ -1277,6 +1277,12 @@ body.darkmode {
           font-size: 20px;
           color: #fff;
         }
+
+        .sun-mode {
+          margin-top: 5px;
+          font-size: 20px;
+          color: #fff;
+        }
       }
     }
 
@@ -1351,7 +1357,6 @@ body.darkmode {
             font-size: 20px;
             letter-spacing: 1.5px;
             text-align: center;
-
 
             .senha-gerada {
               max-width: 300px;
@@ -1525,6 +1530,10 @@ body.darkmode {
         background-color: rgba(106, 105, 105, 0.788);
 
         .dark-mode {
+          color: #ffffffe0;
+        }
+
+        .sun-mode {
           color: #ffffffe0;
         }
       }
