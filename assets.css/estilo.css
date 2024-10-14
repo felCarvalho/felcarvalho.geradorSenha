@@ -337,6 +337,9 @@ body.darkmode {
   body.darkmode .fundo-blur {
     background-color: rgba(1, 1, 1, 0.444);
   }
+  body.darkmode .content-tag-name {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
 }
 @media (min-width: 322px) and (max-width: 576px) {
   .borda {
@@ -661,6 +664,9 @@ body.darkmode {
   body.darkmode .fundo-blur {
     background-color: rgba(1, 1, 1, 0.444);
   }
+  body.darkmode .content-tag-name {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
 }
 @media (min-width: 577px) and (max-width: 1120px) {
   .borda {
@@ -984,6 +990,9 @@ body.darkmode {
   }
   body.darkmode .fundo-blur {
     background-color: rgba(1, 1, 1, 0.744);
+  }
+  body.darkmode .content-tag-name {
+    color: rgba(255, 255, 255, 0.8784313725);
   }
 }
 body.darkmode {
@@ -1315,6 +1324,9 @@ body.darkmode {
   }
   body.darkmode .fundo-blur {
     background-color: rgba(1, 1, 1, 0.744);
+  }
+  body.darkmode .content-tag-name {
+    color: rgba(255, 255, 255, 0.8784313725);
   }
 }
 
