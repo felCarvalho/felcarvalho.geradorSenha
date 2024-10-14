@@ -61,8 +61,9 @@ body.darkmode {
 
       .button-dark {
         background-color: blueviolet;
-        padding: 5px 10px;
-        text-align: left;
+        min-width: 31px;
+        min-height: 31px;
+        text-align: center;
         @include border(15%);
 
         .dark-mode {
@@ -75,7 +76,6 @@ body.darkmode {
           margin-top: 5px;
           font-size: 15px;
           color: #fff;
-          display: none;
         }
       }
     }
@@ -463,11 +463,18 @@ body.darkmode {
 
       .button-dark {
         background-color: blueviolet;
-        padding: 5px 10px;
-        text-align: left;
+        min-width: 30px;
+        min-height: 35px;
+        text-align: center;
         @include border(15%);
 
         .dark-mode {
+          margin-top: 5px;
+          font-size: 15px;
+          color: #fff;
+        }
+
+        .sun-mode {
           margin-top: 5px;
           font-size: 15px;
           color: #fff;
@@ -862,11 +869,18 @@ body.darkmode {
 
       .button-dark {
         background-color: blueviolet;
-        padding: 6.5px 20px;
-        text-align: left;
+        min-width: 56px;
+        min-height: 53px;
+        text-align: center;
         @include border(15%);
 
         .dark-mode {
+          margin-top: 5px;
+          font-size: 28px;
+          color: #fff;
+        }
+
+        .sun-mode {
           margin-top: 5px;
           font-size: 28px;
           color: #fff;
@@ -1267,10 +1281,10 @@ body.darkmode {
       margin: 10px -10px 10px;
 
       .button-dark {
+        min-width: 50px;
+        min-height: 35px;
         background-color: blueviolet;
-        padding: 5px 20px;
         @include border(15%);
-        text-align: left;
 
         .dark-mode {
           margin-top: 5px;

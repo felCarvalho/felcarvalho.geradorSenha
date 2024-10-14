@@ -33,8 +33,9 @@ body.darkmode {
   }
   .borda .content-dark .button-dark {
     background-color: blueviolet;
-    padding: 5px 10px;
-    text-align: left;
+    min-width: 31px;
+    min-height: 31px;
+    text-align: center;
     border-radius: 15%;
   }
   .borda .content-dark .button-dark .dark-mode {
@@ -46,7 +47,6 @@ body.darkmode {
     margin-top: 5px;
     font-size: 15px;
     color: #fff;
-    display: none;
   }
   .borda .flex-row {
     padding: 10px;
@@ -352,11 +352,17 @@ body.darkmode {
   }
   .borda .content-dark .button-dark {
     background-color: blueviolet;
-    padding: 5px 10px;
-    text-align: left;
+    min-width: 30px;
+    min-height: 35px;
+    text-align: center;
     border-radius: 15%;
   }
   .borda .content-dark .button-dark .dark-mode {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #fff;
+  }
+  .borda .content-dark .button-dark .sun-mode {
     margin-top: 5px;
     font-size: 15px;
     color: #fff;
@@ -670,11 +676,17 @@ body.darkmode {
   }
   .borda .content-dark .button-dark {
     background-color: blueviolet;
-    padding: 6.5px 20px;
-    text-align: left;
+    min-width: 56px;
+    min-height: 53px;
+    text-align: center;
     border-radius: 15%;
   }
   .borda .content-dark .button-dark .dark-mode {
+    margin-top: 5px;
+    font-size: 28px;
+    color: #fff;
+  }
+  .borda .content-dark .button-dark .sun-mode {
     margin-top: 5px;
     font-size: 28px;
     color: #fff;
@@ -992,10 +1004,10 @@ body.darkmode {
     margin: 10px -10px 10px;
   }
   .borda .content-dark .button-dark {
+    min-width: 50px;
+    min-height: 35px;
     background-color: blueviolet;
-    padding: 5px 20px;
     border-radius: 15%;
-    text-align: left;
   }
   .borda .content-dark .button-dark .dark-mode {
     margin-top: 5px;

@@ -195,14 +195,15 @@ backdropBlur.addEventListener("click", () => {
 
 //function de ativar animação de button modo escuro e claro
 const darkModeAtivado = () => {
-      iconSun.classList.add("display-none");
-      iconDark.classList.remove("display-none");
+  iconSun.classList.add("display-none");
+  iconDark.classList.remove("display-none");
 };
 
 //function de desativar animação de button modo escuro e claro
 const darkModeDesativado = () => {
-      iconDark.classList.add("display-none");
-      iconSun.classList.remove("display-none");
+  iconDark.classList.add
+  ("display-none");
+  iconSun.classList.remove("display-none");
 };
 
 //variavel para pegar todos os elementos do DOM
