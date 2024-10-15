@@ -12,6 +12,8 @@ const btnClosed = document.querySelector(".modal-closed");
 const btnDarkMode = document.querySelector(".button-dark");
 const iconDark = document.querySelector(".dark-mode");
 const iconSun = document.querySelector(".sun-mode");
+const modalPasswordCopy = document.querySelector(".container-modal-clipboard");
+const copyPassword = document.querySelector(".icon-copy");
 
 //variaveis de dados a serem manipulados
 const minuscula = "abcdefghijklmnopqrstuvwxyz";
@@ -179,6 +181,18 @@ newPassword.addEventListener("click", () => {
   senhaGerada();
 });
 
+const clipBoard = () => {
+  let copyPassword = passwordInsert.textContent;
+  console.log(copyPassword);
+
+  navigator.clipboard.writeText(copyPassword).then(() => {
+  });
+};
+
+copyPassword.addEventListener("click", () => {
+  clipBoard();
+});
+
 //fn=unção para retirar popUp da tela com o btnClosed
 btnClosed.addEventListener("click", () => {
   closed();
@@ -201,8 +215,7 @@ const darkModeAtivado = () => {
 
 //function de desativar animação de button modo escuro e claro
 const darkModeDesativado = () => {
-  iconDark.classList.add
-  ("display-none");
+  iconDark.classList.add("display-none");
   iconSun.classList.remove("display-none");
 };
 
