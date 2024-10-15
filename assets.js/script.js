@@ -30,7 +30,7 @@ const modalAnimationAtivado = () => {
 
   gsap.to(modalError, {
     y: 25,
-    ease: "linear",
+    ease: "power1.out",
     duration: 0.2,
     opacity: 1,
     onComplete: () => {
@@ -44,7 +44,7 @@ const modalAnimationDesativado = () => {
 
   gsap.to(modalError, {
     y: -25,
-    ease: "linear",
+    ease: "power1.out",
     duration: 0.2,
     opacity: 0,
     onComplete: () => {
@@ -99,7 +99,7 @@ const senhaGerada = () => {
 
   //verificando se password tem algum valor para proseguir com a geração da senha.
   if (!password || password.length === 0) {
-    console.log('error-[404]')
+    console.log("error-[404]");
     return;
   }
 
@@ -127,7 +127,7 @@ const senhaGerada = () => {
   gsap.to(passwordInsert, {
     duration: 0.15,
     text: senhaOriginal,
-    ease: "linear",
+    ease: "power1.out",
     //evita que a senha seja inserida pela metade
     onComplete: () => {
       passwordInsert.textContent = passwordOnly;
@@ -184,8 +184,12 @@ newPassword.addEventListener("click", () => {
 const clipBoard = () => {
   let copyPassword = passwordInsert.textContent;
   console.log(copyPassword);
-
-  navigator.clipboard.writeText(copyPassword).then(() => {});
+  navigator.clipboard.writeText(copyPassword).then(() => {
+    modalPasswordCopy.classList.remove("display-none");
+    setTimeout(() => {
+      modalPasswordCopy.style.display = "none";
+    }, 3000);
+  });
 };
 
 copyPassword.addEventListener("click", () => {
