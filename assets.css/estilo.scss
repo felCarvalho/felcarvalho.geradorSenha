@@ -248,6 +248,7 @@ body.darkmode {
     padding: 20px;
     z-index: 100;
     background-color: #fff;
+    z-index: 100;
 
     .content-closed {
       text-align: end;
@@ -290,6 +291,41 @@ body.darkmode {
     }
   }
 
+  .container-modal-clipboard {
+    .content-modal {
+      @include borderSolid();
+      @include shadow();
+      @include border(5px);
+      position: absolute;
+      top: 10%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 3px;
+      background-color: #fff;
+      font-size: 14px;
+      margin-inline: 10px;
+
+      .content-icon-clipboard {
+        background-color: blueviolet;
+        color: #fff;
+        @include border(5px);
+        padding: 1px 7px;
+      }
+
+      .content-mensage-clipboard {
+        font-weight: 600;
+        color: rgb(27, 26, 26);
+        font-family: "poppins", Courier, monospace;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
   .fundo-blur {
     position: fixed;
     top: 0px;
@@ -297,6 +333,7 @@ body.darkmode {
     height: 100%;
     width: 100%;
     transition: all 0.2s ease-in-out;
+    z-index: 10;
   }
 
   .content-tag-name {
@@ -443,12 +480,30 @@ body.darkmode {
       }
     }
 
-    .fundo-blur {
-      background-color: rgba(1, 1, 1, 0.444);
-    }
+    .container-modal-clipboard {
+      .content-modal {
+        background-color: rgba(106, 105, 105, 0.488);
+        box-shadow: none;
+        border: 1px solid rgba(106, 105, 105, 0.488);
+        backdrop-filter: blur(5px);
 
-    .content-tag-name {
-      color: #ffffffe0;
+        .content-icon-clipboard {
+          color: #ffffffe0;
+          background-color: rgb(53, 51, 51);
+        }
+
+        .content-mensage-clipboard {
+          color: #ffffffe0;
+        }
+      }
+
+      .fundo-blur {
+        background-color: rgba(1, 1, 1, 0.444);
+      }
+
+      .content-tag-name {
+        color: #ffffffe0;
+      }
     }
   }
 }
@@ -700,6 +755,41 @@ body.darkmode {
     }
   }
 
+  .container-modal-clipboard {
+    .content-modal {
+      @include borderSolid();
+      @include shadow();
+      @include border(5px);
+      position: absolute;
+      top: 10%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 3px;
+      background-color: #fff;
+      font-size: 14px;
+      margin-inline: 30px;
+
+      .content-icon-clipboard {
+        background-color: blueviolet;
+        color: #fff;
+        @include border(5px);
+        padding: 1px 7px;
+      }
+
+      .content-mensage-clipboard {
+        font-weight: 600;
+        color: rgb(27, 26, 26);
+        font-family: "poppins", Courier, monospace;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
   .fundo-blur {
     position: fixed;
     top: 0px;
@@ -707,6 +797,7 @@ body.darkmode {
     height: 100%;
     width: 100%;
     transition: all 0.2s ease-in-out;
+    z-index: 10;
   }
 
   .content-tag-name {
@@ -849,6 +940,24 @@ body.darkmode {
             text-align: center;
             width: 300px;
           }
+        }
+      }
+    }
+
+    .container-modal-clipboard {
+      .content-modal {
+        background-color: rgba(106, 105, 105, 0.488);
+        box-shadow: none;
+        border: 1px solid rgba(106, 105, 105, 0.488);
+        backdrop-filter: blur(5px);
+
+        .content-icon-clipboard {
+          color: #ffffffe0;
+          background-color: rgb(53, 51, 51);
+        }
+
+        .content-mensage-clipboard {
+          color: #ffffffe0;
         }
       }
     }
@@ -1115,6 +1224,41 @@ body.darkmode {
     }
   }
 
+  .container-modal-clipboard {
+    .content-modal {
+      @include borderSolid();
+      @include shadow();
+      @include border(5px);
+      position: absolute;
+      top: 10%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 10px 3px;
+      background-color: #fff;
+      font-size: 25px;
+      margin-inline: 150px;
+
+      .content-icon-clipboard {
+        background-color: blueviolet;
+        color: #fff;
+        @include border(5px);
+        padding: 1px 7px;
+      }
+
+      .content-mensage-clipboard {
+        font-weight: 600;
+        color: rgb(27, 26, 26);
+        font-family: "poppins", Courier, monospace;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
   .fundo-blur {
     position: fixed;
     top: 0px;
@@ -1122,6 +1266,7 @@ body.darkmode {
     height: 100%;
     width: 100%;
     transition: all 0.2s ease-in-out;
+    z-index: 10;
   }
   .content-tag-name {
     text-align: center;
@@ -1258,6 +1403,24 @@ body.darkmode {
             text-align: center;
             width: 300px;
           }
+        }
+      }
+    }
+
+    .container-modal-clipboard {
+      .content-modal {
+        background-color: rgba(106, 105, 105, 0.488);
+        box-shadow: none;
+        border: 1px solid rgba(106, 105, 105, 0.488);
+        backdrop-filter: blur(5px);
+
+        .content-icon-clipboard {
+          color: #ffffffe0;
+          background-color: rgb(53, 51, 51);
+        }
+
+        .content-mensage-clipboard {
+          color: #ffffffe0;
         }
       }
     }
@@ -1531,12 +1694,48 @@ body.darkmode {
     }
   }
 
+  .container-modal-clipboard {
+    .content-modal {
+      @include borderSolid();
+      @include shadow();
+      @include border(5px);
+      position: absolute;
+      top: 15%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 3px;
+      background-color: #fff;
+      font-size: 20px;
+      margin-inline: 450px;
+
+      .content-icon-clipboard {
+        background-color: blueviolet;
+        color: #fff;
+        @include border(5px);
+        padding: 1px 7px;
+      }
+
+      .content-mensage-clipboard {
+        font-weight: 600;
+        color: rgb(27, 26, 26);
+        font-family: "poppins", Courier, monospace;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
   .fundo-blur {
     position: fixed;
     top: 0px;
     backdrop-filter: blur(20px);
     height: 100%;
     width: 100%;
+    z-index: 10;
   }
 
   .content-tag-name {
@@ -1680,6 +1879,24 @@ body.darkmode {
             text-align: center;
             width: 300px;
           }
+        }
+      }
+    }
+
+    .container-modal-clipboard {
+      .content-modal {
+        background-color: rgba(106, 105, 105, 0.488);
+        box-shadow: none;
+        border: 1px solid rgba(106, 105, 105, 0.488);
+        backdrop-filter: blur(5px);
+
+        .content-icon-clipboard {
+          color: #ffffffe0;
+          background-color: rgb(53, 51, 51);
+        }
+
+        .content-mensage-clipboard {
+          color: #ffffffe0;
         }
       }
     }

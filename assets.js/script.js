@@ -156,7 +156,7 @@ newPassword.addEventListener("click", () => {
   ) {
     fundoBlurOn();
     popUpOn();
-    mensageUpdate("Ops! Selecione algum tipo de caractere.👌");
+    mensageUpdate("Ops! Selecione algum tipo de caractere.");
   }
 
   ToggleOne.checked
