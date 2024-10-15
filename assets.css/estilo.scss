@@ -292,6 +292,7 @@ body.darkmode {
   }
 
   .container-modal-clipboard {
+    transition: all 0.2s ease-in-out;
     .content-modal {
       @include borderSolid();
       @include shadow();
@@ -755,6 +756,7 @@ body.darkmode {
   }
 
   .container-modal-clipboard {
+    transition: all 0.2s ease-in-out;
     .content-modal {
       @include borderSolid();
       @include shadow();
@@ -1224,6 +1226,7 @@ body.darkmode {
   }
 
   .container-modal-clipboard {
+    transition: all 0.2s ease-in-out;
     .content-modal {
       @include borderSolid();
       @include shadow();
@@ -1694,6 +1697,7 @@ body.darkmode {
   }
 
   .container-modal-clipboard {
+    transition: all 0.2s ease-in-out;
     .content-modal {
       @include borderSolid();
       @include shadow();
