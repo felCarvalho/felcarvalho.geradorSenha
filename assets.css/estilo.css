@@ -382,7 +382,7 @@ body.darkmode {
   body.darkmode .container-modal-clipboard .fundo-blur {
     background-color: rgba(1, 1, 1, 0.444);
   }
-  body.darkmode .container-modal-clipboard .content-tag-name {
+  body.darkmode .content-tag-name {
     color: rgba(255, 255, 255, 0.8784313725);
   }
 }
