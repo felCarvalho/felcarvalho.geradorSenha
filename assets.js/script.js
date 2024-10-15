@@ -99,7 +99,7 @@ const senhaGerada = () => {
 
   //verificando se password tem algum valor para proseguir com a geração da senha.
   if (!password || password.length === 0) {
-    passwordInsert.textContent = "ERROR[404]";
+    console.log('error-[404]')
     return;
   }
 
@@ -185,8 +185,7 @@ const clipBoard = () => {
   let copyPassword = passwordInsert.textContent;
   console.log(copyPassword);
 
-  navigator.clipboard.writeText(copyPassword).then(() => {
-  });
+  navigator.clipboard.writeText(copyPassword).then(() => {});
 };
 
 copyPassword.addEventListener("click", () => {
