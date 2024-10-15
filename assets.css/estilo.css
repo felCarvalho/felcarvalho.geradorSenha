@@ -226,9 +226,6 @@ body.darkmode {
     text-align: center;
     width: 200px;
   }
-  .container-modal-clipboard {
-    transition: all 0.2s ease-in-out;
-  }
   .container-modal-clipboard .content-modal {
     border: 1px solid rgb(148, 50, 240);
     box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
@@ -599,9 +596,6 @@ body.darkmode {
   .modal-error .modal-flex .content-img-error .img-error {
     text-align: center;
     width: 200px;
-  }
-  .container-modal-clipboard {
-    transition: all 0.2s ease-in-out;
   }
   .container-modal-clipboard .content-modal {
     border: 1px solid rgb(148, 50, 240);
@@ -978,9 +972,6 @@ body.darkmode {
     text-align: center;
     width: 330px;
   }
-  .container-modal-clipboard {
-    transition: all 0.2s ease-in-out;
-  }
   .container-modal-clipboard .content-modal {
     border: 1px solid rgb(148, 50, 240);
     box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
@@ -1354,9 +1345,6 @@ body.darkmode {
   .modal-error .modal-flex .content-img-error .img-error {
     text-align: center;
     width: 300px;
-  }
-  .container-modal-clipboard {
-    transition: all 0.2s ease-in-out;
   }
   .container-modal-clipboard .content-modal {
     border: 1px solid rgb(148, 50, 240);

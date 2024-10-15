@@ -188,7 +188,7 @@ const clipBoard = () => {
     modalPasswordCopy.classList.remove("display-none");
     setTimeout(() => {
       modalPasswordCopy.classList.add("display-none");
-    }, 3000);
+    }, 2000);
   });
 };
 
