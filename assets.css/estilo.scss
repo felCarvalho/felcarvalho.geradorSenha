@@ -293,6 +293,7 @@ body.darkmode {
   }
 
   .container-modal-clipboard {
+    opacity: 0;
     .content-modal {
       @include borderSolid();
       @include shadow();
@@ -310,7 +311,6 @@ body.darkmode {
       background-color: #fff;
       font-size: 14px;
       transform: translateX(-50%, -50%);
-
 
       .content-icon-clipboard {
         background-color: blueviolet;
@@ -758,6 +758,8 @@ body.darkmode {
   }
 
   .container-modal-clipboard {
+    opacity: 0;
+
     .content-modal {
       @include borderSolid();
       @include shadow();
@@ -1228,6 +1230,7 @@ body.darkmode {
   }
 
   .container-modal-clipboard {
+    opacity: 0;
     .content-modal {
       @include borderSolid();
       @include shadow();
@@ -1717,7 +1720,6 @@ body.darkmode {
       background-color: #fff;
       font-size: 18px;
       transform: translateX(-50%, -50%);
-      
 
       .content-icon-clipboard {
         background-color: blueviolet;

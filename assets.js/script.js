@@ -189,7 +189,7 @@ const clipBoard = () => {
     gsap.to(modalPasswordCopy, {
       opacity: 1,
       ease: "power4.out",
-      duration: 0.5,
+      duration: 1.2,
     });
   });
 
@@ -197,7 +197,7 @@ const clipBoard = () => {
     gsap.to(modalPasswordCopy, {
       opacity: 0,
       ease: "power4.out",
-      duration: 0.5,
+      duration: 1.2,
       onComplete: () => {
         modalPasswordCopy.classList.add("display-none");
       },
