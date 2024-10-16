@@ -186,10 +186,22 @@ const clipBoard = () => {
   console.log(copyPassword);
   navigator.clipboard.writeText(copyPassword).then(() => {
     modalPasswordCopy.classList.remove("display-none");
+    gsap.to(modalPasswordCopy, {
+      opacity: 1,
+      ease: "power4.out",
+      duration: 0.5,
+    });
   });
 
   setTimeout(() => {
-    modalPasswordCopy.classList.add("display-none");
+    gsap.to(modalPasswordCopy, {
+      opacity: 0,
+      ease: "power4.out",
+      duration: 0.5,
+      onComplete: () => {
+        modalPasswordCopy.classList.add("display-none");
+      },
+    });
   }, 1500);
 };
 

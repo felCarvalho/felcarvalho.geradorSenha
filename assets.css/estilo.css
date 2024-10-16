@@ -132,6 +132,7 @@ body.darkmode {
     padding: 5px 10px;
     color: white;
     border-radius: 15%;
+    cursor: pointer;
   }
   .borda .flex-row .align-center .content-option {
     display: flex;
@@ -231,7 +232,7 @@ body.darkmode {
     box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
     border-radius: 5px;
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 5%;
     right: 5%;
     display: flex;
@@ -502,6 +503,7 @@ body.darkmode {
     padding: 6.5px 10px;
     color: white;
     border-radius: 15%;
+    cursor: pointer;
   }
   .borda .flex-row .align-center .content-option {
     display: flex;
@@ -875,6 +877,7 @@ body.darkmode {
     color: white;
     font-size: 28px;
     border-radius: 15%;
+    cursor: pointer;
   }
   .borda .flex-row .align-center .content-option {
     display: flex;
@@ -1250,6 +1253,7 @@ body.darkmode {
     color: white;
     font-size: 20px;
     border-radius: 15%;
+    cursor: pointer;
   }
   .borda .flex-row .align-center .content-option {
     display: flex;
@@ -1346,6 +1350,9 @@ body.darkmode {
     text-align: center;
     width: 300px;
   }
+  .container-modal-clipboard {
+    opacity: 0;
+  }
   .container-modal-clipboard .content-modal {
     border: 1px solid rgb(148, 50, 240);
     box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
@@ -1361,7 +1368,7 @@ body.darkmode {
     gap: 10px;
     padding: 10px;
     background-color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     transform: translateX(-50%, -50%);
   }
   .container-modal-clipboard .content-modal .content-icon-clipboard {
