@@ -374,7 +374,7 @@ body.darkmode {
     background-color: rgba(106, 105, 105, 0.488);
     box-shadow: none;
     border: 1px solid rgba(106, 105, 105, 0.488);
-    backdrop-filter: blur(5px);
+    background-clip: blur(1px);
   }
   body.darkmode .container-modal-clipboard .content-modal .content-icon-clipboard {
     color: rgba(255, 255, 255, 0.8784313725);
@@ -749,7 +749,7 @@ body.darkmode {
     background-color: rgba(106, 105, 105, 0.488);
     box-shadow: none;
     border: 1px solid rgba(106, 105, 105, 0.488);
-    backdrop-filter: blur(5px);
+    background-clip: blur(1px);
   }
   body.darkmode .container-modal-clipboard .content-modal .content-icon-clipboard {
     color: rgba(255, 255, 255, 0.8784313725);
@@ -1105,6 +1105,7 @@ body.darkmode {
     background-color: rgb(53, 51, 51);
     box-shadow: none;
     border: 1px solid rgb(53, 51, 51);
+    background-clip: blur(1px);
   }
   body.darkmode .modal-error .content-closed .modal-closed {
     background-color: rgba(106, 105, 105, 0.788);
@@ -1124,7 +1125,6 @@ body.darkmode {
     background-color: rgba(106, 105, 105, 0.488);
     box-shadow: none;
     border: 1px solid rgba(106, 105, 105, 0.488);
-    backdrop-filter: blur(5px);
   }
   body.darkmode .container-modal-clipboard .content-modal .content-icon-clipboard {
     color: rgba(255, 255, 255, 0.8784313725);
@@ -1487,6 +1487,7 @@ body.darkmode {
     background-color: rgb(53, 51, 51);
     box-shadow: none;
     border: 1px solid rgb(53, 51, 51);
+    backdrop-filter: blur(1px);
   }
   body.darkmode .modal-error .content-closed .modal-closed {
     background-color: rgba(106, 105, 105, 0.788);
@@ -1506,7 +1507,6 @@ body.darkmode {
     background-color: rgba(106, 105, 105, 0.488);
     box-shadow: none;
     border: 1px solid rgba(106, 105, 105, 0.488);
-    backdrop-filter: blur(5px);
   }
   body.darkmode .container-modal-clipboard .content-modal .content-icon-clipboard {
     color: rgba(255, 255, 255, 0.8784313725);
