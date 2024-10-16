@@ -202,7 +202,7 @@ const clipBoard = () => {
         modalPasswordCopy.classList.add("display-none");
       },
     });
-  }, 1500);
+  }, 2000);
 };
 
 copyPassword.addEventListener("click", () => {
