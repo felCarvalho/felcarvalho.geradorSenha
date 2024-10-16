@@ -4,7 +4,7 @@ Feito somente para estudar alguns poucos conceitos de strings, manipulação de 
 
 //Gerar senha com 20 caracteres.
 
-//Função copy ainda em desenvolvimento.
+//Função copy como opção de praticidade ao user.
 
 //Totalmente resposivo.
 
@@ -12,13 +12,13 @@ Feito somente para estudar alguns poucos conceitos de strings, manipulação de 
 
 //Usuário pode ter mais três tipos de carateres selecioanaveis.
 
-//Botão (nova senha) para sempre ter a opçaõ de gerar um nova  senha.
+//Botão (nova senha) para sempre ter a opçaõ de gerar um nova senha.
 
 //Desgin conciso em toda os tamanhos de tela.
 
-//Adicionei tambem uma mensagem de erro no container de inserção da senha com a seguinte legenda (ERROR[404]), melhorando a legibilidade de erros para o usuario.
+//Usei uma animação de texto sendo digitado para a senha gerada usando a Library GSAP de animações.
 
-//Usei uma animação de texto sendo digitado para a senha gerada usando uma biblioteca js de animações.
+//Poup-up de senha copiada aparece após a senha ser copiada e desaparece apos 1.2 segundos automaticamente.
 
 //pop-up sendo exibido em todas as telas, sendo possivel desabilita-lo ao clicar no btn-closed(X) ou em qualquer área da tela que tenha o efeito de desfoque.
 
