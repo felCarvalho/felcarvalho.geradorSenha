@@ -181,32 +181,41 @@ newPassword.addEventListener("click", () => {
   senhaGerada();
 });
 
-const clipBoard = () => {
-  let copyPassword = passwordInsert.textContent;
-  console.log(copyPassword);
-  navigator.clipboard.writeText(copyPassword).then(() => {
-    modalPasswordCopy.classList.remove("display-none");
-    gsap.to(modalPasswordCopy, {
-      opacity: 1,
-      ease: "power4.out",
-      duration: 1.2,
-    });
-  });
+//para verificar se a animação do popUp está ativa.
+let isAnimation = false;
 
-  setTimeout(() => {
-    gsap.to(modalPasswordCopy, {
-      opacity: 0,
-      ease: "power4.out",
-      duration: 1.2,
-      onComplete: () => {
-        modalPasswordCopy.classList.add("display-none");
-      },
+const clipBoard = () => {
+  
+    let copyPassword = passwordInsert.textContent;
+    console.log(copyPassword);
+    navigator.clipboard.writeText(copyPassword).then(() => {
+      modalPasswordCopy.classList.remove("display-none");
+      gsap.to(modalPasswordCopy, {
+        opacity: 1,
+        ease: "power4.out",
+        duration: 1.5,
+      });
     });
-  }, 2000);
+  
+    setTimeout(() => {
+      gsap.to(modalPasswordCopy, {
+        opacity: 0,
+        ease: "power4.out",
+        duration: 1.5,
+        onComplete: () => {
+          modalPasswordCopy.classList.add("display-none");
+          isAnimation = false;
+        },
+      });
+    }, 2000);
 };
 
 copyPassword.addEventListener("click", () => {
-  clipBoard();
+  if (isAnimation) {
+    return;
+  }
+  isAnimation = true;
+    clipBoard();
 });
 
 //fn=unção para retirar popUp da tela com o btnClosed
