@@ -185,29 +185,28 @@ newPassword.addEventListener("click", () => {
 let isAnimation = false;
 
 const clipBoard = () => {
-  
-    let copyPassword = passwordInsert.textContent;
-    console.log(copyPassword);
-    navigator.clipboard.writeText(copyPassword).then(() => {
-      modalPasswordCopy.classList.remove("display-none");
-      gsap.to(modalPasswordCopy, {
-        opacity: 1,
-        ease: "power4.out",
-        duration: 1.5,
-      });
+  let copyPassword = passwordInsert.textContent;
+  console.log(copyPassword);
+  navigator.clipboard.writeText(copyPassword).then(() => {
+    modalPasswordCopy.classList.remove("display-none");
+    gsap.to(modalPasswordCopy, {
+      opacity: 1,
+      ease: "power4.out",
+      duration: 1.5,
     });
-  
-    setTimeout(() => {
-      gsap.to(modalPasswordCopy, {
-        opacity: 0,
-        ease: "power4.out",
-        duration: 1.5,
-        onComplete: () => {
-          modalPasswordCopy.classList.add("display-none");
-          isAnimation = false;
-        },
-      });
-    }, 2000);
+  });
+
+  setTimeout(() => {
+    gsap.to(modalPasswordCopy, {
+      opacity: 0,
+      ease: "power4.out",
+      duration: 1.5,
+      onComplete: () => {
+        modalPasswordCopy.classList.add("display-none");
+        isAnimation = false;
+      },
+    });
+  }, 2000);
 };
 
 copyPassword.addEventListener("click", () => {
@@ -215,7 +214,8 @@ copyPassword.addEventListener("click", () => {
     return;
   }
   isAnimation = true;
-    clipBoard();
+  clipBoard();
+  isAnimation = true;
 });
 
 //fn=unção para retirar popUp da tela com o btnClosed
