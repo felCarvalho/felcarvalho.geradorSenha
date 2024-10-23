@@ -293,7 +293,8 @@ body.darkmode {
     background-color: blueviolet;
     color: #fff;
     border-radius: 5px;
-    padding: 1px 7px;
+    padding: 4px 8px;
+    font-size: 18px;
   }
   .container-modal-clipboard .content-modal .content-mensage-clipboard {
     font-weight: 600;
@@ -711,17 +712,18 @@ body.darkmode {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     padding: 10px 3px;
     background-color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     transform: translateX(-50%, -50%);
   }
   .container-modal-clipboard .content-modal .content-icon-clipboard {
     background-color: blueviolet;
     color: #fff;
     border-radius: 5px;
-    padding: 1px 7px;
+    padding: 3px 10px;
+    font-size: 18px;
   }
   .container-modal-clipboard .content-modal .content-mensage-clipboard {
     font-weight: 600;
@@ -1144,14 +1146,15 @@ body.darkmode {
     gap: 20px;
     padding: 10px 3px;
     background-color: #fff;
-    font-size: 25px;
+    font-size: 22px;
     transform: translateX(-50%, -50%);
   }
   .container-modal-clipboard .content-modal .content-icon-clipboard {
     background-color: blueviolet;
     color: #fff;
     border-radius: 5px;
-    padding: 1px 7px;
+    padding: 8px 14px;
+    font-size: 25px;
   }
   .container-modal-clipboard .content-modal .content-mensage-clipboard {
     font-weight: 600;
@@ -1566,13 +1569,13 @@ body.darkmode {
     border-radius: 5px;
     position: absolute;
     top: 15%;
-    left: 35%;
-    right: 35%;
+    left: 37%;
+    right: 37%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     background-color: #fff;
     font-size: 18px;
@@ -1582,7 +1585,8 @@ body.darkmode {
     background-color: blueviolet;
     color: #fff;
     border-radius: 5px;
-    padding: 1px 7px;
+    padding: 4px 10px;
+    font-size: 25px;
   }
   .container-modal-clipboard .content-modal .content-mensage-clipboard {
     font-weight: 600;
