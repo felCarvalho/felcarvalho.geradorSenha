@@ -14,6 +14,34 @@ const iconDark = document.querySelector(".dark-mode");
 const iconSun = document.querySelector(".sun-mode");
 const modalPasswordCopy = document.querySelector(".container-modal-clipboard");
 const copyPassword = document.querySelector(".icon-copy");
+const valueInsertSlider = document.querySelector(".value-slider");
+const sliderRangeStyle = document.querySelector(".custom-range");
+
+//sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, "rgb(229 231 235" ${porcentagem}%)`;
+//sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, rgb(229, 231, 235) ${porcentagem}%)`;
+//sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, rgb(240, 242, 245) ${porcentagem}%)`;
+//sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, rgb(245, 247, 250) ${porcentagem}%)`;
+
+const slider = () => {
+  const sliderValue = sliderRangeStyle.value;
+  const sliderMin = sliderRangeStyle.min;
+  const sliderMax = sliderRangeStyle.max;
+  console.log(sliderValue);
+
+  const porcentagem =
+    ((sliderValue - sliderMin) / (sliderMax - sliderMin)) * 100;
+  console.log(porcentagem);
+  valueInsertSlider.textContent = sliderValue;
+  if (body.classList.contains("darkmode")) {
+    sliderRangeStyle.style.background = `linear-gradient(to right, #ffffffe0 ${porcentagem}%, transparent ${porcentagem}%)`;
+  } else {
+    sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, #eeee ${porcentagem}%)`;
+  }
+};
+
+sliderRangeStyle.addEventListener("input", () => {
+  slider();
+});
 
 //variaveis de dados a serem manipulados
 const minuscula = "abcdefghijklmnopqrstuvwxyz";
@@ -89,7 +117,7 @@ const mensageUpdate = (updateError) => {
 //função para criar a logica de armazenamento e de caracteres aleátorios para a senha de 20 caracteres
 const senhaGerada = () => {
   let passwordOnly = "";
-  const passwordLength = 20;
+  const passwordLength = sliderRangeStyle.value;
 
   //usando join() para criar um string com a array de caracteres.
   let password = caracteresPassword.join("");
@@ -142,6 +170,7 @@ window.addEventListener("load", () => {
     : console.log("error no checked padrão #4563");
 
   senhaGerada();
+  slider();
 });
 
 //evento de click para deixarmos o usuario selecionar quantos vezes ele vai querer geraruma senha nova
@@ -215,7 +244,6 @@ copyPassword.addEventListener("click", () => {
   }
   isAnimation = true;
   clipBoard();
-  isAnimation = true;
 });
 
 //fn=unção para retirar popUp da tela com o btnClosed
@@ -255,6 +283,8 @@ btnDarkMode.addEventListener("click", () => {
     darkModeDesativado();
     body.classList.add("darkmode");
   }
+  slider();
+
 });
 
 //trocado pelo operador tenario.
