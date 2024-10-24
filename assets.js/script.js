@@ -115,13 +115,17 @@ const senhaGerada = () => {
     return;
   }
 
-  //loop for para percorre toda a array de string para pegar os caracteres pelo seu indice.
-  for (let i = 0; i < passwordLength; i++) {
-    const randonPassword = Math.floor(Math.random() * password.length);
-    console.log(randonPassword);
-    //inserindo caracteres da array vazia
-    passwordArray.push(password[randonPassword]);
-  }
+  const loopGeradorPassword = () => {
+    //loop for para percorre toda a array de string para pegar os caracteres pelo seu indice.
+    for (let i = 0; i < passwordArredondado; i++) {
+      const randonPassword = Math.floor(Math.random() * password.length);
+      console.log(randonPassword);
+      //inserindo caracteres da array vazia
+      passwordArray.push(password[randonPassword]);
+    }
+  };
+
+  loopGeradorPassword();
 
   //tranformando caracteres da array vazia em string.
   passwordOnly = passwordArray.join("");
