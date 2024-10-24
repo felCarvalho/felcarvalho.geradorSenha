@@ -99,7 +99,9 @@ const senhaGerada = () => {
   let passwordOnly = "";
   const passwordLength = sliderRangeStyle.value;
 
-  copyPasswordLength.textContent = `Nº Caracteres: ${passwordLength}`;
+  const passwordArredondado = Math.floor(passwordLength);
+
+  copyPasswordLength.textContent = `Nº Caracteres: ${passwordArredondado}`;
 
   //usando join() para criar um string com a array de caracteres.
   let password = caracteresPassword.join("");
@@ -145,40 +147,8 @@ const senhaGerada = () => {
   });
 };
 
-const slider = () => {
-  const sliderValue = sliderRangeStyle.value;
-  const sliderMin = sliderRangeStyle.min;
-  const sliderMax = sliderRangeStyle.max;
-  console.log(sliderValue);
-
-  const porcentagem =
-    ((sliderValue - sliderMin) / (sliderMax - sliderMin)) * 100;
-  console.log(porcentagem);
-  valueInsertSlider.textContent = sliderValue;
-  if (body.classList.contains("darkmode")) {
-    sliderRangeStyle.style.background = `linear-gradient(to right, #ffffffe0 ${porcentagem}%, transparent ${porcentagem}%)`;
-  } else {
-    sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, #eeee ${porcentagem}%)`;
-  }
-};
-
-sliderRangeStyle.addEventListener("input", () => {
-  slider();
-  senhaGerada();
-});
-
-//senha sendo executada ao carregar o object window
-window.addEventListener("load", () => {
-  ToggleOne.checked
-    ? caracteresPassword.push(minuscula) && console.log("checked padrão")
-    : console.log("error no checked padrão #4563");
-
-  senhaGerada();
-  slider();
-});
-
 //evento de click para deixarmos o usuario selecionar quantos vezes ele vai querer geraruma senha nova
-newPassword.addEventListener("click", () => {
+const verificacaoGerador = () => {
   caracteresPassword = [];
   console.log(caracteresPassword);
 
@@ -212,6 +182,48 @@ newPassword.addEventListener("click", () => {
 
   //funçaõ de gerar senha só será executada após as verificações de botões.
   senhaGerada();
+};
+
+newPassword.addEventListener("click", () => {
+  verificacaoGerador();
+});
+
+const slider = () => {
+  const sliderValue = sliderRangeStyle.value;
+  const sliderMin = sliderRangeStyle.min;
+  const sliderMax = sliderRangeStyle.max;
+  console.log(sliderValue);
+
+  //calculo do slider para funcionamento dinamico
+  const porcentagem =
+    ((sliderValue - sliderMin) / (sliderMax - sliderMin)) * 100;
+  console.log(porcentagem);
+
+  //variavel que insere o numero de caracteres da senha controlado pelo slider.
+  valueInsertSlider.textContent = Math.floor(sliderValue);
+
+  //modo escuro e claro do slider
+  if (body.classList.contains("darkmode")) {
+    sliderRangeStyle.style.background = `linear-gradient(to right, #ffffffe0 ${porcentagem}%, transparent ${porcentagem}%)`;
+  } else {
+    sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, #eeee ${porcentagem}%)`;
+  }
+};
+
+sliderRangeStyle.addEventListener("input", () => {
+  slider();
+  senhaGerada();
+  verificacaoGerador();
+});
+
+//senha sendo executada ao carregar o object window
+window.addEventListener("load", () => {
+  ToggleOne.checked
+    ? caracteresPassword.push(minuscula) && console.log("checked padrão")
+    : console.log("error no checked padrão #4563");
+
+  senhaGerada();
+  slider();
 });
 
 //para verificar se a animação do popUp está ativa.

@@ -109,7 +109,7 @@ body.darkmode {
   .borda .flex-row .align-center .container-slider-volume .custom-range {
     -webkit-appearance: none;
     appearance: none;
-    width: 200px;
+    width: 238px;
     height: 32px;
     background-color: rgb(229, 231, 235);
     border-radius: 30px;
@@ -534,7 +534,7 @@ body.darkmode {
   .borda .flex-row .align-center .container-slider-volume .custom-range {
     -webkit-appearance: none;
     appearance: none;
-    width: 220px;
+    width: 266px;
     height: 35px;
     background-color: rgb(229, 231, 235);
     border-radius: 30px;
@@ -549,8 +549,8 @@ body.darkmode {
     cursor: pointer;
   }
   .borda .flex-row .align-center .container-slider-volume .content-value-slider {
-    min-width: 35px;
-    max-width: 35px;
+    min-width: 34px;
+    max-width: 34px;
     padding: 5px;
     background-color: blueviolet;
     color: white;
@@ -947,7 +947,7 @@ body.darkmode {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 31px;
+    gap: 30px;
     margin: 10px 0;
   }
   .borda .flex-row .align-center .container-slider-volume .icon-slider {
@@ -960,8 +960,8 @@ body.darkmode {
   .borda .flex-row .align-center .container-slider-volume .custom-range {
     -webkit-appearance: none;
     appearance: none;
-    width: 382px;
-    height: 55px;
+    width: 482.5px;
+    height: 53.5px;
     background-color: rgb(229, 231, 235);
     border-radius: 30px;
     border: 1px solid blueviolet;
@@ -975,9 +975,9 @@ body.darkmode {
     cursor: pointer;
   }
   .borda .flex-row .align-center .container-slider-volume .content-value-slider {
-    min-width: 67px;
-    max-width: 67px;
-    padding: 9px;
+    min-width: 64px;
+    max-width: 64px;
+    padding: 8px;
     background-color: blueviolet;
     color: white;
     font-size: 25px;
@@ -1006,7 +1006,7 @@ body.darkmode {
     text-align: center;
   }
   .borda .flex-row .align-center .content-senha-gerada .sub-content-senha-gerada .senha-gerada {
-    height: 42.7px;
+    height: 42px;
     max-width: 344px;
     min-width: 344px;
     overflow: hidden;
@@ -1396,10 +1396,10 @@ body.darkmode {
   .borda .flex-row .align-center .container-slider-volume .custom-range {
     -webkit-appearance: none;
     appearance: none;
-    width: 300px;
+    width: 389px;
     height: 40px;
     background-color: rgb(229, 231, 235);
-    border-radius: 20px;
+    border-radius: 30px;
     border: 1px solid blueviolet;
     outline: none;
   }
@@ -1411,8 +1411,8 @@ body.darkmode {
     cursor: pointer;
   }
   .borda .flex-row .align-center .container-slider-volume .content-value-slider {
-    min-width: 60px;
-    max-width: 60px;
+    min-width: 58px;
+    max-width: 58px;
     padding: 5px;
     background-color: blueviolet;
     color: white;
