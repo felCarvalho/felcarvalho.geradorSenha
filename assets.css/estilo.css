@@ -1308,23 +1308,37 @@ body.darkmode {
     border-radius: 5px;
     margin: 80px 10px;
   }
-  .borda .content-dark {
-    text-align: end;
-    width: 100%;
-    margin: 10px -10px 10px;
+  .borda .display-flex-header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    font-family: "poppins";
   }
-  .borda .content-dark .button-dark {
+  .borda .display-flex-header .icon-config-header-open .btn-config {
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .borda .display-flex-header .icon-config-header-open .btn-config i {
+    margin-right: 8px;
+  }
+  .borda .display-flex-header .content-dark .button-dark {
     min-width: 50px;
     min-height: 35px;
     background-color: blueviolet;
     border-radius: 10px;
   }
-  .borda .content-dark .button-dark .dark-mode {
+  .borda .display-flex-header .content-dark .button-dark .dark-mode {
     margin-top: 5px;
     font-size: 20px;
     color: #fff;
   }
-  .borda .content-dark .button-dark .sun-mode {
+  .borda .display-flex-header .content-dark .button-dark .sun-mode {
     margin-top: 5px;
     font-size: 20px;
     color: #fff;
@@ -1410,6 +1424,12 @@ body.darkmode {
     height: 0px;
     cursor: pointer;
   }
+  .borda .flex-row .align-center .container-slider-volume .custom-range::-webkit-slider-thumb::after {
+    content: var(text-content);
+    width: 10px;
+    height: 20px;
+    background-color: rgb(139, 92, 246);
+  }
   .borda .flex-row .align-center .container-slider-volume .content-value-slider {
     min-width: 58px;
     max-width: 58px;
@@ -1419,6 +1439,7 @@ body.darkmode {
     font-size: 20px;
     text-align: center;
     border-radius: 10px;
+    font-weight: 600;
   }
   .borda .flex-row .align-center .content-senha-gerada {
     display: flex;
@@ -1594,6 +1615,233 @@ body.darkmode {
     font-family: "poppins", Courier, monospace;
     letter-spacing: 1px;
   }
+  .container-menu-config {
+    border: 1px solid rgb(148, 50, 240);
+    box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
+    border-radius: 5px;
+    font-family: "poppins";
+    background-color: #fff;
+    transform: translateX(-50%, -50%);
+    position: absolute;
+    top: 15.5%;
+    left: 21px;
+    z-index: 8;
+  }
+  .container-menu-config .container-title-menu-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px;
+  }
+  .container-menu-config .container-title-menu-option .content-title {
+    cursor: pointer;
+  }
+  .container-menu-config .container-title-menu-option .content-title .title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(145, 49, 235, 0.87);
+  }
+  .container-menu-config .container-title-menu-option .content-title .title i {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(153, 74, 226, 0.87);
+    margin-right: 8px;
+  }
+  .container-menu-config .container-title-menu-option .content-closed button {
+    background-color: rgba(156, 83, 224, 0.366);
+    border-radius: 5px;
+  }
+  .container-menu-config .container-title-menu-option .content-closed button i {
+    padding: 8px 12px;
+    font-size: 20px;
+    color: rgba(145, 49, 235, 0.87);
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .container-menu-config .sub-content-link {
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(156, 83, 224, 0.166);
+    border-radius: 5px;
+    max-width: 500px;
+    min-width: 500px;
+    cursor: pointer;
+  }
+  .container-menu-config .sub-content-link .display-flex-link .title-link-menu {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(145, 49, 235, 0.87);
+  }
+  .container-menu-config .sub-content-link .display-flex-link .title-link-menu i {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(153, 74, 226, 0.87);
+  }
+  .container-menu-config .sub-content-link .container-description .description {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(153, 92, 211, 0.699);
+    letter-spacing: 1px;
+  }
+  .container-option-config {
+    border: 1px solid rgb(148, 50, 240);
+    box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
+    border-radius: 5px;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 10%;
+    transform: translateX(-50%, -50%);
+    background-color: #fff;
+    font-family: "poppins";
+    z-index: 8;
+  }
+  .container-option-config .container-title-closed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 15px;
+  }
+  .container-option-config .container-title-closed .content-title .title-menu {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(145, 49, 235, 0.87);
+    letter-spacing: 1px;
+  }
+  .container-option-config .container-title-closed .content-title .title-menu i {
+    margin-right: 8px;
+  }
+  .container-option-config .container-title-closed .content-closed button {
+    background-color: rgba(156, 83, 224, 0.366);
+    border-radius: 5px;
+  }
+  .container-option-config .container-title-closed .content-closed button i {
+    padding: 8px 12px;
+    font-size: 20px;
+    color: rgba(145, 49, 235, 0.87);
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .container-option-config .sub-content-optin-config {
+    margin: 30px;
+    background-color: rgba(156, 83, 224, 0.166);
+    border-radius: 5px;
+  }
+  .container-option-config .sub-content-optin-config .content-input-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+  }
+  .container-option-config .sub-content-optin-config .content-input-option .label-input {
+    width: 100%;
+  }
+  .container-option-config .sub-content-optin-config .content-input-option .label-input .title-input {
+    font-size: 20px;
+    color: rgba(145, 49, 235, 0.87);
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .container-option-config .sub-content-optin-config .content-input-option .label-input input {
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgba(171, 122, 218, 0.451);
+    padding: 8px;
+    color: rgba(145, 49, 235, 0.87);
+    transition: all 30ms ease-in-out;
+    letter-spacing: 1px;
+  }
+  .container-option-config .sub-content-optin-config .content-input-option .label-input input[type=number]::-webkit-inner-spin-button,
+  .container-option-config .sub-content-optin-config .content-input-option .label-input ::-webkit-outer-spin-button {
+    appearance: none;
+  }
+  .container-option-config .sub-content-optin-config .content-input-option .label-input input:focus-visible {
+    width: 100%;
+    outline: 2.5px solid blueviolet;
+    color: rgba(145, 49, 235, 0.87);
+    transition: all 30ms ease-in-out;
+  }
+  .container-option-config .sub-content-optin-config .content-input-option .label-input .description {
+    font-size: 11px;
+    font-weight: 600;
+    font-style: italic;
+    color: rgba(153, 92, 211, 0.699);
+    white-space: pre-line;
+    letter-spacing: 1px;
+  }
+  .container-option-config .sub-content-optin-config .content-input-option .content-icon-pen {
+    background-color: rgba(156, 83, 224, 0.366);
+    margin-top: 12.3px;
+    border-radius: 50%;
+    padding: 8px 12px;
+  }
+  .container-option-config .sub-content-optin-config .content-input-option .content-icon-pen i {
+    color: rgba(145, 49, 235, 0.87);
+  }
+  .container-option-config .container-buttons {
+    margin: 40px 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .container-option-config .container-buttons .content-cancelar button {
+    padding: 10px 15px;
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .container-option-config .container-buttons .content-cancelar button i {
+    margin-right: 8px;
+    color: #fff;
+  }
+  .container-option-config .container-buttons .content-cancelar button:hover {
+    padding: 10px 15px;
+    background-color: rgba(255, 0, 0, 0.493);
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .container-option-config .container-buttons .content-cancelar button:hover i {
+    margin-right: 8px;
+    color: #fff;
+  }
+  .container-option-config .container-buttons .content-confirmar button {
+    padding: 10px 15px;
+    background-color: rgb(135, 70, 196);
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .container-option-config .container-buttons .content-confirmar button i {
+    margin-right: 8px;
+    color: #fff;
+  }
+  .container-option-config .container-buttons .content-confirmar button:hover {
+    padding: 10px 15px;
+    background-color: rgb(127, 30, 218);
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .container-option-config .container-buttons .content-confirmar button:hover i {
+    margin-right: 8px;
+    color: #fff;
+  }
   .fundo-blur {
     position: fixed;
     top: 0px;
@@ -1601,6 +1849,14 @@ body.darkmode {
     height: 100%;
     width: 100%;
     z-index: 10;
+  }
+  .fundo-background-menu {
+    background-color: rgba(131, 125, 125, 0.1843137255);
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 7;
   }
   .content-tag-name {
     text-align: center;

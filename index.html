@@ -16,12 +16,20 @@
   </head>
   <body>
     <div class="borda">
-      <div class="content-dark">
-        <button class="button-dark">
-          <i class="fa-solid fa-moon dark-mode"></i>
-          <i class="fa-solid fa-sun sun-mode display-none"></i>
-        </button>
-      </div>
+      <header class="display-flex-header">
+        <div class="icon-config-header-open display-none">
+          <button class="btn-config">
+            <i class="fa-solid fa-gear"></i>
+            Configurçaões
+          </button>
+        </div>
+        <div class="content-dark">
+          <button class="button-dark">
+            <i class="fa-solid fa-moon dark-mode"></i>
+            <i class="fa-solid fa-sun sun-mode display-none"></i>
+          </button>
+        </div>
+      </header>
       <article class="flex-row">
         <div class="content-icon-destaque">
           <img
@@ -134,6 +142,117 @@
         >
       </div>
     </div>
+    <section class="container-menu-config display-none">
+      <div class="container-title-menu-option">
+        <div class="content-title">
+          <h3 class="title title-closed"
+            ><i class="fa-solid fa-angle-left"></i>Configurçaões</h3
+          >
+        </div>
+        <div class="content-closed">
+          <button><i class="fa-solid fa-x"></i></button>
+        </div>
+      </div>
+      <div class="sub-content-link">
+        <div class="display-flex-link">
+          <h2 class="title-link-menu"
+            >Personalizar caracteres disponiveis
+            <i class="fa-solid fa-angle-right"></i
+          ></h2>
+        </div>
+        <div class="container-description">
+          <p class="description"
+            >altere a quantidade de caracteres em cada opção disponivel.</p
+          >
+        </div>
+      </div>
+      <div class="sub-content-link">
+        <div class="display-flex-link">
+          <h2 class="title-link-menu"
+            >Inclua uma palavra favorita. <i class="fa-solid fa-angle-right"></i
+          ></h2>
+        </div>
+        <div class="container-description">
+          <p class="description"
+            >selecione uma palavra pessoal para adiconar a senha aléatoria (em
+            desenvolvimento).</p
+          >
+        </div>
+      </div>
+    </section>
+    <section class="container-option-config display-none">
+      <div class="container-title-closed">
+        <div class="content-title title-back-form">
+          <h2 class="title-menu"
+            ><i class="fa-solid fa-angle-left"></i>Personalizar caracteres
+            disponiveis</h2
+          >
+        </div>
+        <div class="content-closed btn-closed-form">
+          <button><i class="fa-solid fa-x"></i></button>
+        </div>
+      </div>
+      <div class="sub-content-optin-config">
+        <div class="content-input-option">
+          <label class="label-input" for="">
+            <p class="title-input">abc:</p>
+            <input type="text" id="abc" required />
+            <p class="description">letras minusculas*</p>
+          </label>
+          <div class="content-icon-pen">
+            <i class="fa-solid fa-pen"></i>
+          </div>
+        </div>
+      </div>
+      <div class="sub-content-optin-config">
+        <div class="content-input-option">
+          <label class="label-input" for="">
+            <p class="title-input">ABC:</p>
+            <input type="text" id="ABC" required />
+            <p class="description">letras maiusculas*</p>
+          </label>
+          <div class="content-icon-pen">
+            <i class="fa-solid fa-pen"></i>
+          </div>
+        </div>
+      </div>
+      <div class="sub-content-optin-config">
+        <div class="content-input-option">
+          <label class="label-input" for="">
+            <p class="title-input">123:</p>
+            <input type="number" id="numeros" required />
+            <p class="description">números*</p>
+          </label>
+          <div class="content-icon-pen">
+            <i class="fa-solid fa-pen"></i>
+          </div>
+        </div>
+      </div>
+      <div class="sub-content-optin-config">
+        <div class="content-input-option">
+          <label class="label-input" for="">
+            <p class="title-input">&*%:</p>
+            <input type="text" id="simbolos" required />
+            <p class="description">(Exemplos aceitos:!@#$%&*0+,:]^&gt;&lt;)</p>
+          </label>
+          <div class="content-icon-pen">
+            <i class="fa-solid fa-pen"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container-buttons">
+        <div class="content-cancelar">
+          <button type="reset" class="btn-cancelar-form"
+            ><i class="fa-solid fa-x"></i>cancelar</button
+          >
+        </div>
+        <div class="content-confirmar">
+          <button class="btn-confirmar-form btn-confirm-block"
+            ><i class="fa-solid fa-check"></i>confirmar</button
+          >
+        </div>
+      </div>
+    </section>
     <div class="modal-error display-none">
       <div class="content-closed">
         <i class="fa-solid fa-x modal-closed"></i>
@@ -151,8 +270,6 @@
         </div>
       </div>
     </div>
-    <div class="fundo-blur display-none"></div>
-
     <div class="container-modal-clipboard display-none">
       <div class="content-modal">
         <div class="content-icon-clipboard">
@@ -164,9 +281,12 @@
         </div>
       </div>
     </div>
+    <div class="fundo-blur display-none"></div>
+    <div class="fundo-background-menu display-none"></div>
     <div class="content-tag-name">
       <felcarvalho class="felcarvalho">Felipe Carvalho 2024&copy;</felcarvalho>
     </div>
-    <script src="/assets.js/script.js"></script>
+    <script type="module" src="/assets.js/script.js"></script>
+    <script type="module" src="/assets.js/customization.js"></script>
   </body>
 </html>

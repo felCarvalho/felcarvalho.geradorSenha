@@ -1,5 +1,5 @@
-//todos os elementos intertivos do HTML
-const newPassword = document.querySelector(".btn-password");
+//todos os elementos intertivos do HTML3
+export const newPassword = document.querySelector(".btn-password");
 const ToggleOne = document.querySelector(".checked-one");
 const ToggleTwo = document.querySelector(".checked-two");
 const ToggleThree = document.querySelector(".checked-three");
@@ -15,19 +15,13 @@ const iconSun = document.querySelector(".sun-mode");
 const modalPasswordCopy = document.querySelector(".container-modal-clipboard");
 const copyPassword = document.querySelector(".icon-copy");
 const valueInsertSlider = document.querySelector(".value-slider");
-const sliderRangeStyle = document.querySelector(".custom-range");
+export const sliderRangeStyle = document.querySelector(".custom-range");
 const copyPasswordLength = document.querySelector(".numero-caracteres-copy");
 
-//sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, "rgb(229 231 235" ${porcentagem}%)`;
-//sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, rgb(229, 231, 235) ${porcentagem}%)`;
-//sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, rgb(240, 242, 245) ${porcentagem}%)`;
-//sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, rgb(245, 247, 250) ${porcentagem}%)`;
-
-//variaveis de dados a serem manipulados
-const minuscula = "abcdefghijklmnopqrstuvwxyz";
-const maiuscula = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
-const numeros = "12345679";
-const simbolos = "!@#$%&*0+,:210]^><";
+let lowerCase = "abcdefghijklmnopqrstuvwxyz";
+let upperCase = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
+let number = "12345679";
+let simbolosEspecial = "!@#$%&*0+,:]^><";
 
 //array para armazenar os ddados selecionados pelo usuario
 let caracteresPassword = [];
@@ -152,7 +146,7 @@ const senhaGerada = () => {
 };
 
 //evento de click para deixarmos o usuario selecionar quantos vezes ele vai querer geraruma senha nova
-const verificacaoGerador = () => {
+export const verificacaoGerador = (minuscula, maiuscula, numeros, simbolos) => {
   caracteresPassword = [];
   console.log(caracteresPassword);
 
@@ -184,15 +178,20 @@ const verificacaoGerador = () => {
     ? caracteresPassword.push(simbolos)
     : console.log("error-toogle-four");
 
-  //funçaõ de gerar senha só será executada após as verificações de botões.
   senhaGerada();
 };
 
-newPassword.addEventListener("click", () => {
-  verificacaoGerador();
-});
+const newPasswordGenerator = function () {
+  verificacaoGerador(lowerCase, upperCase, number, simbolosEspecial);
+};
 
-const slider = () => {
+export const controlePassword = function () {
+  newPasswordGenerator();
+};
+
+newPassword.addEventListener("click", controlePassword);
+
+export const slider = function () {
   const sliderValue = sliderRangeStyle.value;
   const sliderMin = sliderRangeStyle.min;
   const sliderMax = sliderRangeStyle.max;
@@ -210,24 +209,28 @@ const slider = () => {
   if (body.classList.contains("darkmode")) {
     sliderRangeStyle.style.background = `linear-gradient(to right, #ffffffe0 ${porcentagem}%, transparent ${porcentagem}%)`;
   } else {
-    sliderRangeStyle.style.background = `linear-gradient(to right, blueviolet ${porcentagem}%, #eeee ${porcentagem}%)`;
+    sliderRangeStyle.style.background = `linear-gradient(to right, ${
+      porcentagem > 73.5 ? "#8B5CF6" : "blueviolet"
+    } ${porcentagem}%, #eeee ${porcentagem}%)`;
+    //sliderRangeStyle.style.background = `linear-gradient(to right, ${(porcentagem === 100) ? 'blueviolet' : '#8B5CF6'} ${porcentagem}%, #eeee ${porcentagem}%)`;
   }
 };
 
-sliderRangeStyle.addEventListener("input", () => {
+export const controleSLider = function () {
+  verificacaoGerador(lowerCase, upperCase, number, simbolosEspecial);
   slider();
-  senhaGerada();
-  verificacaoGerador();
-});
+};
+
+sliderRangeStyle.addEventListener("input", controleSLider);
 
 //senha sendo executada ao carregar o object window
-window.addEventListener("load", () => {
+window.addEventListener("load", (minuscula) => {
   ToggleOne.checked
     ? caracteresPassword.push(minuscula) && console.log("checked padrão")
     : console.log("error no checked padrão #4563");
-
-  senhaGerada();
+  verificacaoGerador(lowerCase);
   slider();
+  caracteresPassword = [];
 });
 
 //para verificar se a animação do popUp está ativa.
