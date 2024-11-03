@@ -17,13 +17,12 @@
   <body>
     <div class="borda">
       <header class="display-flex-header">
-        <div class="icon-config-header-open display-none">
+        <div class="icon-config-header-open">
           <button class="btn-config">
             <i class="fa-solid fa-gear"></i>
-            Configurçaões
           </button>
         </div>
-        <div class="content-dark">
+        <div class="content-dark display-none">
           <button class="button-dark">
             <i class="fa-solid fa-moon dark-mode"></i>
             <i class="fa-solid fa-sun sun-mode display-none"></i>
@@ -137,9 +136,12 @@
       </article>
       <div class="content-button">
         <button class="btn-password">
-          <i class="fa-solid fa-arrow-rotate-right"></i>
+          <i class="fa-solid fa-check"></i>
           nova senha</button
         >
+        <button class="btn-reset-gerador display-non">
+          <i class="fa-solid fa-arrow-rotate-left"></i>valor padrão
+        </button>
       </div>
     </div>
     <section class="container-menu-config display-none">
@@ -196,11 +198,14 @@
         <div class="content-input-option">
           <label class="label-input" for="">
             <p class="title-input">abc:</p>
-            <input type="text" id="abc" required />
+            <input type="text" id="abc" value="" required />
             <p class="description">letras minusculas*</p>
           </label>
-          <div class="content-icon-pen">
+          <div class="content-icon btn-icon-pen-abc">
             <i class="fa-solid fa-pen"></i>
+          </div>
+          <div class="content-icon btn-icon-check-abc">
+            <i class="fa-solid fa-check"></i>
           </div>
         </div>
       </div>
@@ -208,11 +213,14 @@
         <div class="content-input-option">
           <label class="label-input" for="">
             <p class="title-input">ABC:</p>
-            <input type="text" id="ABC" required />
+            <input type="text" id="ABC" value="" required />
             <p class="description">letras maiusculas*</p>
           </label>
-          <div class="content-icon-pen">
+          <div class="content-icon btn-icon-pen-ABC">
             <i class="fa-solid fa-pen"></i>
+          </div>
+          <div class="content-icon btn-icon-check-ABC">
+            <i class="fa-solid fa-check"></i>
           </div>
         </div>
       </div>
@@ -220,11 +228,14 @@
         <div class="content-input-option">
           <label class="label-input" for="">
             <p class="title-input">123:</p>
-            <input type="number" id="numeros" required />
+            <input type="number" id="numeros" value="" required />
             <p class="description">números*</p>
           </label>
-          <div class="content-icon-pen">
+          <div class="content-icon btn-icon-pen-number">
             <i class="fa-solid fa-pen"></i>
+          </div>
+          <div class="content-icon btn-icon-check-number">
+            <i class="fa-solid fa-check"></i>
           </div>
         </div>
       </div>
@@ -232,17 +243,22 @@
         <div class="content-input-option">
           <label class="label-input" for="">
             <p class="title-input">&*%:</p>
-            <input type="text" id="simbolos" required />
-            <p class="description">(Exemplos aceitos:!@#$%&*0+,:]^&gt;&lt;)</p>
+            <input type="text" id="simbolos" value="" required />
+            <p class="description"
+              >simbolos especiais</p
+            >
           </label>
-          <div class="content-icon-pen">
+          <div class="content-icon btn-icon-pen-simbolos">
             <i class="fa-solid fa-pen"></i>
+          </div>
+          <div class="content-icon btn-icon-check-simbolos">
+            <i class="fa-solid fa-check"></i>
           </div>
         </div>
       </div>
       <div class="container-buttons">
         <div class="content-cancelar">
-          <button type="reset" class="btn-cancelar-form"
+          <button class="btn-cancelar-form"
             ><i class="fa-solid fa-x"></i>cancelar</button
           >
         </div>

@@ -5,8 +5,15 @@ import {
   controlePassword,
   controleSLider,
   slider,
+  lowerCase,
+  upperCase,
+  numberCaractere,
+  simbolosEspecial,
+  resetGeradorReferencia,
+  btnResetGerador,
+  resetGerador,
 } from "../assets.js/script.js";
-  
+
 const btnConfig = document.querySelector(".icon-config-header-open");
 const config = document.querySelector(".container-menu-config");
 const backgroundFundoPopUp = document.querySelector(".fundo-background-menu");
@@ -22,13 +29,45 @@ const inputLowerCase = document.querySelector("#abc");
 const inputUpperCase = document.querySelector("#ABC");
 const inputNumber = document.querySelector("#numeros");
 const inputSimbols = document.querySelector("#simbolos");
-export const btnConfirmar = document.querySelector(".btn-confirmar-form");
+const btnConfirmar = document.querySelector(".btn-confirmar-form");
 const btnCancelar = document.querySelector(".btn-cancelar-form");
-
+const iconPen_abc = document.querySelector(".btn-icon-pen-abc");
+const iconPenABC = document.querySelector(".btn-icon-pen-ABC");
+const iconPenNumber = document.querySelector(".btn-icon-pen-number");
+const iconPenSimbols = document.querySelector(".btn-icon-pen-simbolos");
+const iconCheck_abc = document.querySelector(".btn-icon-check-abc");
+const iconCheckABC = document.querySelector(".btn-icon-check-ABC");
+const iconCheckNumber = document.querySelector(".btn-icon-check-number");
+const iconCheckSimbolos = document.querySelector(".btn-icon-check-simbolos");
 const verificacaoLower = /[a-z]/;
 const verificacaoUpper = /[A-Z]/;
 const verificacaoNumber = /[0-9]/;
-const verificacaoCaracteresEspeciais = /[!@#$%&()-+=): /[!@#$%&()\-\+=]/;
+const verificacaoCaracteresEspeciais = /[!@#$%^&*()_+={}\[\]|\\:;"'<>,.?/~]`/;
+
+//função unica para melhorar o entendimento e diminução de codigo onde será executado para facilitar a leitura.
+const verificarInputsEstado = function () {
+  inputLowerCase.value = lowerCase;
+  inputLowerCase.disabled = true;
+  inputLowerCase.style.backgroundColor = " rgba(171, 122, 218, 0.451";
+
+  inputUpperCase.value = upperCase;
+  inputUpperCase.disabled = true;
+  inputUpperCase.style.backgroundColor = " rgba(171, 122, 218, 0.451";
+
+  inputNumber.value = numberCaractere;
+  inputNumber.disabled = true;
+  inputNumber.style.backgroundColor = " rgba(171, 122, 218, 0.451";
+
+  inputSimbols.value = simbolosEspecial;
+  inputSimbols.disabled = true;
+  inputSimbols.style.backgroundColor = " rgba(171, 122, 218, 0.451";
+};
+
+export const verificarInputsEstadoReferencia = function () {
+  verificarInputsEstado();
+};
+
+window.addEventListener("load", verificarInputsEstadoReferencia);
 
 //background para o popUp de configurações(remove o display-none)
 const backgroundPopUpOn = () => {
@@ -59,11 +98,13 @@ btnConfig.addEventListener("click", () => {
 titleClosedConfig.addEventListener("click", () => {
   menuConfigOff();
   backgroundPopUpOff();
+  verificarInputsEstado();
 });
 
 btnClosedConfig.addEventListener("click", () => {
   menuConfigOff();
   backgroundPopUpOff();
+  verificarInputsEstado();
 });
 
 optionPersonalizar.addEventListener("click", () => {
@@ -81,7 +122,88 @@ btnClosedOptionForm.addEventListener("click", () => {
   modalOptionCaracteresForm.classList.add("display-none");
   menuConfigOff();
   backgroundPopUpOff();
+  verificarInputsEstado();
 });
+
+const activeInputPersonalizado_abc = function () {
+  inputLowerCase.disabled = false;
+  inputLowerCase.style.backgroundColor = "rgba(182, 128, 236, 0.200)";
+  inputLowerCase.focus();
+};
+
+const activeInputReferencia_abc = function () {
+  activeInputPersonalizado_abc();
+};
+
+const activeInputPersonalizadosABC = function () {
+  inputUpperCase.disabled = false;
+  inputUpperCase.style.backgroundColor = "rgba(182, 128, 236, 0.200)";
+  inputUpperCase.focus();
+};
+
+const activeInputReferenciaABC = function () {
+  activeInputPersonalizadosABC();
+};
+
+const activeInputPersonalizadosNumber = function () {
+  inputNumber.disabled = false;
+  inputNumber.style.backgroundColor = "rgba(182, 128, 236, 0.200)";
+  inputNumber.focus();
+};
+
+const activeInputReferenciaNumber = function () {
+  activeInputPersonalizadosNumber();
+};
+
+const activeInputPersonalizadosSimbols = function () {
+  inputSimbols.disabled = false;
+  inputSimbols.style.backgroundColor = "rgba(182, 128, 236, 0.200)";
+  inputSimbols.focus();
+};
+
+const activeInputReferenciaSimbols = function () {
+  activeInputPersonalizadosSimbols();
+};
+
+//funções para fazerem os inputs voltarem ao estado inical da pagina após fecharem o modal pelo btnClosed ou a seção de configurações como um todo
+iconPen_abc.addEventListener("click", activeInputReferencia_abc);
+iconPenABC.addEventListener("click", activeInputReferenciaABC);
+iconPenNumber.addEventListener("click", activeInputReferenciaNumber);
+iconPenSimbols.addEventListener("click", activeInputReferenciaSimbols);
+
+//função de desabilitar inputs com checked e capturar seus valores atuais para uma maior interatividade no visual.
+const btnCHeck_abc = function () {
+  const valueAtual_abc = inputLowerCase.value;
+  inputLowerCase.value = lowerCase;
+  inputLowerCase.style.backgroundColor = " rgba(171, 122, 218, 0.451";
+  inputLowerCase.value = valueAtual_abc;
+};
+const btnCHeckABC = function () {
+  const valueAtualABC = inputUpperCase.value;
+  inputUpperCase.value = upperCase;
+  inputUpperCase.disabled = true;
+  inputUpperCase.style.backgroundColor = " rgba(171, 122, 218, 0.451";
+  inputUpperCase.value = valueAtualABC;
+};
+const btnCHeckNumber = function () {
+  const valueAtualNumber = inputNumber.value;
+  inputNumber.value = numberCaractere;
+  inputNumber.disabled = true;
+  inputNumber.style.backgroundColor = " rgba(171, 122, 218, 0.451";
+  inputNumber.value = valueAtualNumber;
+};
+const btnCHeckSimbols = function () {
+  const valueAtualSimbols = inputSimbols.value;
+  inputSimbols.value = simbolosEspecial;
+  inputSimbols.disabled = true;
+  inputSimbols.style.backgroundColor = " rgba(171, 122, 218, 0.451";
+  inputSimbols.value = valueAtualSimbols;
+};
+
+iconCheck_abc.addEventListener("click", btnCHeck_abc);
+iconCheckABC.addEventListener("click", btnCHeckABC);
+iconCheckNumber.addEventListener("click", btnCHeckNumber);
+iconCheckSimbolos.addEventListener("click", btnCHeckSimbols);
 
 const verificarCaracteresPersonalizados = function (
   lower,
@@ -89,16 +211,21 @@ const verificarCaracteresPersonalizados = function (
   number,
   simbols
 ) {
-  const lowerCase = new Set(lower);
-  const upperCase = new Set(upper);
-  const numerosCaracteres = new Set(number);
-  const simbolosCaracteres = new Set(simbols);
-  console.log(lowerCase, upperCase, numerosCaracteres, simbolosCaracteres);
+  const lowerCaseNew = new Set(lower);
+  const upperCaseNew = new Set(upper);
+  const numerosCaracteresNew = new Set(number);
+  const simbolosCaracteresNew = new Set(simbols);
+  console.log(
+    lowerCaseNew,
+    upperCaseNew,
+    numerosCaracteresNew,
+    simbolosCaracteresNew
+  );
 
-  const lowerCaseArray = [...lowerCase];
-  const upperCaseArray = [...upperCase];
-  const numerosCaracteresArray = [...numerosCaracteres];
-  const simbolosCaracteresArray = [...simbolosCaracteres];
+  const lowerCaseArray = [...lowerCaseNew];
+  const upperCaseArray = [...upperCaseNew];
+  const numerosCaracteresArray = [...numerosCaracteresNew];
+  const simbolosCaracteresArray = [...simbolosCaracteresNew];
 
   const lowerCaseFinal = lowerCaseArray.join("");
   const upperCaseFinal = upperCaseArray.join("");
@@ -113,15 +240,16 @@ const verificarCaracteresPersonalizados = function (
   );
 };
 
-btnConfirmar.addEventListener("click", function () {
-  const minusculas = inputLowerCase.value;
-  const maiusculas = inputUpperCase.value;
-  const numeros = inputNumber.value;
-  const simbolos = inputSimbols.value;
+let verificarGeradorPersonalizado = false;
+
+const senhGeradaPersonalizada = function () {
+  let minusculas = inputLowerCase.value;
+  let maiusculas = inputUpperCase.value;
+  let numeros = inputNumber.value;
+  let simbolos = inputSimbols.value;
 
   const validacao = [
     {
-      valor: minusculas,
       validar: () =>
         verificacaoUpper.test(minusculas) ||
         verificacaoNumber.test(minusculas) ||
@@ -129,7 +257,6 @@ btnConfirmar.addEventListener("click", function () {
       erro: "Ops, digite apenas caracteres minusculos",
     },
     {
-      valor: maiusculas,
       validar: () =>
         verificacaoLower.test(maiusculas) ||
         verificacaoNumber.test(maiusculas) ||
@@ -137,12 +264,10 @@ btnConfirmar.addEventListener("click", function () {
       erro: "Ops, digite apenas caracteres maiusculos",
     },
     {
-      valor: numeros,
       validar: () => !verificacaoNumber.test(numeros),
       erro: "Ops, digite apenas caracteres numericos",
     },
     {
-      valor: simbolos,
       validar: () =>
         verificacaoUpper.test(simbolos) ||
         verificacaoLower.test(simbolos) ||
@@ -164,6 +289,8 @@ btnConfirmar.addEventListener("click", function () {
   if (!isError) {
     sliderRangeStyle.removeEventListener("input", controleSLider);
     newPassword.removeEventListener("click", controlePassword);
+    btnResetGerador.removeEventListener("click", resetGeradorReferencia);
+    verificarInputsEstadoReferencia();
 
     const newSliderRange = function () {
       slider();
@@ -184,10 +311,29 @@ btnConfirmar.addEventListener("click", function () {
       );
     };
 
+    modalOptionCaracteresForm.classList.add("display-none");
+    backgroundPopUpOff();
+
     sliderRangeStyle.addEventListener("input", newSliderRange);
     newPassword.addEventListener("click", newVariablePassword);
+
+    const resetGeradorPersonaliado = function () {
+      resetGerador();
+      sliderRangeStyle.removeEventListener("input", newSliderRange);
+      newPassword.removeEventListener("click", newVariablePassword);
+      sliderRangeStyle.addEventListener("input", controleSLider);
+    newPassword.addEventListener("click", controlePassword);
+    };
+
+    const newResetGerador = function () {
+      resetGeradorPersonaliado();
+      //verificarGeradorPersonalizado = true;
+    };
+    btnResetGerador.addEventListener("click", newResetGerador);
   }
-});
+};
+
+btnConfirmar.addEventListener("click", senhGeradaPersonalizada);
 //replace(/[^a-zA-AZ\s]+/g, "").trim();
 
 //modelo usando regex sem verificação, apenas formatando da forma necessaria para o codigo funcionar(obs: não apresenta erros ao usuario.)

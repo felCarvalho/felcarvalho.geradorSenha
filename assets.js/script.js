@@ -1,9 +1,11 @@
+import {} from "../assets.js/customization.js";
+
 //todos os elementos intertivos do HTML3
 export const newPassword = document.querySelector(".btn-password");
-const ToggleOne = document.querySelector(".checked-one");
-const ToggleTwo = document.querySelector(".checked-two");
-const ToggleThree = document.querySelector(".checked-three");
-const ToggleFour = document.querySelector(".checked-four");
+let ToggleOne = document.querySelector(".checked-one");
+let ToggleTwo = document.querySelector(".checked-two");
+let ToggleThree = document.querySelector(".checked-three");
+let ToggleFour = document.querySelector(".checked-four");
 const passwordInsert = document.querySelector(".senha-gerada");
 const backdropBlur = document.querySelector(".fundo-blur");
 const modalError = document.querySelector(".modal-error");
@@ -17,11 +19,12 @@ const copyPassword = document.querySelector(".icon-copy");
 const valueInsertSlider = document.querySelector(".value-slider");
 export const sliderRangeStyle = document.querySelector(".custom-range");
 const copyPasswordLength = document.querySelector(".numero-caracteres-copy");
+export const btnResetGerador = document.querySelector(".btn-reset-gerador");
 
-let lowerCase = "abcdefghijklmnopqrstuvwxyz";
-let upperCase = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
-let number = "12345679";
-let simbolosEspecial = "!@#$%&*0+,:]^><";
+export let lowerCase = "abcdefghijklmnopqrstuvwxyz";
+export let upperCase = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
+export let numberCaractere = "012345679";
+export let simbolosEspecial = "!@#$%&*+,:]^><\\";
 
 //array para armazenar os ddados selecionados pelo usuario
 let caracteresPassword = [];
@@ -182,7 +185,7 @@ export const verificacaoGerador = (minuscula, maiuscula, numeros, simbolos) => {
 };
 
 const newPasswordGenerator = function () {
-  verificacaoGerador(lowerCase, upperCase, number, simbolosEspecial);
+  verificacaoGerador(lowerCase, upperCase, numberCaractere, simbolosEspecial);
 };
 
 export const controlePassword = function () {
@@ -211,27 +214,58 @@ export const slider = function () {
   } else {
     sliderRangeStyle.style.background = `linear-gradient(to right, ${
       porcentagem > 73.5 ? "#8B5CF6" : "blueviolet"
-    } ${porcentagem}%, #eeee ${porcentagem}%)`;
+    } ${porcentagem}%, transparent ${porcentagem}%)`;
     //sliderRangeStyle.style.background = `linear-gradient(to right, ${(porcentagem === 100) ? 'blueviolet' : '#8B5CF6'} ${porcentagem}%, #eeee ${porcentagem}%)`;
   }
 };
 
 export const controleSLider = function () {
-  verificacaoGerador(lowerCase, upperCase, number, simbolosEspecial);
+  verificacaoGerador(lowerCase, upperCase, numberCaractere, simbolosEspecial);
   slider();
 };
 
 sliderRangeStyle.addEventListener("input", controleSLider);
 
-//senha sendo executada ao carregar o object window
-window.addEventListener("load", (minuscula) => {
+const geradorPadrao = function (minuscula) {
+  caracteresPassword = [];
+
   ToggleOne.checked
     ? caracteresPassword.push(minuscula) && console.log("checked padrão")
     : console.log("error no checked padrão #4563");
   verificacaoGerador(lowerCase);
   slider();
+};
+
+const geradorPadraoReferencia = function () {
+  geradorPadrao();
+};
+
+window.addEventListener("load", geradorPadraoReferencia);
+
+export const resetGerador = function () {
+  console.log("reset do gerador executado!");
+
   caracteresPassword = [];
-});
+
+  if (!ToggleOne.checked) {
+    ToggleOne.checked = true;
+  }
+  if (ToggleTwo.checked) {
+    ToggleTwo.checked = false;
+  }
+  if (ToggleThree.checked) {
+    ToggleThree.checked = false;
+  }
+  if (ToggleFour.checked) {
+    ToggleFour.checked = false;
+  }
+};
+
+export const resetGeradorReferencia = function () {
+  resetGerador();
+};
+
+btnResetGerador.addEventListener("click", resetGeradorReferencia);
 
 //para verificar se a animação do popUp está ativa.
 let isAnimation = false;
@@ -334,4 +368,16 @@ btnDarkMode.addEventListener("click", () => {
     duration: 1,
     text: senhaOriginal,
     ease: "linear",
-  });*/
+  });
+  window.addEventListener("load", (minuscula) => {
+  ToggleOne.checked
+    ? caracteresPassword.push(minuscula) && console.log("checked padrão")
+    : console.log("error no checked padrão #4563");
+  verificacaoGerador(lowerCase);
+  slider();
+  caracteresPassword = [];
+});
+
+  
+  
+  */
