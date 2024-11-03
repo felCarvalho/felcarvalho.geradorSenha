@@ -324,7 +324,7 @@ body.darkmode {
     background-color: #fff;
     transform: translateX(-50%, -50%);
     position: absolute;
-    top: 14%;
+    top: 11%;
     left: 21px;
     z-index: 8;
   }
@@ -565,6 +565,7 @@ body.darkmode {
   }
   .fundo-background-menu {
     background-color: rgba(194, 193, 193, 0.4509803922);
+    backdrop-filter: blur(2px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -1013,7 +1014,7 @@ body.darkmode {
     background-color: #fff;
     transform: translateX(-50%, -50%);
     position: absolute;
-    top: 14%;
+    top: 11%;
     left: 21px;
     z-index: 8;
   }
@@ -1254,6 +1255,7 @@ body.darkmode {
   }
   .fundo-background-menu {
     background-color: rgba(194, 193, 193, 0.4509803922);
+    backdrop-filter: blur(2px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -1704,7 +1706,7 @@ body.darkmode {
     background-color: #fff;
     transform: translateX(-50%, -50%);
     position: absolute;
-    top: 10%;
+    top: 11%;
     left: 21px;
     z-index: 8;
   }
@@ -1945,6 +1947,7 @@ body.darkmode {
   }
   .fundo-background-menu {
     background-color: rgba(194, 193, 193, 0.4509803922);
+    backdrop-filter: blur(2px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -2645,6 +2648,7 @@ body.darkmode {
   }
   .fundo-background-menu {
     background-color: rgba(194, 193, 193, 0.4509803922);
+    backdrop-filter: blur(2px);
     position: fixed;
     top: 0px;
     height: 100%;
