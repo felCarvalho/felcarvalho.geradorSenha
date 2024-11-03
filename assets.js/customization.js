@@ -118,12 +118,18 @@ tilteBackOptionForm.addEventListener("click", () => {
   menuConfigOn();
 });
 
-btnClosedOptionForm.addEventListener("click", () => {
+const btnClosedForm = function () {
   modalOptionCaracteresForm.classList.add("display-none");
   menuConfigOff();
   backgroundPopUpOff();
   verificarInputsEstado();
-});
+};
+
+const btnClosedFormReferencia = function () {
+  btnClosedForm();
+};
+
+btnClosedOptionForm.addEventListener("click", btnClosedFormReferencia);
 
 const activeInputPersonalizado_abc = function () {
   inputLowerCase.disabled = false;
@@ -322,7 +328,7 @@ const senhGeradaPersonalizada = function () {
       sliderRangeStyle.removeEventListener("input", newSliderRange);
       newPassword.removeEventListener("click", newVariablePassword);
       sliderRangeStyle.addEventListener("input", controleSLider);
-    newPassword.addEventListener("click", controlePassword);
+      newPassword.addEventListener("click", controlePassword);
     };
 
     const newResetGerador = function () {
@@ -334,6 +340,8 @@ const senhGeradaPersonalizada = function () {
 };
 
 btnConfirmar.addEventListener("click", senhGeradaPersonalizada);
+
+btnCancelar.addEventListener("click", btnClosedFormReferencia);
 //replace(/[^a-zA-AZ\s]+/g, "").trim();
 
 //modelo usando regex sem verificação, apenas formatando da forma necessaria para o codigo funcionar(obs: não apresenta erros ao usuario.)
