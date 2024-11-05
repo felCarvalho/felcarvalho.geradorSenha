@@ -14,7 +14,9 @@ import {
   resetGerador,
 } from "../assets.js/script.js";
 
-const btnConfig = document.querySelector(".icon-config-header-open");
+//import { linkConvidado } from "../assets.js/loginUser.js";
+
+export const btnConfig = document.querySelector(".icon-config-header-open");
 const config = document.querySelector(".container-menu-config");
 const backgroundFundoPopUp = document.querySelector(".fundo-background-menu");
 const titleClosedConfig = document.querySelector(".title-closed");
@@ -246,8 +248,6 @@ const verificarCaracteresPersonalizados = function (
   );
 };
 
-let verificarGeradorPersonalizado = false;
-
 const senhGeradaPersonalizada = function () {
   let minusculas = inputLowerCase.value;
   let maiusculas = inputUpperCase.value;
@@ -342,6 +342,9 @@ const senhGeradaPersonalizada = function () {
 btnConfirmar.addEventListener("click", senhGeradaPersonalizada);
 
 btnCancelar.addEventListener("click", btnClosedFormReferencia);
+
+
+
 //replace(/[^a-zA-AZ\s]+/g, "").trim();
 
 //modelo usando regex sem verificação, apenas formatando da forma necessaria para o codigo funcionar(obs: não apresenta erros ao usuario.)

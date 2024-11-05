@@ -1,4 +1,4 @@
-import {} from "../assets.js/customization.js";
+
 
 //todos os elementos intertivos do HTML3
 export const newPassword = document.querySelector(".btn-password");
@@ -236,7 +236,7 @@ const geradorPadrao = function (minuscula) {
   slider();
 };
 
-const geradorPadraoReferencia = function () {
+export const geradorPadraoReferencia = function () {
   geradorPadrao();
 };
 

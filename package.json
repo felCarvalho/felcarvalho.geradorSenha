@@ -1,6 +1,7 @@
 {
   "scripts": {
     "sass": "sass --watch assets.css/estilo.scss:assets.css/estilo.css",
+    "sassLogin": "sass --watch assets.css/loginUser.css/estiloLogin.scss:assets.css/loginUser.css/estiloLogin.css",
     "twind": "tailwind -i ./inputTwind.css/input.css -o ./dist/output.css --watch"
   },
   "devDependencies": {
