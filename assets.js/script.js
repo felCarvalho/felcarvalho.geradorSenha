@@ -1,6 +1,4 @@
-
-
-//todos os elementos intertivos do HTML3
+//todos os elementos do HTML(DOM).
 export const newPassword = document.querySelector(".btn-password");
 let ToggleOne = document.querySelector(".checked-one");
 let ToggleTwo = document.querySelector(".checked-two");
@@ -259,6 +257,12 @@ export const resetGerador = function () {
   if (ToggleFour.checked) {
     ToggleFour.checked = false;
   }
+
+  const valorPadraoSlider = 10.5;
+  const insertPadraoSlider = valorPadraoSlider;
+  sliderRangeStyle.value = insertPadraoSlider;
+  console.log(sliderRangeStyle.value);
+  slider();
 };
 
 export const resetGeradorReferencia = function () {

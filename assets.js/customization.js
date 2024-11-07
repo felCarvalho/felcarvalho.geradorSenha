@@ -14,9 +14,13 @@ import {
   resetGerador,
 } from "../assets.js/script.js";
 
-//import { linkConvidado } from "../assets.js/loginUser.js";
+import {
+  ativarGerador,
+  desativarInterfaceLogin,
+} from "../assets.js/loginUser.js";
 
-export const btnConfig = document.querySelector(".icon-config-header-open");
+const linkConvidado = document.querySelector(".link");
+const btnConfig = document.querySelector(".icon-config-header-open");
 const config = document.querySelector(".container-menu-config");
 const backgroundFundoPopUp = document.querySelector(".fundo-background-menu");
 const titleClosedConfig = document.querySelector(".title-closed");
@@ -329,6 +333,7 @@ const senhGeradaPersonalizada = function () {
       newPassword.removeEventListener("click", newVariablePassword);
       sliderRangeStyle.addEventListener("input", controleSLider);
       newPassword.addEventListener("click", controlePassword);
+      sliderRangeStyle.value = "";
     };
 
     const newResetGerador = function () {
@@ -343,7 +348,28 @@ btnConfirmar.addEventListener("click", senhGeradaPersonalizada);
 
 btnCancelar.addEventListener("click", btnClosedFormReferencia);
 
+const controleUser = {
+  controleLogin: false,
+};
 
+const linkUserConvidado = function (controleKey) {
+  controleKey.controleLogin = true;
+
+  if (controleKey.controleLogin === true) {
+    btnConfig.classList.add("display-none");
+    desativarInterfaceLogin();
+    ativarGerador();
+  }
+};
+
+const linkUserConvidadoReferencia = function (e) {
+  e.preventDefault();
+  linkUserConvidado(controleUser);
+};
+
+linkConvidado.addEventListener("click", linkUserConvidadoReferencia);
+
+//const verificarUserConvidado = function () {};
 
 //replace(/[^a-zA-AZ\s]+/g, "").trim();
 
