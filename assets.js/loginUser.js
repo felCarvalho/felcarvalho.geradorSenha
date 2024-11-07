@@ -20,11 +20,11 @@ const ativarInterfaceLoginReferencia = function () {
 };
 
 //função de desativar a pag de login
-export const desativarInterfaceLogin = () => {
+const desativarInterfaceLogin = () => {
   loginContainer.classList.add("display-none");
 };
 //função de referencia para desativar pag de login("muito util caso queria remover essa função em algum outro tipo de uso" de evento de load)
-const desativarInterfaceLoginReferencia = function () {
+export const desativarInterfaceLoginReferencia = function () {
   desativarInterfaceLogin();
 };
 
@@ -59,8 +59,8 @@ const verificarLogin = function ({ userKey, passwordKey }) {
     desativarGerador();
   } else {
     alert("login feito com sucesso");
-    ativarGerador();
     desativarInterfaceLogin();
+    ativarGerador();
   }
 };
 
@@ -71,3 +71,8 @@ const verificarLoginReferencia = function () {
 
 //evento de clickda função verficarLoginReferencia
 btnLogin.addEventListener("click", verificarLoginReferencia);
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    verificarLogin(login)
+  }
+});

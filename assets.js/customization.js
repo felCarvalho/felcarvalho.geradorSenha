@@ -16,7 +16,7 @@ import {
 
 import {
   ativarGerador,
-  desativarInterfaceLogin,
+  desativarInterfaceLoginReferencia,
 } from "../assets.js/loginUser.js";
 
 const linkConvidado = document.querySelector(".link");
@@ -333,7 +333,6 @@ const senhGeradaPersonalizada = function () {
       newPassword.removeEventListener("click", newVariablePassword);
       sliderRangeStyle.addEventListener("input", controleSLider);
       newPassword.addEventListener("click", controlePassword);
-      sliderRangeStyle.value = "";
     };
 
     const newResetGerador = function () {
@@ -357,13 +356,12 @@ const linkUserConvidado = function (controleKey) {
 
   if (controleKey.controleLogin === true) {
     btnConfig.classList.add("display-none");
-    desativarInterfaceLogin();
+    desativarInterfaceLoginReferencia();
     ativarGerador();
   }
 };
 
-const linkUserConvidadoReferencia = function (e) {
-  e.preventDefault();
+const linkUserConvidadoReferencia = function () {
   linkUserConvidado(controleUser);
 };
 
