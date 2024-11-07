@@ -73,6 +73,6 @@ const verificarLoginReferencia = function () {
 btnLogin.addEventListener("click", verificarLoginReferencia);
 document.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
-    verificarLogin(login)
+    verificarLogin(login);
   }
 });
