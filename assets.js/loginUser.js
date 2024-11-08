@@ -4,6 +4,14 @@ const geradorContainer = document.querySelector(".borda");
 const loginContainer = document.querySelector(".container-login");
 const nameAutor = document.querySelector(".content-tag-name");
 const btnLogin = document.querySelector(".btn-login");
+export const temporizadorConvidadoUser = document.querySelector(
+  ".container-temporizador"
+);
+const visualizarPassword = document.querySelector(
+  ".icon-viasualiador-password"
+);
+const esconderPassword = document.querySelector(".icon-esconder-password");
+
 
 const login = {
   userKey: "felipeAdmin",
@@ -11,9 +19,26 @@ const login = {
 };
 
 //função de ativar a pag de login
-const ativarInterfaceLogin = () => {
+export const ativarInterfaceLogin = () => {
   loginContainer.classList.remove("display-none");
 };
+
+export const desativarTemporizador = function () {
+  temporizadorConvidadoUser.classList.add("display-none");
+};
+
+const desativarTemporizadorReferencia = function () {
+  desativarTemporizador();
+};
+
+export const ativarTemporizador = function () {
+  temporizadorConvidadoUser.classList.remove("display-none");
+};
+
+const ativarTemporizadorReferencia = function () {
+  ativarTemporizador();
+};
+
 //função de referencia para ativar pag de login("muito util caso queria remover essa função em algum outro tipo de uso" de evento de load)
 const ativarInterfaceLoginReferencia = function () {
   ativarInterfaceLogin();
@@ -30,6 +55,7 @@ export const desativarInterfaceLoginReferencia = function () {
 
 //evento de load para atualzar a varivel de controle assim que a pag carregar
 //window.addEventListener("load", controleLoginReferencia);
+window.addEventListener("load", desativarTemporizadorReferencia);
 
 //evento de load para carregar a interface de login
 window.addEventListener("load", ativarInterfaceLoginReferencia);
@@ -41,7 +67,7 @@ export const ativarGerador = () => {
 };
 
 //função de desativar o gerador
-const desativarGerador = () => {
+export const desativarGerador = () => {
   geradorContainer.classList.add("display-none");
   nameAutor.classList.add("display-none");
 };
@@ -60,6 +86,7 @@ const verificarLogin = function ({ userKey, passwordKey }) {
   } else {
     alert("login feito com sucesso");
     desativarInterfaceLogin();
+    desativarTemporizador();
     ativarGerador();
   }
 };

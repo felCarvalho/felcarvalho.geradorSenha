@@ -17,8 +17,13 @@ import {
 import {
   ativarGerador,
   desativarInterfaceLoginReferencia,
+  desativarGerador,
+  ativarTemporizador,
+  ativarInterfaceLogin,
+  desativarTemporizador,
 } from "../assets.js/loginUser.js";
 
+const temporizadorInsert = document.querySelector(".temporizador");
 const linkConvidado = document.querySelector(".link");
 const btnConfig = document.querySelector(".icon-config-header-open");
 const config = document.querySelector(".container-menu-config");
@@ -347,6 +352,28 @@ btnConfirmar.addEventListener("click", senhGeradaPersonalizada);
 
 btnCancelar.addEventListener("click", btnClosedFormReferencia);
 
+let temporizador = 0.6;
+
+const temporizadorUser = function () {
+  const interval = setInterval(() => {
+    if (temporizador <= 0.01) {
+      clearInterval(interval);
+      alert("tempo esgotado!");
+      desativarGerador();
+      ativarInterfaceLogin();
+      desativarTemporizador();
+      temporizadorInsert.textContent = "0.00";
+    } else {
+      temporizadorInsert.textContent = `${(temporizador -= 0.01).toFixed(2)}`;
+    }
+  }, 1000);
+};
+
+//caso precise da função em algum evento de list.
+const temporizadorReferencia = function () {
+  temporizadorUser();
+};
+
 const controleUser = {
   controleLogin: false,
 };
@@ -357,7 +384,10 @@ const linkUserConvidado = function (controleKey) {
   if (controleKey.controleLogin === true) {
     btnConfig.classList.add("display-none");
     desativarInterfaceLoginReferencia();
+    temporizadorUser();
     ativarGerador();
+    //temporizadorConvidadoUser.classList.remove("display-none");
+    ativarTemporizador();
   }
 };
 

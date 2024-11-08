@@ -301,7 +301,7 @@ const clipBoard = () => {
 
 copyPassword.addEventListener("click", () => {
   if (isAnimation) {
-    return;
+    return; 
   }
   isAnimation = true;
   clipBoard();

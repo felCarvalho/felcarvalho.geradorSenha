@@ -684,6 +684,29 @@ body.darkmode {
     }
   }
 
+  .container-temporizador {
+    font-family: "poppins";
+    background-color: rgba(156, 83, 224, 0.166);
+    max-width: 50px;
+    min-width: 50px;
+    min-height: 25px;
+    max-height: 25px;
+    @include borderSolid();
+    @include border(30px);
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    top: 46px;
+    left: 16px;
+
+    .content-temporizador {
+      text-align: center;
+      color: rgba(145, 49, 235, 0.87);
+      .temporizador {
+        margin-top: 1px;
+        font-size: 15px;
+      }
+    }
+  }
   .fundo-blur {
     position: fixed;
     top: 0px;
@@ -1532,6 +1555,29 @@ body.darkmode {
     }
   }
 
+  .container-temporizador {
+    font-family: "poppins";
+    background-color: rgba(156, 83, 224, 0.166);
+    max-width: 60px;
+    min-width: 60px;
+    min-height: 30px;
+    max-height: 30px;
+    @include borderSolid();
+    @include border(30px);
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    top: 47px;
+    left: 18px;
+
+    .content-temporizador {
+      text-align: center;
+      color: rgba(145, 49, 235, 0.87);
+      .temporizador {
+        margin-top: 4px;
+        font-size: 15px;
+      }
+    }
+  }
   .fundo-blur {
     position: fixed;
     top: 0px;
@@ -2380,6 +2426,30 @@ body.darkmode {
             color: #fff;
           }
         }
+      }
+    }
+  }
+
+  .container-temporizador {
+    font-family: "poppins";
+    background-color: rgba(156, 83, 224, 0.166);
+    max-width: 60px;
+    min-width: 60px;
+    min-height: 30px;
+    max-height: 30px;
+    @include borderSolid();
+    @include border(30px);
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    top: 47px;
+    left: 18px;
+
+    .content-temporizador {
+      text-align: center;
+      color: rgba(145, 49, 235, 0.87);
+      .temporizador {
+        margin-top: 4px;
+        font-size: 15px;
       }
     }
   }
@@ -3240,6 +3310,30 @@ body.darkmode {
             color: #fff;
           }
         }
+      }
+    }
+  }
+
+  .container-temporizador {
+    font-family: "poppins";
+    background-color: rgba(156, 83, 224, 0.166);
+    max-width: 60px;
+    min-width: 60px;
+    min-height: 30px;
+    max-height: 30px;
+    @include borderSolid();
+    @include border(30px);
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    top: 88px;
+    left: 18px;
+
+    .content-temporizador {
+      text-align: center;
+      color: rgba(145, 49, 235, 0.87);
+      .temporizador {
+        margin-top: 4px;
+        font-size: 15px;
       }
     }
   }

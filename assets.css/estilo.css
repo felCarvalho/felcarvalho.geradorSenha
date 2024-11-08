@@ -557,6 +557,27 @@ body.darkmode {
     margin-right: 8px;
     color: #fff;
   }
+  .container-temporizador {
+    background-color: rgba(156, 83, 224, 0.166);
+    max-width: 50px;
+    min-width: 50px;
+    min-height: 25px;
+    max-height: 25px;
+    border: 1px solid rgb(148, 50, 240);
+    border-radius: 30px;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    top: 46px;
+    left: 16px;
+  }
+  .container-temporizador .content-temporizador {
+    text-align: center;
+    color: rgba(145, 49, 235, 0.87);
+  }
+  .container-temporizador .content-temporizador .temporizador {
+    margin-top: 1px;
+    font-size: 15px;
+  }
   .fundo-blur {
     position: fixed;
     top: 0px;
@@ -1249,6 +1270,27 @@ body.darkmode {
   .container-option-config .container-buttons .content-confirmar button:hover i {
     margin-right: 8px;
     color: #fff;
+  }
+  .container-temporizador {
+    background-color: rgba(156, 83, 224, 0.166);
+    max-width: 60px;
+    min-width: 60px;
+    min-height: 30px;
+    max-height: 30px;
+    border: 1px solid rgb(148, 50, 240);
+    border-radius: 30px;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    top: 47px;
+    left: 18px;
+  }
+  .container-temporizador .content-temporizador {
+    text-align: center;
+    color: rgba(145, 49, 235, 0.87);
+  }
+  .container-temporizador .content-temporizador .temporizador {
+    margin-top: 4px;
+    font-size: 15px;
   }
   .fundo-blur {
     position: fixed;
@@ -1944,6 +1986,27 @@ body.darkmode {
   .container-option-config .container-buttons .content-confirmar button:hover i {
     margin-right: 8px;
     color: #fff;
+  }
+  .container-temporizador {
+    background-color: rgba(156, 83, 224, 0.166);
+    max-width: 60px;
+    min-width: 60px;
+    min-height: 30px;
+    max-height: 30px;
+    border: 1px solid rgb(148, 50, 240);
+    border-radius: 30px;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    top: 47px;
+    left: 18px;
+  }
+  .container-temporizador .content-temporizador {
+    text-align: center;
+    color: rgba(145, 49, 235, 0.87);
+  }
+  .container-temporizador .content-temporizador .temporizador {
+    margin-top: 4px;
+    font-size: 15px;
   }
   .fundo-blur {
     position: fixed;
@@ -2646,6 +2709,27 @@ body.darkmode {
   .container-option-config .container-buttons .content-confirmar button:hover i {
     margin-right: 8px;
     color: #fff;
+  }
+  .container-temporizador {
+    background-color: rgba(156, 83, 224, 0.166);
+    max-width: 60px;
+    min-width: 60px;
+    min-height: 30px;
+    max-height: 30px;
+    border: 1px solid rgb(148, 50, 240);
+    border-radius: 30px;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    top: 88px;
+    left: 18px;
+  }
+  .container-temporizador .content-temporizador {
+    text-align: center;
+    color: rgba(145, 49, 235, 0.87);
+  }
+  .container-temporizador .content-temporizador .temporizador {
+    margin-top: 4px;
+    font-size: 15px;
   }
   .fundo-blur {
     position: fixed;
