@@ -6,7 +6,7 @@ import {
   controleSLider,
   slider,
   lowerCase,
-  upperCase,
+  upperCase, 
   numberCaractere,
   simbolosEspecial,
   resetGeradorReferencia,
@@ -25,7 +25,7 @@ import {
 
 const temporizadorInsert = document.querySelector(".temporizador");
 const linkConvidado = document.querySelector(".link");
-const btnConfig = document.querySelector(".icon-config-header-open");
+export const btnConfig = document.querySelector(".icon-config-header-open");
 const config = document.querySelector(".container-menu-config");
 const backgroundFundoPopUp = document.querySelector(".fundo-background-menu");
 const titleClosedConfig = document.querySelector(".title-closed");

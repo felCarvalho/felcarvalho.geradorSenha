@@ -1,3 +1,5 @@
+import { btnConfig } from "../assets.js/customization.js";
+
 const password = document.querySelector(".login-password");
 const user = document.querySelector(".login-user");
 const geradorContainer = document.querySelector(".borda");
@@ -87,6 +89,7 @@ const verificarLogin = function ({ userKey, passwordKey }) {
     desativarInterfaceLogin();
     desativarTemporizador();
     ativarGerador();
+    btnConfig.classList.remove("display-none");
   }
 };
 

@@ -12,7 +12,7 @@ import {
   resetGeradorReferencia,
   btnResetGerador,
   resetGerador,
-} from "../assets.js/script.js";
+} from "./script.js";
 
 import {
   ativarGerador,
@@ -21,11 +21,11 @@ import {
   ativarTemporizador,
   ativarInterfaceLogin,
   desativarTemporizador,
-} from "../assets.js/loginUser.js";
+} from "./loginUser.js";
 
 const temporizadorInsert = document.querySelector(".temporizador");
 const linkConvidado = document.querySelector(".link");
-const btnConfig = document.querySelector(".icon-config-header-open");
+export const btnConfig = document.querySelector(".icon-config-header-open");
 const config = document.querySelector(".container-menu-config");
 const backgroundFundoPopUp = document.querySelector(".fundo-background-menu");
 const titleClosedConfig = document.querySelector(".title-closed");
