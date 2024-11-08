@@ -558,6 +558,7 @@ body.darkmode {
     color: #fff;
   }
   .container-temporizador {
+    font-family: "poppins";
     background-color: rgba(156, 83, 224, 0.166);
     max-width: 50px;
     min-width: 50px;
@@ -1272,6 +1273,7 @@ body.darkmode {
     color: #fff;
   }
   .container-temporizador {
+    font-family: "poppins";
     background-color: rgba(156, 83, 224, 0.166);
     max-width: 60px;
     min-width: 60px;
@@ -1988,6 +1990,7 @@ body.darkmode {
     color: #fff;
   }
   .container-temporizador {
+    font-family: "poppins";
     background-color: rgba(156, 83, 224, 0.166);
     max-width: 60px;
     min-width: 60px;
@@ -2711,6 +2714,7 @@ body.darkmode {
     color: #fff;
   }
   .container-temporizador {
+    font-family: "poppins";
     background-color: rgba(156, 83, 224, 0.166);
     max-width: 60px;
     min-width: 60px;
