@@ -12,7 +12,6 @@ const visualizarPassword = document.querySelector(
 );
 const esconderPassword = document.querySelector(".icon-esconder-password");
 
-
 const login = {
   userKey: "felipeAdmin",
   passwordKey: "20232024",
