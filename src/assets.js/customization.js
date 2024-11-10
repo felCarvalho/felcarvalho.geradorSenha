@@ -24,6 +24,7 @@ import {
   ativarInterfaceLogin,
   desativarTemporizador,
   ativarBtnVoltar,
+  desativarBtnVoltar,
 } from "../assets.js/loginUser.js";
 
 const temporizadorInsert = document.querySelector(".temporizador");
@@ -356,8 +357,30 @@ btnConfirmar.addEventListener("click", senhGeradaPersonalizada);
 btnCancelar.addEventListener("click", btnClosedFormReferencia);
 
 let temporizador = 0.6;
+let userConvidadoLoginUnico = 0;
+console.log(userConvidadoLoginUnico);
+let avisoLoginExcedido = 0;
 
 const temporizadorUser = function () {
+  userConvidadoLoginUnico++;
+  avisoLoginExcedido++;
+  console.log(avisoLoginExcedido);
+
+  //console.log(userConvidadoLoginUnico);
+
+  if (userConvidadoLoginUnico > 1) {
+    return;
+  }
+
+  if (avisoLoginExcedido > 2) {
+    alert("faça login para aproveita o gerador de senha");
+    desativarGerador();
+    desativarTemporizador();
+    desativarBtnVoltar();
+    ativarInterfaceLogin();
+    return;
+  }
+
   const interval = setInterval(() => {
     if (temporizador <= 0.01) {
       clearInterval(interval);
@@ -365,16 +388,16 @@ const temporizadorUser = function () {
       desativarGerador();
       ativarInterfaceLogin();
       desativarTemporizador();
+      desativarBtnVoltar();
+      userConvidadoLoginUnico = 0;
+      console.log(userConvidadoLoginUnico);
       temporizadorInsert.textContent = "0.00";
     } else {
-      temporizadorInsert.textContent = `${(temporizador -= 0.01).toFixed(2)}`;
+      temporizadorInsert.textContent = `${(temporizador -= 0.21)
+        .toFixed(2)
+        .replace(".", ":")}`;
     }
   }, 1000);
-};
-
-//caso precise da função em algum evento de list.
-const temporizadorReferencia = function () {
-  temporizadorUser();
 };
 
 const controleUser = {
@@ -387,10 +410,10 @@ const linkUserConvidado = function (controleKey) {
   if (controleKey.controleLogin === true) {
     btnConfig.classList.add("display-none");
     desativarInterfaceLoginReferencia();
-    temporizadorUser();
     ativarGerador();
-    ativarTemporizador();
     ativarBtnVoltar();
+    ativarTemporizador();
+    temporizadorUser();
   }
 };
 

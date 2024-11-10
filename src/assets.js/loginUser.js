@@ -78,7 +78,7 @@ export const desativarGerador = () => {
   nameAutor.classList.add("display-none");
 };
 
-const desativarBtnVoltar = function () {
+export const desativarBtnVoltar = function () {
   btnVoltar.classList.add("display-none");
 };
 
