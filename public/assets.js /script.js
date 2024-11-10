@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; 
 
 //todos os elementos do HTML(DOM).
 export const newPassword = document.querySelector(".btn-password");
