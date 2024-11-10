@@ -361,20 +361,12 @@ export const desativarBtnVoltar = function () {
 
 let temporizador = 0.6;
 let userConvidadoLoginUnico = 0;
-console.log(userConvidadoLoginUnico);
-let avisoLoginExcedido = 0;
-let controleTemporizador = false;
+let interval;
 
 const temporizadorUser = function () {
   userConvidadoLoginUnico++;
-  console.log(avisoLoginExcedido);
 
   if (userConvidadoLoginUnico > 1) {
-    return;
-  }
-
-  avisoLoginExcedido++;
-  if (avisoLoginExcedido > 2) {
     alert("faça login para aproveita o gerador de senha");
     desativarGerador();
     desativarTemporizador();
@@ -383,7 +375,7 @@ const temporizadorUser = function () {
     return;
   }
 
-  const interval = setInterval(() => {
+  interval = setInterval(() => {
     if (temporizador <= 0.01) {
       clearInterval(interval);
 
@@ -394,13 +386,21 @@ const temporizadorUser = function () {
       desativarTemporizador();
       btnIsBack.classList.add("display-none");
       userConvidadoLoginUnico = 0;
-      temporizadorInsert.textContent = "0:00";
     } else {
       temporizadorInsert.textContent = `${(temporizador -= 0.01)
         .toFixed(2)
         .replace(".", ":")}`;
     }
   }, 1000);
+};
+
+const redefinirTemporizador = function () {
+  clearInterval(interval);
+  temporizadorInsert.textContent = "0:00";
+};
+
+const redefinirTemporizadorReferencia = function () {
+  redefinirTemporizador();
 };
 
 const temporizadorUserReferencia = function () {
@@ -426,6 +426,7 @@ const voltarPagLogin = function () {
   ativarInterfaceLogin();
   desativarBtnVoltar();
   desativarTemporizador();
+  redefinirTemporizador();
 };
 
 const voltarPagLoginReferncia = function () {
