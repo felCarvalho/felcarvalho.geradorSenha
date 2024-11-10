@@ -393,7 +393,7 @@ const temporizadorUser = function () {
       console.log(userConvidadoLoginUnico);
       temporizadorInsert.textContent = "0.00";
     } else {
-      temporizadorInsert.textContent = `${(temporizador -= 0.21)
+      temporizadorInsert.textContent = `${(temporizador -= 0.01)
         .toFixed(2)
         .replace(".", ":")}`;
     }
