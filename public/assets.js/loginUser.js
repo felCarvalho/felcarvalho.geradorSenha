@@ -1,6 +1,6 @@
 "use strict";
 
-import { btnConfig } from "../assets.js/customization.js";
+import { btnConfig } from "/public/assets.js/customization.js";
 
 const password = document.querySelector(".login-password");
 const user = document.querySelector(".login-user");
