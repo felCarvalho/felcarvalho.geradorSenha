@@ -23,12 +23,11 @@ import {
   ativarTemporizador,
   ativarInterfaceLogin,
   desativarTemporizador,
-  ativarBtnVoltar,
-  desativarBtnVoltar,
 } from "../assets.js/loginUser.js";
 
+const btnIsBack = document.querySelector(".container-btn-back");
 const temporizadorInsert = document.querySelector(".temporizador");
-const linkConvidado = document.querySelector(".link");
+export const linkConvidado = document.querySelector(".link");
 export const btnConfig = document.querySelector(".icon-config-header-open");
 const config = document.querySelector(".container-menu-config");
 const backgroundFundoPopUp = document.querySelector(".fundo-background-menu");
@@ -356,27 +355,30 @@ btnConfirmar.addEventListener("click", senhGeradaPersonalizada);
 
 btnCancelar.addEventListener("click", btnClosedFormReferencia);
 
+export const desativarBtnVoltar = function () {
+  btnIsBack.classList.add("display-none");
+};
+
 let temporizador = 0.6;
 let userConvidadoLoginUnico = 0;
 console.log(userConvidadoLoginUnico);
 let avisoLoginExcedido = 0;
+let controleTemporizador = false;
 
 const temporizadorUser = function () {
   userConvidadoLoginUnico++;
-  avisoLoginExcedido++;
   console.log(avisoLoginExcedido);
-
-  //console.log(userConvidadoLoginUnico);
 
   if (userConvidadoLoginUnico > 1) {
     return;
   }
 
+  avisoLoginExcedido++;
   if (avisoLoginExcedido > 2) {
     alert("faça login para aproveita o gerador de senha");
     desativarGerador();
     desativarTemporizador();
-    desativarBtnVoltar();
+    btnIsBack.classList.add("display-none");
     ativarInterfaceLogin();
     return;
   }
@@ -384,14 +386,15 @@ const temporizadorUser = function () {
   const interval = setInterval(() => {
     if (temporizador <= 0.01) {
       clearInterval(interval);
+
       alert("tempo esgotado!");
+
       desativarGerador();
       ativarInterfaceLogin();
       desativarTemporizador();
-      desativarBtnVoltar();
+      btnIsBack.classList.add("display-none");
       userConvidadoLoginUnico = 0;
-      console.log(userConvidadoLoginUnico);
-      temporizadorInsert.textContent = "0.00";
+      temporizadorInsert.textContent = "0:00";
     } else {
       temporizadorInsert.textContent = `${(temporizador -= 0.01)
         .toFixed(2)
@@ -399,6 +402,37 @@ const temporizadorUser = function () {
     }
   }, 1000);
 };
+
+const temporizadorUserReferencia = function () {
+  temporizadorUser();
+};
+
+//sem uso no momento
+const desativarBtnVoltarReferencia = function () {
+  desativarBtnVoltar();
+};
+
+export const ativarBtnVoltar = function () {
+  btnIsBack.classList.remove("display-none");
+};
+
+//sem uso no momento
+const ativarBtnVoltarReferencia = function () {
+  ativarBtnVoltar();
+};
+
+const voltarPagLogin = function () {
+  desativarGerador();
+  ativarInterfaceLogin();
+  desativarBtnVoltar();
+  desativarTemporizador();
+};
+
+const voltarPagLoginReferncia = function () {
+  voltarPagLogin();
+};
+
+btnIsBack.addEventListener("click", voltarPagLoginReferncia);
 
 const controleUser = {
   controleLogin: false,
@@ -420,7 +454,6 @@ const linkUserConvidado = function (controleKey) {
 const linkUserConvidadoReferencia = function () {
   linkUserConvidado(controleUser);
 };
-
 linkConvidado.addEventListener("click", linkUserConvidadoReferencia);
 
 //const verificarUserConvidado = function () {};

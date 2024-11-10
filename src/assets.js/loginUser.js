@@ -1,6 +1,5 @@
 "use strict";
-
-import { btnConfig } from "../assets.js/customization.js";
+import { btnConfig, desativarBtnVoltar, ativarBtnVoltar } from "../assets.js/customization.js";
 
 const password = document.querySelector(".login-password");
 const user = document.querySelector(".login-user");
@@ -15,7 +14,6 @@ const visualizarPassword = document.querySelector(
   ".icon-viasualiador-password"
 );
 const esconderPassword = document.querySelector(".icon-esconder-password");
-export const btnVoltar = document.querySelector(".container-btn-back");
 
 const login = {
   userKey: "felipeAdmin",
@@ -77,37 +75,6 @@ export const desativarGerador = () => {
   geradorContainer.classList.add("display-none");
   nameAutor.classList.add("display-none");
 };
-
-export const desativarBtnVoltar = function () {
-  btnVoltar.classList.add("display-none");
-};
-
-//sem uso no momento
-const desativarBtnVoltarReferencia = function () {
-  desativarBtnVoltar();
-};
-
-export const ativarBtnVoltar = function () {
-  btnVoltar.classList.remove("display-none");
-};
-
-//sem uso no momento
-const ativarBtnVoltarReferencia = function () {
-  ativarBtnVoltar();
-};
-
-const voltarPagLogin = function () {
-  desativarGerador();
-  ativarInterfaceLogin();
-  desativarBtnVoltar();
-  desativarTemporizador();
-};
-
-const voltarPagLoginReferncia = function () {
-  voltarPagLogin();
-};
-
-btnVoltar.addEventListener("click", voltarPagLoginReferncia);
 
 //função de verificar o login de acrodo com os parametrôs escolhidos para efetuar ou não o login.
 const verificarLogin = function ({ userKey, passwordKey }) {
