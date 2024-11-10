@@ -579,6 +579,29 @@ body.darkmode {
     margin-top: 1px;
     font-size: 15px;
   }
+  .container-btn-back {
+    font-family: "poppins";
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .container-btn-back button {
+    background-color: blueviolet;
+    color: white;
+    padding: 2px 15px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+  }
+  .container-btn-back button i {
+    margin-right: 8px;
+  }
+  .container-btn-back button:hover {
+    background-color: rgb(103, 22, 180);
+    color: rgba(255, 255, 255, 0.899);
+    padding: 5px 20px;
+    border-radius: 10px;
+  }
   .fundo-blur {
     position: fixed;
     top: 0px;
@@ -1293,6 +1316,29 @@ body.darkmode {
   .container-temporizador .content-temporizador .temporizador {
     margin-top: 4px;
     font-size: 15px;
+  }
+  .container-btn-back {
+    font-family: "poppins";
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .container-btn-back button {
+    background-color: blueviolet;
+    color: white;
+    padding: 2px 15px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+  }
+  .container-btn-back button i {
+    margin-right: 8px;
+  }
+  .container-btn-back button:hover {
+    background-color: rgb(103, 22, 180);
+    color: rgba(255, 255, 255, 0.899);
+    padding: 5px 20px;
+    border-radius: 10px;
   }
   .fundo-blur {
     position: fixed;
@@ -2010,6 +2056,29 @@ body.darkmode {
   .container-temporizador .content-temporizador .temporizador {
     margin-top: 4px;
     font-size: 15px;
+  }
+  .container-btn-back {
+    font-family: "poppins";
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .container-btn-back button {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+  }
+  .container-btn-back button i {
+    margin-right: 8px;
+  }
+  .container-btn-back button:hover {
+    background-color: rgb(103, 22, 180);
+    color: rgba(255, 255, 255, 0.899);
+    padding: 5px 20px;
+    border-radius: 10px;
   }
   .fundo-blur {
     position: fixed;
@@ -2734,6 +2803,29 @@ body.darkmode {
   .container-temporizador .content-temporizador .temporizador {
     margin-top: 4px;
     font-size: 15px;
+  }
+  .container-btn-back {
+    font-family: "poppins";
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .container-btn-back button {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+  }
+  .container-btn-back button i {
+    margin-right: 8px;
+  }
+  .container-btn-back button:hover {
+    background-color: rgb(103, 22, 180);
+    color: rgba(255, 255, 255, 0.899);
+    padding: 5px 20px;
+    border-radius: 10px;
   }
   .fundo-blur {
     position: fixed;

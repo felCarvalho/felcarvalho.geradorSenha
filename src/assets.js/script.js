@@ -1,3 +1,5 @@
+"use strict";
+
 //todos os elementos do HTML(DOM).
 export const newPassword = document.querySelector(".btn-password");
 let ToggleOne = document.querySelector(".checked-one");

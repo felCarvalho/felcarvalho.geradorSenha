@@ -1,3 +1,5 @@
+"use strict";
+
 import {
   verificacaoGerador,
   newPassword,
@@ -6,7 +8,7 @@ import {
   controleSLider,
   slider,
   lowerCase,
-  upperCase, 
+  upperCase,
   numberCaractere,
   simbolosEspecial,
   resetGeradorReferencia,
@@ -21,6 +23,7 @@ import {
   ativarTemporizador,
   ativarInterfaceLogin,
   desativarTemporizador,
+  ativarBtnVoltar,
 } from "../assets.js/loginUser.js";
 
 const temporizadorInsert = document.querySelector(".temporizador");
@@ -386,8 +389,8 @@ const linkUserConvidado = function (controleKey) {
     desativarInterfaceLoginReferencia();
     temporizadorUser();
     ativarGerador();
-    //temporizadorConvidadoUser.classList.remove("display-none");
     ativarTemporizador();
+    ativarBtnVoltar();
   }
 };
 

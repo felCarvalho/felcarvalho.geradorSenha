@@ -1,3 +1,5 @@
+"use strict";
+
 import { btnConfig } from "../assets.js/customization.js";
 
 const password = document.querySelector(".login-password");
@@ -13,6 +15,7 @@ const visualizarPassword = document.querySelector(
   ".icon-viasualiador-password"
 );
 const esconderPassword = document.querySelector(".icon-esconder-password");
+export const btnVoltar = document.querySelector(".container-btn-back");
 
 const login = {
   userKey: "felipeAdmin",
@@ -43,11 +46,13 @@ const ativarTemporizadorReferencia = function () {
 //função de referencia para ativar pag de login("muito util caso queria remover essa função em algum outro tipo de uso" de evento de load)
 const ativarInterfaceLoginReferencia = function () {
   ativarInterfaceLogin();
+  desativarBtnVoltar();
 };
 
 //função de desativar a pag de login
 const desativarInterfaceLogin = () => {
   loginContainer.classList.add("display-none");
+  ativarBtnVoltar();
 };
 //função de referencia para desativar pag de login("muito util caso queria remover essa função em algum outro tipo de uso" de evento de load)
 export const desativarInterfaceLoginReferencia = function () {
@@ -73,6 +78,37 @@ export const desativarGerador = () => {
   nameAutor.classList.add("display-none");
 };
 
+const desativarBtnVoltar = function () {
+  btnVoltar.classList.add("display-none");
+};
+
+//sem uso no momento
+const desativarBtnVoltarReferencia = function () {
+  desativarBtnVoltar();
+};
+
+export const ativarBtnVoltar = function () {
+  btnVoltar.classList.remove("display-none");
+};
+
+//sem uso no momento
+const ativarBtnVoltarReferencia = function () {
+  ativarBtnVoltar();
+};
+
+const voltarPagLogin = function () {
+  desativarGerador();
+  ativarInterfaceLogin();
+  desativarBtnVoltar();
+  desativarTemporizador();
+};
+
+const voltarPagLoginReferncia = function () {
+  voltarPagLogin();
+};
+
+btnVoltar.addEventListener("click", voltarPagLoginReferncia);
+
 //função de verificar o login de acrodo com os parametrôs escolhidos para efetuar ou não o login.
 const verificarLogin = function ({ userKey, passwordKey }) {
   console.log(`Esse é o usuer: ${userKey}`);
@@ -86,6 +122,7 @@ const verificarLogin = function ({ userKey, passwordKey }) {
     desativarGerador();
   } else {
     alert("login feito com sucesso");
+    desativarBtnVoltar();
     desativarInterfaceLogin();
     desativarTemporizador();
     ativarGerador();
