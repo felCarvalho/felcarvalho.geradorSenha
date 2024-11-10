@@ -14,7 +14,7 @@ import {
   resetGeradorReferencia,
   btnResetGerador,
   resetGerador,
-} from "/public/assets.js/script.js";
+} from "../assets.js/script.js";
 
 import {
   ativarGerador,
@@ -24,7 +24,7 @@ import {
   ativarInterfaceLogin,
   desativarTemporizador,
   ativarBtnVoltar,
-} from "/public/assets.js/loginUser.js";
+} from "../assets.js/loginUser.js";
 
 const temporizadorInsert = document.querySelector(".temporizador");
 const linkConvidado = document.querySelector(".link");
