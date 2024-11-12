@@ -433,8 +433,8 @@
     @include border(5px);
     position: absolute;
     transform: translateX(-50%, -50%);
-    left: 10%;
-    right: 10%;
+    left: 15%;
+    right: 15%;
     top: 20%;
     backdrop-filter: blur(10px);
     z-index: 10;
@@ -645,8 +645,8 @@
     @include border(5px);
     position: absolute;
     transform: translateX(-50%, -50%);
-    left: 25%;
-    right: 25%;
+    left: 30%;
+    right: 30%;
     top: 25%;
     backdrop-filter: blur(10px);
     z-index: 10;
