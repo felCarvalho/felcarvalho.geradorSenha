@@ -4,6 +4,8 @@ import {
   btnConfig,
   desativarBtnVoltar,
   ativarBtnVoltar,
+  btnIsBack,
+  voltarPagLoginReferncia,
 } from "../assets.js/customization.js";
 
 const password = document.querySelector(".login-password");
@@ -19,7 +21,15 @@ const visualizarPassword = document.querySelector(
   ".icon-viasualiador-password"
 );
 const esconderPassword = document.querySelector(".icon-esconder-password");
-const containerPopUp = document.querySelector(".container-animation-login");
+export const containerPopUp = document.querySelector(
+  ".container-animation-login"
+);
+const containerPopUpLoginSucesso = document.querySelector(
+  ".container-animation-login-sucesso"
+);
+const containerPopUpLoginError = document.querySelector(
+  ".container-animation-login-error"
+);
 
 export const ativarPoUpLogin = function () {
   containerPopUp.classList.remove("display-none");
@@ -43,9 +53,9 @@ export const verficarAnimaçao = function (status) {
   isAnimationLogin = status;
 };
 
-export const popUpLogin = function () {
-  containerPopUp.classList.remove("display-none");
-  gsap.to(containerPopUp, {
+export const popUpLogin = function (modal) {
+  modal.classList.remove("display-none");
+  gsap.to(modal, {
     opacity: 1,
     y: 20,
     ease: "power4.out",
@@ -53,17 +63,17 @@ export const popUpLogin = function () {
   });
 
   setTimeout(() => {
-    gsap.to(containerPopUp, {
+    gsap.to(modal, {
       opacity: 0,
       y: -20,
       ease: "power4.out",
       duration: 1.5,
       onComplete: () => {
-        containerPopUp.classList.add("display-none");
+        modal.classList.add("display-none");
         verficarAnimaçao(false);
       },
     });
-  }, 4000);
+  }, 3000);
 };
 
 const login = {
@@ -127,6 +137,17 @@ export const desativarGerador = () => {
   nameAutor.classList.add("display-none");
 };
 
+const voltarPagLoginTwo = function () {
+  desativarGerador();
+  ativarInterfaceLogin();
+  desativarBtnVoltar();
+  desativarTemporizador();
+};
+
+export const voltarPagLoginRefernciaTwo = function () {
+  voltarPagLoginTwo();
+};
+
 //função de verificar o login de acrodo com os parametrôs escolhidos para efetuar ou não o login.
 const verificarLogin = function ({ userKey, passwordKey }) {
   console.log(`Esse é o usuer: ${userKey}`);
@@ -136,14 +157,16 @@ const verificarLogin = function ({ userKey, passwordKey }) {
   const valorPassword = password.value;
 
   if (valorUser !== userKey || valorPassword !== passwordKey) {
-    alert("usuário ou senha inválida");
     desativarGerador();
+    popUpLogin(containerPopUpLoginError);
   } else {
-    alert("login feito com sucesso");
     desativarBtnVoltar();
     desativarInterfaceLogin();
     desativarTemporizador();
     ativarGerador();
+    popUpLogin(containerPopUpLoginSucesso);
+    btnIsBack.removeEventListener("click", voltarPagLoginReferncia);
+    btnIsBack.addEventListener("click", voltarPagLoginRefernciaTwo);
     btnConfig.classList.remove("display-none");
   }
 };

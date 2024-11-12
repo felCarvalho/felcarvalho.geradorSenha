@@ -26,9 +26,10 @@ import {
   popUpLogin,
   verficarAnimaçao,
   isAnimationLogin,
+  containerPopUp,
 } from "../assets.js/loginUser.js";
 
-const btnIsBack = document.querySelector(".btn-back");
+export const btnIsBack = document.querySelector(".btn-back");
 const temporizadorInsert = document.querySelector(".temporizador");
 export const linkConvidado = document.querySelector(".link");
 export const btnConfig = document.querySelector(".icon-config-header-open");
@@ -402,11 +403,12 @@ const temporizadorUser = function () {
     desativarTemporizador();
     btnIsBack.classList.add("display-none");
     ativarInterfaceLogin();
+    desativarBtnVoltar();
     if (isAnimationLogin) {
       return;
     }
     verficarAnimaçao(true);
-    popUpLogin();
+    popUpLogin(containerPopUp);
     return;
   }
 
@@ -416,15 +418,16 @@ const temporizadorUser = function () {
       desativarGerador();
       ativarInterfaceLogin();
       desativarTemporizador();
+      desativarBtnVoltar();
       if (isAnimationLogin) {
         return;
       }
       verficarAnimaçao(true);
-      popUpLogin();
+      popUpLogin(containerPopUp);
       btnIsBack.classList.add("display-none");
-      userConvidadoLoginUnico = 0;
+      userConvidadoLoginUnico = 1;
     } else {
-      temporizadorInsert.textContent = `${(temporizador -= 0.01)
+      temporizadorInsert.textContent = `${(temporizador -= 0.3)
         .toFixed(2)
         .replace(".", ":")}`;
     }
@@ -432,13 +435,14 @@ const temporizadorUser = function () {
 };
 
 const redefinirTemporizador = function () {
+  desativarBtnVoltar();
   clearInterval(interval);
   temporizadorInsert.textContent = "0:00";
-  /* if (isAnimationLogin) {
+  if (isAnimationLogin) {
     return;
   }
   verficarAnimaçao(true);
-  popUpLogin();*/
+  popUpLogin(containerPopUp);
 };
 
 const redefinirTemporizadorReferencia = function () {
@@ -471,7 +475,7 @@ const voltarPagLogin = function () {
   redefinirTemporizador();
 };
 
-const voltarPagLoginReferncia = function () {
+export const voltarPagLoginReferncia = function () {
   voltarPagLogin();
 };
 
