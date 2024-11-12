@@ -427,7 +427,7 @@ const temporizadorUser = function () {
       btnIsBack.classList.add("display-none");
       userConvidadoLoginUnico = 1;
     } else {
-      temporizadorInsert.textContent = `${(temporizador -= 0.3)
+      temporizadorInsert.textContent = `${(temporizador -= 0.1)
         .toFixed(2)
         .replace(".", ":")}`;
     }
