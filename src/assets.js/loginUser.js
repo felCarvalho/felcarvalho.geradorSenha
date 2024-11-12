@@ -1,5 +1,10 @@
 "use strict";
-import { btnConfig, desativarBtnVoltar, ativarBtnVoltar } from "../assets.js/customization.js";
+
+import {
+  btnConfig,
+  desativarBtnVoltar,
+  ativarBtnVoltar,
+} from "../assets.js/customization.js";
 
 const password = document.querySelector(".login-password");
 const user = document.querySelector(".login-user");
@@ -14,6 +19,52 @@ const visualizarPassword = document.querySelector(
   ".icon-viasualiador-password"
 );
 const esconderPassword = document.querySelector(".icon-esconder-password");
+const containerPopUp = document.querySelector(".container-animation-login");
+
+export const ativarPoUpLogin = function () {
+  containerPopUp.classList.remove("display-none");
+};
+
+const ativarPoUpLoginReferencia = function () {
+  ativarPoUpLogin();
+};
+
+export const desativarPoUpLogin = function () {
+  containerPopUp.classList.add("display-none");
+};
+
+const desativarPoUpLoginReferencia = function () {
+  desativarPoUpLogin();
+};
+
+export let isAnimationLogin = false;
+
+export const verficarAnimaçao = function (status) {
+  isAnimationLogin = status;
+};
+
+export const popUpLogin = function () {
+  containerPopUp.classList.remove("display-none");
+  gsap.to(containerPopUp, {
+    opacity: 1,
+    y: 20,
+    ease: "power4.out",
+    duration: 1.5,
+  });
+
+  setTimeout(() => {
+    gsap.to(containerPopUp, {
+      opacity: 0,
+      y: -20,
+      ease: "power4.out",
+      duration: 1.5,
+      onComplete: () => {
+        containerPopUp.classList.add("display-none");
+        verficarAnimaçao(false);
+      },
+    });
+  }, 5000);
+};
 
 const login = {
   userKey: "felipeAdmin",

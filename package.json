@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "sass": "sass ./src/assets.css/estilo.scss:./src/assets.css/estilo.css",
-    "sassLogin": "sass ./src/assets.css/loginUser.css/estiloLogin.scss:./src/assets.css/loginUser.css/estiloLogin.css",
-    "twind": "tailwind -i ./src/inputTwind.css/input.css -o ./src/dist/output.css",
+    "sass": "sass --watch ./src/assets.css/estilo.scss:./src/assets.css/estilo.css",
+    "sassLogin": "sass --watch ./src/assets.css/loginUser.css/estiloLogin.scss:./src/assets.css/loginUser.css/estiloLogin.css",
+    "twind": "tailwind -i ./src/inputTwind.css/input.css -o ./src/dist/output.css --watch",
     "build": "npm run sass && npm run sassLogin && npm run twind"
   },
   "devDependencies": {

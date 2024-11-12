@@ -162,6 +162,27 @@
   .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description span {
     color: blueviolet;
   }
+  .container-animation-login {
+    border: 1px solid rgb(148, 50, 240);
+    box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
+    border-radius: 5px;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 10%;
+    right: 10%;
+    top: 5%;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    background-color: #fff;
+  }
+  .container-animation-login p {
+    color: blueviolet;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding: 10px;
+  }
 }
 @media (min-width: 322px) and (max-width: 576px) {
   .container-login {
@@ -314,6 +335,27 @@
   }
   .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description span {
     color: blueviolet;
+  }
+  .container-animation-login {
+    border: 1px solid rgb(148, 50, 240);
+    box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
+    border-radius: 5px;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 10%;
+    right: 10%;
+    top: 20%;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    background-color: #fff;
+  }
+  .container-animation-login p {
+    color: blueviolet;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding: 10px;
   }
 }
 @media (min-width: 576px) and (max-width: 1120px) {
@@ -470,6 +512,27 @@
   .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description span {
     color: blueviolet;
   }
+  .container-animation-login {
+    border: 1px solid rgb(148, 50, 240);
+    box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
+    border-radius: 5px;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    background-color: #fff;
+  }
+  .container-animation-login p {
+    color: blueviolet;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 20px 10px;
+  }
 }
 @media (min-width: 1121px) {
   .container-login {
@@ -623,6 +686,27 @@
   }
   .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description span {
     color: blueviolet;
+  }
+  .container-animation-login {
+    border: 1px solid rgb(148, 50, 240);
+    box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
+    border-radius: 5px;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 40%;
+    right: 40%;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    background-color: #fff;
+  }
+  .container-animation-login p {
+    color: blueviolet;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 20px 10px;
   }
 }
 

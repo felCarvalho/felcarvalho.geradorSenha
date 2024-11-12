@@ -23,6 +23,9 @@ import {
   ativarTemporizador,
   ativarInterfaceLogin,
   desativarTemporizador,
+  popUpLogin,
+  verficarAnimaçao,
+  isAnimationLogin,
 } from "../assets.js/loginUser.js";
 
 const btnIsBack = document.querySelector(".container-btn-back");
@@ -367,23 +370,29 @@ const temporizadorUser = function () {
   userConvidadoLoginUnico++;
 
   if (userConvidadoLoginUnico > 1) {
-    alert("faça login para aproveita o gerador de senha");
     desativarGerador();
     desativarTemporizador();
     btnIsBack.classList.add("display-none");
     ativarInterfaceLogin();
+    if (isAnimationLogin) {
+      return;
+    }
+    verficarAnimaçao(true);
+    popUpLogin();
     return;
   }
 
   interval = setInterval(() => {
     if (temporizador <= 0.01) {
       clearInterval(interval);
-
-      alert("tempo esgotado!");
-
       desativarGerador();
       ativarInterfaceLogin();
       desativarTemporizador();
+      if (isAnimationLogin) {
+        return;
+      }
+      verficarAnimaçao(true);
+      popUpLogin();
       btnIsBack.classList.add("display-none");
       userConvidadoLoginUnico = 0;
     } else {
@@ -397,6 +406,11 @@ const temporizadorUser = function () {
 const redefinirTemporizador = function () {
   clearInterval(interval);
   temporizadorInsert.textContent = "0:00";
+  if (isAnimationLogin) {
+    return;
+  }
+  verficarAnimaçao(true);
+  popUpLogin();
 };
 
 const redefinirTemporizadorReferencia = function () {
@@ -427,6 +441,11 @@ const voltarPagLogin = function () {
   desativarBtnVoltar();
   desativarTemporizador();
   redefinirTemporizador();
+  if (isAnimationLogin) {
+    return;
+  }
+  verficarAnimaçao(true);
+  popUpLogin();
 };
 
 const voltarPagLoginReferncia = function () {
@@ -455,6 +474,7 @@ const linkUserConvidado = function (controleKey) {
 const linkUserConvidadoReferencia = function () {
   linkUserConvidado(controleUser);
 };
+
 linkConvidado.addEventListener("click", linkUserConvidadoReferencia);
 
 //const verificarUserConvidado = function () {};

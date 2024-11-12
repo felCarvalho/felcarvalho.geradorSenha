@@ -197,7 +197,7 @@
 
             .description {
               margin-top: 1px;
-             // text-decoration: line-through;
+              // text-decoration: line-through;
 
               .paragrafo-description {
                 font-size: 10.5px;
@@ -214,6 +214,30 @@
           }
         }
       }
+    }
+  }
+
+  .container-animation-login {
+    @include borderSolid();
+    @include shadow();
+    @include border(5px);
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 10%;
+    right: 10%;
+    top: 5%;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    background-color: #fff;
+
+    p {
+      color: blueviolet;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      padding: 10px;
+    //font-family: "poppins";
     }
   }
 }
@@ -383,7 +407,7 @@
 
             .description {
               margin-top: 1px;
-            //  text-decoration: line-through;
+              //  text-decoration: line-through;
 
               .paragrafo-description {
                 font-size: 10.5px;
@@ -400,6 +424,30 @@
           }
         }
       }
+    }
+  }
+
+  .container-animation-login {
+    @include borderSolid();
+    @include shadow();
+    @include border(5px);
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 10%;
+    right: 10%;
+    top: 20%;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    background-color: #fff;
+
+    p {
+      color: blueviolet;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      padding: 10px;
+    //font-family: "poppins";
     }
   }
 }
@@ -571,7 +619,7 @@
 
             .description {
               margin-top: 1px;
-             // text-decoration: line-through;
+              // text-decoration: line-through;
 
               .paragrafo-description {
                 font-size: 12.4px;
@@ -588,6 +636,30 @@
           }
         }
       }
+    }
+  }
+
+  .container-animation-login {
+    @include borderSolid();
+    @include shadow();
+    @include border(5px);
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    background-color: #fff;
+
+    p {
+      color: blueviolet;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 1px;
+      padding: 20px 10px;
+    //font-family: "poppins";
     }
   }
 }
@@ -736,8 +808,8 @@
             text-align: center;
 
             .link {
-             color: blueviolet;
-             font-size: 15px;
+              color: blueviolet;
+              font-size: 15px;
             }
           }
 
@@ -758,7 +830,7 @@
 
             .description {
               margin-top: 1px;
-             // text-decoration: line-through;
+              // text-decoration: line-through;
 
               .paragrafo-description {
                 font-size: 12.4px;
@@ -775,6 +847,30 @@
           }
         }
       }
+    }
+  }
+
+  .container-animation-login {
+    @include borderSolid();
+    @include shadow();
+    @include border(5px);
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 40%;
+    right: 40%;
+    top: 25%;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    background-color: #fff;
+
+    p {
+      color: blueviolet;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 1px;
+      padding: 20px 10px;
+    //font-family: "poppins";
     }
   }
 }

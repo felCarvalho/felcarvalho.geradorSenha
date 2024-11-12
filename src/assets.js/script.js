@@ -11,7 +11,7 @@ const backdropBlur = document.querySelector(".fundo-blur");
 const modalError = document.querySelector(".modal-error");
 const mensagemError = document.querySelector(".mensage-error");
 const btnClosed = document.querySelector(".modal-closed");
-const btnDarkMode = document.querySelector(".button-dark");
+const btnDarkMode = document.querySelector(".button-dark"); 
 const iconDark = document.querySelector(".dark-mode");
 const iconSun = document.querySelector(".sun-mode");
 const modalPasswordCopy = document.querySelector(".container-modal-clipboard");
@@ -282,7 +282,7 @@ const clipBoard = () => {
   navigator.clipboard.writeText(copyPassword).then(() => {
     modalPasswordCopy.classList.remove("display-none");
     gsap.to(modalPasswordCopy, {
-      opacity: 1,
+      y: 20,
       ease: "power4.out",
       duration: 1.5,
     });
