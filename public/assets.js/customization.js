@@ -402,7 +402,7 @@ const temporizadorUser = function () {
     desativarGerador();
     desativarTemporizador();
     btnIsBack.classList.add("display-none");
-    ativarInterfaceLogin();
+    ativarInterfaceLogin(); 
     desativarBtnVoltar();
     if (isAnimationLogin) {
       return;
@@ -427,7 +427,7 @@ const temporizadorUser = function () {
       btnIsBack.classList.add("display-none");
       userConvidadoLoginUnico = 1;
     } else {
-      temporizadorInsert.textContent = `${(temporizador -= 0.1)
+      temporizadorInsert.textContent = `${(temporizador -= 0.01)
         .toFixed(2)
         .replace(".", ":")}`;
     }
