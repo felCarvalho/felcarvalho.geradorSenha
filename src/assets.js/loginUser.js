@@ -63,7 +63,7 @@ export const popUpLogin = function () {
         verficarAnimaçao(false);
       },
     });
-  }, 5000);
+  }, 4000);
 };
 
 const login = {

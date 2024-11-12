@@ -86,6 +86,34 @@ export const verificarInputsEstadoReferencia = function () {
 
 window.addEventListener("load", verificarInputsEstadoReferencia);
 
+/*const modalAnimationAtivado = (modal) => {
+  modal.classList.add("display-block");
+
+  gsap.to(modal, {
+    y: 25,
+    ease: "power1.out",
+    duration: 0.2,
+    opacity: 1,
+    onComplete: () => {
+      modal.classList.add("display-block");
+    },
+  });
+};
+
+const modalAnimationDesativado = (modal) => {
+  modal.classList.add("display-block");
+
+  gsap.to(modal, {
+    y: -25,
+    ease: "power1.out",
+    duration: 0.2,
+    opacity: 0,
+    onComplete: () => {
+      modal.classList.remove("display-none");
+    },
+  });
+};*/
+
 //background para o popUp de configurações(remove o display-none)
 const backgroundPopUpOn = () => {
   backgroundFundoPopUp.classList.remove("display-none");
@@ -406,11 +434,11 @@ const temporizadorUser = function () {
 const redefinirTemporizador = function () {
   clearInterval(interval);
   temporizadorInsert.textContent = "0:00";
-  if (isAnimationLogin) {
+  /* if (isAnimationLogin) {
     return;
   }
   verficarAnimaçao(true);
-  popUpLogin();
+  popUpLogin();*/
 };
 
 const redefinirTemporizadorReferencia = function () {
@@ -441,11 +469,6 @@ const voltarPagLogin = function () {
   desativarBtnVoltar();
   desativarTemporizador();
   redefinirTemporizador();
-  if (isAnimationLogin) {
-    return;
-  }
-  verficarAnimaçao(true);
-  popUpLogin();
 };
 
 const voltarPagLoginReferncia = function () {

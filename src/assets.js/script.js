@@ -35,7 +35,7 @@ const modalAnimationAtivado = () => {
 
   gsap.to(modalError, {
     y: 25,
-    ease: "power1.out",
+    ease: "power4.out",
     duration: 0.2,
     opacity: 1,
     onComplete: () => {
@@ -49,7 +49,7 @@ const modalAnimationDesativado = () => {
 
   gsap.to(modalError, {
     y: -25,
-    ease: "power1.out",
+    ease: "power4.out",
     duration: 0.2,
     opacity: 0,
     onComplete: () => {
@@ -282,7 +282,7 @@ const clipBoard = () => {
   navigator.clipboard.writeText(copyPassword).then(() => {
     modalPasswordCopy.classList.remove("display-none");
     gsap.to(modalPasswordCopy, {
-      y: 20,
+      opacity: 1,
       ease: "power4.out",
       duration: 1.5,
     });
