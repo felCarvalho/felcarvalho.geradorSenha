@@ -28,7 +28,7 @@ import {
   isAnimationLogin,
 } from "../assets.js/loginUser.js";
 
-const btnIsBack = document.querySelector(".container-btn-back");
+const btnIsBack = document.querySelector(".btn-back");
 const temporizadorInsert = document.querySelector(".temporizador");
 export const linkConvidado = document.querySelector(".link");
 export const btnConfig = document.querySelector(".icon-config-header-open");
