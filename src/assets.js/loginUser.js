@@ -73,7 +73,7 @@ export const popUpLogin = function (modal) {
         verficarAnimaçao(false);
       },
     });
-  }, 3000);
+  }, 3500);
 };
 
 const login = {
@@ -135,7 +135,7 @@ export const ativarGerador = () => {
 export const desativarGerador = () => {
   geradorContainer.classList.add("display-none");
   nameAutor.classList.add("display-none");
-};
+}; 
 
 const voltarPagLoginTwo = function () {
   desativarGerador();

@@ -735,6 +735,212 @@ body.darkmode {
     }
   }
 
+  .background {
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 3%;
+    right: 3%;
+    top: 20%;
+    font-family: "poppins";
+    @include border(5px);
+    @include borderSolid();
+    @include shadow();
+    background-color: #fff;
+
+    .content-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 8px;
+
+      .title-menu {
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(145, 49, 235, 0.87);
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        i {
+          font-size: 13px;
+          margin-right: 8px;
+        }
+      }
+
+      .content-closed {
+        cursor: pointer;
+
+        button {
+          background-color: rgba(156, 83, 224, 0.366);
+          @include border(5px);
+          cursor: pointer;
+
+          i {
+            padding: 8px 12px;
+            font-size: 13px;
+            color: rgba(145, 49, 235, 0.87);
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+    .container-palavra-pessoal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      background-color: rgba(156, 83, 224, 0.166);
+      margin: 15px 10px;
+      @include border(5px);
+
+      .content-input-pessoal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+
+        .content-input-label {
+          width: 100%;
+
+          input {
+            @include border(5px);
+            width: 100%;
+            padding: 8px;
+            color: rgba(145, 49, 235, 0.87);
+            transition: all 30ms ease-in-out;
+            letter-spacing: 1px;
+            user-select: none;
+            background-color: rgba(172, 122, 218, 0.178);
+            //border: 1px solid black;
+          }
+
+          input:focus-visible {
+            width: 100%;
+            outline: 1.5px solid rgba(137, 43, 226, 0.87);
+            color: rgba(145, 49, 235, 0.87);
+            transition: all 30ms ease-in-out;
+          }
+
+          input::placeholder {
+            color: rgba(153, 92, 211, 0.699);
+            font-size: 13px;
+          }
+
+          .label {
+            font-size: 13px;
+            color: rgba(145, 49, 235, 0.87);
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .content-check-pessoal {
+        background-color: rgba(156, 83, 224, 0.366);
+        margin-top: 19.3px;
+        @include border(50%);
+        padding: 8px 12px;
+        cursor: pointer;
+        margin-right: 10px;
+        //border: 1px solid black;
+
+        i {
+          color: rgba(145, 49, 235, 0.87);
+        }
+      }
+    }
+
+    .container-alert {
+      text-align: center;
+
+      .title-alert {
+        color: blueviolet;
+        letter-spacing: 1.5px;
+      }
+
+      .paragrafo-alert {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        color: blueviolet;
+        line-height: 19px;
+        line-break: loose;
+        padding-inline: 20px;
+      }
+    }
+
+    .container-buttons-palavra-personalizada {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px 0;
+
+      .content-btn-cancelar {
+        button {
+          padding: 5px 10px;
+          background-color: red;
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+
+        button:hover {
+          padding: 5px 10px;
+          background-color: rgba(255, 0, 0, 0.493);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+      }
+
+      .content-btn-confirmar {
+        button {
+          padding: 5px 10px;
+          background-color: rgb(135, 70, 196);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+
+        button:hover {
+          padding: 5px 10px;
+          background-color: rgb(127, 30, 218);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
   .fundo-blur {
     position: fixed;
     top: 0px;
@@ -1631,6 +1837,212 @@ body.darkmode {
       color: rgba(255, 255, 255, 0.899);
       padding: 5px 20px;
       @include border(10px);
+    }
+  }
+
+  .background {
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 3%;
+    right: 3%;
+    top: 25%;
+    font-family: "poppins";
+    @include border(5px);
+    @include borderSolid();
+    @include shadow();
+    background-color: #fff;
+
+    .content-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 8px;
+
+      .title-menu {
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(145, 49, 235, 0.87);
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        i {
+          font-size: 13px;
+          margin-right: 8px;
+        }
+      }
+
+      .content-closed {
+        cursor: pointer;
+
+        button {
+          background-color: rgba(156, 83, 224, 0.366);
+          @include border(5px);
+          cursor: pointer;
+
+          i {
+            padding: 8px 12px;
+            font-size: 13px;
+            color: rgba(145, 49, 235, 0.87);
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+    .container-palavra-pessoal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      background-color: rgba(156, 83, 224, 0.166);
+      margin: 15px 10px;
+      @include border(5px);
+
+      .content-input-pessoal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+
+        .content-input-label {
+          width: 100%;
+
+          input {
+            @include border(5px);
+            width: 100%;
+            padding: 8px;
+            color: rgba(145, 49, 235, 0.87);
+            transition: all 30ms ease-in-out;
+            letter-spacing: 1px;
+            user-select: none;
+            background-color: rgba(172, 122, 218, 0.178);
+            //border: 1px solid black;
+          }
+
+          input:focus-visible {
+            width: 100%;
+            outline: 1.5px solid rgba(137, 43, 226, 0.87);
+            color: rgba(145, 49, 235, 0.87);
+            transition: all 30ms ease-in-out;
+          }
+
+          input::placeholder {
+            color: rgba(153, 92, 211, 0.699);
+            font-size: 13px;
+          }
+
+          .label {
+            font-size: 13px;
+            color: rgba(145, 49, 235, 0.87);
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .content-check-pessoal {
+        background-color: rgba(156, 83, 224, 0.366);
+        margin-top: 19.3px;
+        @include border(50%);
+        padding: 8px 12px;
+        cursor: pointer;
+        margin-right: 10px;
+        //border: 1px solid black;
+
+        i {
+          color: rgba(145, 49, 235, 0.87);
+        }
+      }
+    }
+
+    .container-alert {
+      text-align: center;
+
+      .title-alert {
+        color: blueviolet;
+        letter-spacing: 1.5px;
+      }
+
+      .paragrafo-alert {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        color: blueviolet;
+        line-height: 19px;
+        line-break: strict;
+        padding: 10px;
+      }
+    }
+
+    .container-buttons-palavra-personalizada {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px 0;
+
+      .content-btn-cancelar {
+        button {
+          padding: 5px 10px;
+          background-color: red;
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+
+        button:hover {
+          padding: 5px 10px;
+          background-color: rgba(255, 0, 0, 0.493);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+      }
+
+      .content-btn-confirmar {
+        button {
+          padding: 5px 10px;
+          background-color: rgb(135, 70, 196);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+
+        button:hover {
+          padding: 5px 10px;
+          background-color: rgb(127, 30, 218);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 
@@ -2537,6 +2949,212 @@ body.darkmode {
     }
   }
 
+  .background {
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 10%;
+    right: 10%;
+    top: 25%;
+    font-family: "poppins";
+    @include border(5px);
+    @include borderSolid();
+    @include shadow();
+    background-color: #fff;
+
+    .content-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px;
+
+      .title-menu {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgba(145, 49, 235, 0.87);
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        i {
+          font-size: 20px;
+          margin-right: 8px;
+        }
+      }
+
+      .content-closed {
+        cursor: pointer;
+
+        button {
+          background-color: rgba(156, 83, 224, 0.366);
+          @include border(5px);
+          cursor: pointer;
+
+          i {
+            padding: 8px 12px;
+            font-size: 20px;
+            color: rgba(145, 49, 235, 0.87);
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+    .container-palavra-pessoal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      background-color: rgba(156, 83, 224, 0.166);
+      margin: 30px;
+      @include border(5px);
+
+      .content-input-pessoal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+
+        .content-input-label {
+          width: 100%;
+
+          input {
+            @include border(5px);
+            width: 100%;
+            padding: 8px;
+            color: rgba(145, 49, 235, 0.87);
+            transition: all 30ms ease-in-out;
+            letter-spacing: 1px;
+            user-select: none;
+            background-color: rgba(172, 122, 218, 0.178);
+            //border: 1px solid black;
+          }
+
+          input:focus-visible {
+            width: 100%;
+            outline: 1.5px solid rgba(137, 43, 226, 0.87);
+            color: rgba(145, 49, 235, 0.87);
+            transition: all 30ms ease-in-out;
+          }
+
+          input::placeholder {
+            color: rgba(153, 92, 211, 0.699);
+          }
+
+          .label {
+            font-size: 16px;
+            color: rgba(145, 49, 235, 0.87);
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .content-check-pessoal {
+        background-color: rgba(156, 83, 224, 0.366);
+        margin-top: 25.3px;
+        @include border(50%);
+        padding: 8px 12px;
+        cursor: pointer;
+        margin-right: 10px;
+        //border: 1px solid black;
+
+        i {
+          color: rgba(145, 49, 235, 0.87);
+        }
+      }
+    }
+
+    .container-alert {
+      text-align: center;
+
+      .title-alert {
+        color: blueviolet;
+        letter-spacing: 1.5px;
+      }
+
+      .paragrafo-alert {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        color: blueviolet;
+        line-height: 19px;
+        line-break: strict;
+        padding: 10px;
+      }
+    }
+
+    .container-buttons-palavra-personalizada {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 50px;
+      align-items: center;
+      margin: 30px 0;
+
+      .content-btn-cancelar {
+        button {
+          padding: 5px 10px;
+          background-color: red;
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+
+        button:hover {
+          padding: 5px 10px;
+          background-color: rgba(255, 0, 0, 0.493);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+      }
+
+      .content-btn-confirmar {
+        button {
+          padding: 5px 10px;
+          background-color: rgb(135, 70, 196);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+
+        button:hover {
+          padding: 5px 10px;
+          background-color: rgb(127, 30, 218);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
   .fundo-blur {
     position: fixed;
     top: 0px;
@@ -3284,7 +3902,7 @@ body.darkmode {
           input {
             @include border(5px);
             width: 100%;
-            background-color: rgba(172, 122, 218, 0.904);
+            background-color: rgba(172, 122, 218, 0.178);
             padding: 8px;
             color: rgba(145, 49, 235, 0.87);
             transition: all 30ms ease-in-out;
@@ -3445,6 +4063,212 @@ body.darkmode {
       color: rgba(255, 255, 255, 0.899);
       padding: 5px 20px;
       @include border(10px);
+    }
+  }
+
+  .background {
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    left: 20%;
+    right: 20%;
+    top: 25%;
+    font-family: "poppins";
+    @include border(5px);
+    @include borderSolid();
+    @include shadow();
+    background-color: #fff;
+
+    .content-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px;
+
+      .title-menu {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgba(145, 49, 235, 0.87);
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        i {
+          font-size: 20px;
+          margin-right: 8px;
+        }
+      }
+
+      .content-closed {
+        cursor: pointer;
+
+        button {
+          background-color: rgba(156, 83, 224, 0.366);
+          @include border(5px);
+          cursor: pointer;
+
+          i {
+            padding: 8px 12px;
+            font-size: 20px;
+            color: rgba(145, 49, 235, 0.87);
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+    .container-palavra-pessoal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      background-color: rgba(156, 83, 224, 0.166);
+      margin: 30px;
+      @include border(5px);
+
+      .content-input-pessoal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+
+        .content-input-label {
+          width: 100%;
+
+          input {
+            @include border(5px);
+            width: 100%;
+            padding: 8px;
+            color: rgba(145, 49, 235, 0.87);
+            transition: all 30ms ease-in-out;
+            letter-spacing: 1px;
+            user-select: none;
+            background-color: rgba(172, 122, 218, 0.178);
+            //border: 1px solid black;
+          }
+
+          input:focus-visible {
+            width: 100%;
+            outline: 1.5px solid rgba(137, 43, 226, 0.87);
+            color: rgba(145, 49, 235, 0.87);
+            transition: all 30ms ease-in-out;
+          }
+
+          input::placeholder {
+            color: rgba(153, 92, 211, 0.699);
+          }
+
+          .label {
+            font-size: 16px;
+            color: rgba(145, 49, 235, 0.87);
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .content-check-pessoal {
+        background-color: rgba(156, 83, 224, 0.366);
+        @include border(50%);
+        margin-top: 23px;
+        padding: 8px 12px;
+        cursor: pointer;
+        margin-right: 10px;
+        //border: 1px solid black;
+
+        i {
+          color: rgba(145, 49, 235, 0.87);
+        }
+      }
+    }
+
+    .container-alert {
+      text-align: center;
+
+      .title-alert {
+        color: blueviolet;
+        letter-spacing: 1.5px;
+      }
+
+      .paragrafo-alert {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        color: blueviolet;
+        line-height: 19px;
+        line-break: strict;
+        padding: 20px;
+      }
+    }
+
+    .container-buttons-palavra-personalizada {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 50px;
+      align-items: center;
+      margin: 30px 0;
+
+      .content-btn-cancelar {
+        button {
+          padding: 10px 15px;
+          background-color: red;
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+
+        button:hover {
+          padding: 10px 15px;
+          background-color: rgba(255, 0, 0, 0.493);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+      }
+
+      .content-btn-confirmar {
+        button {
+          padding: 10px 15px;
+          background-color: rgb(135, 70, 196);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+
+        button:hover {
+          padding: 10px 15px;
+          background-color: rgb(127, 30, 218);
+          color: #fff;
+          @include border(10px);
+          letter-spacing: 1px;
+          font-weight: 600;
+
+          i {
+            margin-right: 8px;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 

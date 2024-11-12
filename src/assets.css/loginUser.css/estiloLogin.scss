@@ -508,8 +508,8 @@
     @include border(5px);
     position: absolute;
     transform: translateX(-50%, -50%);
-    left: 15%;
-    right: 15%;
+    left: 14%;
+    right: 14%;
     top: 20%;
     backdrop-filter: blur(10px);
     z-index: 10;
@@ -517,7 +517,7 @@
 
     p {
       color: blueviolet;
-      font-size: 15px;
+      font-size: 17px;
       text-align: center;
       font-weight: 400;
       letter-spacing: 1.5px;
