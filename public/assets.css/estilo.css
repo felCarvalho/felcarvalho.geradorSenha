@@ -613,6 +613,7 @@ body.darkmode {
     border: 1px solid rgb(148, 50, 240);
     box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
     background-color: #fff;
+    z-index: 15;
   }
   .background .content-title {
     display: flex;
@@ -655,6 +656,19 @@ body.darkmode {
     background-color: rgba(156, 83, 224, 0.166);
     margin: 15px 10px;
     border-radius: 5px;
+    /*.content-check-pessoal {
+      background-color: rgba(156, 83, 224, 0.366);
+      margin-top: 19.3px;
+      @include border(50%);
+      padding: 8px 12px;
+      cursor: pointer;
+      margin-right: 10px;
+      //border: 1px solid black;
+
+      i {
+        color: rgba(145, 49, 235, 0.87);
+      }
+    }*/
   }
   .background .container-palavra-pessoal .content-input-pessoal {
     display: flex;
@@ -692,17 +706,6 @@ body.darkmode {
     color: rgba(145, 49, 235, 0.87);
     font-weight: 500;
     letter-spacing: 1px;
-  }
-  .background .container-palavra-pessoal .content-check-pessoal {
-    background-color: rgba(156, 83, 224, 0.366);
-    margin-top: 19.3px;
-    border-radius: 50%;
-    padding: 8px 12px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  .background .container-palavra-pessoal .content-check-pessoal i {
-    color: rgba(145, 49, 235, 0.87);
   }
   .background .container-alert {
     text-align: center;
@@ -1523,6 +1526,7 @@ body.darkmode {
     border: 1px solid rgb(148, 50, 240);
     box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
     background-color: #fff;
+    z-index: 15;
   }
   .background .content-title {
     display: flex;
@@ -1565,6 +1569,19 @@ body.darkmode {
     background-color: rgba(156, 83, 224, 0.166);
     margin: 15px 10px;
     border-radius: 5px;
+    /*.content-check-pessoal {
+      background-color: rgba(156, 83, 224, 0.366);
+      margin-top: 19.3px;
+      @include border(50%);
+      padding: 8px 12px;
+      cursor: pointer;
+      margin-right: 10px;
+      //border: 1px solid black;
+
+      i {
+        color: rgba(145, 49, 235, 0.87);
+      }
+    }*/
   }
   .background .container-palavra-pessoal .content-input-pessoal {
     display: flex;
@@ -1602,17 +1619,6 @@ body.darkmode {
     color: rgba(145, 49, 235, 0.87);
     font-weight: 500;
     letter-spacing: 1px;
-  }
-  .background .container-palavra-pessoal .content-check-pessoal {
-    background-color: rgba(156, 83, 224, 0.366);
-    margin-top: 19.3px;
-    border-radius: 50%;
-    padding: 8px 12px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  .background .container-palavra-pessoal .content-check-pessoal i {
-    color: rgba(145, 49, 235, 0.87);
   }
   .background .container-alert {
     text-align: center;
@@ -2435,6 +2441,7 @@ body.darkmode {
     border: 1px solid rgb(148, 50, 240);
     box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
     background-color: #fff;
+    z-index: 15;
   }
   .background .content-title {
     display: flex;
@@ -2477,6 +2484,19 @@ body.darkmode {
     background-color: rgba(156, 83, 224, 0.166);
     margin: 30px;
     border-radius: 5px;
+    /*.content-check-pessoal {
+      background-color: rgba(156, 83, 224, 0.366);
+      margin-top: 25.3px;
+      @include border(50%);
+      padding: 8px 12px;
+      cursor: pointer;
+      margin-right: 10px;
+      //border: 1px solid black;
+
+      i {
+        color: rgba(145, 49, 235, 0.87);
+      }
+    }*/
   }
   .background .container-palavra-pessoal .content-input-pessoal {
     display: flex;
@@ -2513,17 +2533,6 @@ body.darkmode {
     color: rgba(145, 49, 235, 0.87);
     font-weight: 500;
     letter-spacing: 1px;
-  }
-  .background .container-palavra-pessoal .content-check-pessoal {
-    background-color: rgba(156, 83, 224, 0.366);
-    margin-top: 25.3px;
-    border-radius: 50%;
-    padding: 8px 12px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  .background .container-palavra-pessoal .content-check-pessoal i {
-    color: rgba(145, 49, 235, 0.87);
   }
   .background .container-alert {
     text-align: center;
@@ -3354,6 +3363,7 @@ body.darkmode {
     border: 1px solid rgb(148, 50, 240);
     box-shadow: 0px 0px 15px -6px rgb(148, 50, 240);
     background-color: #fff;
+    z-index: 15;
   }
   .background .content-title {
     display: flex;
@@ -3396,6 +3406,19 @@ body.darkmode {
     background-color: rgba(156, 83, 224, 0.166);
     margin: 30px;
     border-radius: 5px;
+    /* .content-check-pessoal {
+       background-color: rgba(156, 83, 224, 0.366);
+       @include border(50%);
+       margin-top: 23px;
+       padding: 8px 12px;
+       cursor: pointer;
+       margin-right: 10px;
+       //border: 1px solid black;
+
+       i {
+         color: rgba(145, 49, 235, 0.87);
+       }
+     }*/
   }
   .background .container-palavra-pessoal .content-input-pessoal {
     display: flex;
@@ -3432,17 +3455,6 @@ body.darkmode {
     color: rgba(145, 49, 235, 0.87);
     font-weight: 500;
     letter-spacing: 1px;
-  }
-  .background .container-palavra-pessoal .content-check-pessoal {
-    background-color: rgba(156, 83, 224, 0.366);
-    border-radius: 50%;
-    margin-top: 23px;
-    padding: 8px 12px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  .background .container-palavra-pessoal .content-check-pessoal i {
-    color: rgba(145, 49, 235, 0.87);
   }
   .background .container-alert {
     text-align: center;

@@ -265,7 +265,7 @@
           >
         </div>
       </div>
-      <div class="sub-content-link">
+      <div class="sub-content-link" id="linkPalavraEspecial">
         <div class="display-flex-link">
           <h2 class="title-link-menu"
             >Inclua uma palavra favorita. <i class="fa-solid fa-angle-right"></i
@@ -366,10 +366,10 @@
     </section>
     <section class="background display-none">
       <div class="content-title">
-        <h2 class="title-menu"
+        <h2 class="title-menu" id="title-menu-closed-palavra-personalizada"
           ><i class="fa-solid fa-angle-left"></i>Palavra personalizada
         </h2>
-        <div class="content-closed">
+        <div class="content-closed" id="content-closed-palavra-personalizada">
           <button><i class="fa-solid fa-x"></i></button>
         </div>
       </div>
@@ -379,14 +379,13 @@
             <p class="label">Palavra Pessoal:</p>
             <input
               type="text"
+              id="palavra-personalizada-valor"
+              value=""
               name=""
               id=""
               placeholder="Digite sua palavra pessoal"
             />
           </div>
-        </div>
-        <div class="content-check-pessoal">
-          <i class="fa-solid fa-check"></i>
         </div>
       </div>
       <div class="container-alert">
@@ -398,10 +397,16 @@
         >
       </div>
       <div class="container-buttons-palavra-personalizada">
-        <div class="content-btn-cancelar">
+        <div
+          class="content-btn-cancelar"
+          id="content-btn-cancelar-palavra-personalizada"
+        >
           <button>cancelar</button>
         </div>
-        <div class="content-btn-confirmar">
+        <div
+          class="content-btn-confirmar"
+          id="content-btn-confirmar-palavra-personalizada"
+        >
           <button>confirmar</button>
         </div>
       </div>

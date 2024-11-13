@@ -1,5 +1,10 @@
 "use strict";
- 
+
+import {
+  stringFinalPersonalizada,
+  palavraEspecialValor,
+} from "../assets.js/customization.js";
+
 //todos os elementos do HTML(DOM).
 export const newPassword = document.querySelector(".btn-password");
 let ToggleOne = document.querySelector(".checked-one");
@@ -11,7 +16,7 @@ const backdropBlur = document.querySelector(".fundo-blur");
 const modalError = document.querySelector(".modal-error");
 const mensagemError = document.querySelector(".mensage-error");
 const btnClosed = document.querySelector(".modal-closed");
-const btnDarkMode = document.querySelector(".button-dark"); 
+const btnDarkMode = document.querySelector(".button-dark");
 const iconDark = document.querySelector(".dark-mode");
 const iconSun = document.querySelector(".sun-mode");
 const modalPasswordCopy = document.querySelector(".container-modal-clipboard");
@@ -98,7 +103,7 @@ const senhaGerada = () => {
 
   const passwordArredondado = Math.floor(passwordLength);
 
-  copyPasswordLength.textContent = `Nº Caracteres: ${passwordArredondado}`;
+  //copyPasswordLength.textContent = `Nº Caracteres: ${passwordArredondado}`;
 
   //usando join() para criar um string com a array de caracteres.
   let password = caracteresPassword.join("");
@@ -242,6 +247,8 @@ export const geradorPadraoReferencia = function () {
 
 window.addEventListener("load", geradorPadraoReferencia);
 
+let controleStringPersonaliza = false;
+
 export const resetGerador = function () {
   console.log("reset do gerador executado!");
 
@@ -265,6 +272,8 @@ export const resetGerador = function () {
   sliderRangeStyle.value = insertPadraoSlider;
   console.log(sliderRangeStyle.value);
   slider();
+
+  controleStringPersonaliza = true;
 };
 
 export const resetGeradorReferencia = function () {
@@ -279,7 +288,27 @@ let isAnimation = false;
 const clipBoard = () => {
   let copyPassword = passwordInsert.textContent;
   console.log(copyPassword);
-  navigator.clipboard.writeText(copyPassword).then(() => {
+
+  let copyStringPersonalizada = stringFinalPersonalizada;
+  console.log(copyStringPersonalizada);
+
+  let passwordFinal;
+
+  if (copyStringPersonalizada) {
+    passwordFinal = copyStringPersonalizada + copyPassword;
+  } else {
+    passwordFinal = copyPassword;
+  }
+
+  if (controleStringPersonaliza) {
+    passwordFinal = copyPassword;
+  }
+
+  palavraEspecialValor.addEventListener("input", () => {
+    controleStringPersonaliza = false;
+  });
+
+  navigator.clipboard.writeText(passwordFinal).then(() => {
     modalPasswordCopy.classList.remove("display-none");
     gsap.to(modalPasswordCopy, {
       opacity: 1,
@@ -299,11 +328,13 @@ const clipBoard = () => {
       },
     });
   }, 2000);
+
+  copyPasswordLength.textContent = `Nº Caracteres: ${passwordFinal.length}`;
 };
 
 copyPassword.addEventListener("click", () => {
   if (isAnimation) {
-    return; 
+    return;
   }
   isAnimation = true;
   clipBoard();

@@ -6,8 +6,8 @@ import {
   ativarBtnVoltar,
 } from "../assets.js/customization.js";
 
-const password = document.querySelector(".login-password");
-const user = document.querySelector(".login-user");
+export const password = document.querySelector(".login-password");
+export const user = document.querySelector(".login-user");
 const geradorContainer = document.querySelector(".borda");
 const loginContainer = document.querySelector(".container-login");
 const nameAutor = document.querySelector(".content-tag-name");
@@ -36,7 +36,7 @@ export const ativarPoUpLogin = function () {
 const ativarPoUpLoginReferencia = function () {
   ativarPoUpLogin();
 };
-
+ 
 export const desativarPoUpLogin = function () {
   containerPopUp.classList.add("display-none");
 };
