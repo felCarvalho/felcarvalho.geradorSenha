@@ -746,6 +746,7 @@ body.darkmode {
     @include borderSolid();
     @include shadow();
     background-color: #fff;
+    z-index: 15;
 
     .content-title {
       display: flex;
@@ -839,7 +840,7 @@ body.darkmode {
         }
       }
 
-      .content-check-pessoal {
+      /*.content-check-pessoal {
         background-color: rgba(156, 83, 224, 0.366);
         margin-top: 19.3px;
         @include border(50%);
@@ -851,7 +852,7 @@ body.darkmode {
         i {
           color: rgba(145, 49, 235, 0.87);
         }
-      }
+      }*/
     }
 
     .container-alert {
@@ -1851,6 +1852,7 @@ body.darkmode {
     @include borderSolid();
     @include shadow();
     background-color: #fff;
+    z-index: 15;
 
     .content-title {
       display: flex;
@@ -1944,7 +1946,7 @@ body.darkmode {
         }
       }
 
-      .content-check-pessoal {
+      /*.content-check-pessoal {
         background-color: rgba(156, 83, 224, 0.366);
         margin-top: 19.3px;
         @include border(50%);
@@ -1956,7 +1958,7 @@ body.darkmode {
         i {
           color: rgba(145, 49, 235, 0.87);
         }
-      }
+      }*/
     }
 
     .container-alert {
@@ -2960,6 +2962,7 @@ body.darkmode {
     @include borderSolid();
     @include shadow();
     background-color: #fff;
+    z-index: 15;
 
     .content-title {
       display: flex;
@@ -3052,7 +3055,7 @@ body.darkmode {
         }
       }
 
-      .content-check-pessoal {
+      /*.content-check-pessoal {
         background-color: rgba(156, 83, 224, 0.366);
         margin-top: 25.3px;
         @include border(50%);
@@ -3064,7 +3067,7 @@ body.darkmode {
         i {
           color: rgba(145, 49, 235, 0.87);
         }
-      }
+      }*/
     }
 
     .container-alert {
@@ -4077,6 +4080,7 @@ body.darkmode {
     @include borderSolid();
     @include shadow();
     background-color: #fff;
+    z-index: 15;
 
     .content-title {
       display: flex;
@@ -4169,7 +4173,7 @@ body.darkmode {
         }
       }
 
-      .content-check-pessoal {
+     /* .content-check-pessoal {
         background-color: rgba(156, 83, 224, 0.366);
         @include border(50%);
         margin-top: 23px;
@@ -4181,7 +4185,7 @@ body.darkmode {
         i {
           color: rgba(145, 49, 235, 0.87);
         }
-      }
+      }*/
     }
 
     .container-alert {

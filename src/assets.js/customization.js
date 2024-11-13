@@ -27,6 +27,8 @@ import {
   verficarAnimaçao,
   isAnimationLogin,
   containerPopUp,
+  user,
+  password,
 } from "../assets.js/loginUser.js";
 
 const btnIsBack = document.querySelector(".btn-back");
@@ -43,6 +45,24 @@ const modalOptionCaracteresForm = document.querySelector(
 );
 const tilteBackOptionForm = document.querySelector(".title-back-form");
 const btnClosedOptionForm = document.querySelector(".btn-closed-form");
+const palavraEspecial = document.querySelector(".background");
+const linkStringFavorita = document.querySelector("#linkPalavraEspecial");
+const closedTitlePalavraEspecial = document.querySelector(
+  "#title-menu-closed-palavra-personalizada"
+);
+const closedBtnPalavraEspecial = document.querySelector(
+  "#content-closed-palavra-personalizada"
+);
+const btnCancelarPalavraPessoal = document.querySelector(
+  "#content-btn-cancelar-palavra-personalizada"
+);
+export const palavraEspecialValor = document.querySelector(
+  "#palavra-personalizada-valor"
+);
+
+const btnConfirmarPalavraEspecial = document.querySelector(
+  "#content-btn-confirmar-palavra-personalizada"
+);
 const inputLowerCase = document.querySelector("#abc");
 const inputUpperCase = document.querySelector("#ABC");
 const inputNumber = document.querySelector("#numeros");
@@ -87,34 +107,6 @@ export const verificarInputsEstadoReferencia = function () {
 
 window.addEventListener("load", verificarInputsEstadoReferencia);
 
-/*const modalAnimationAtivado = (modal) => {
-  modal.classList.add("display-block");
-
-  gsap.to(modal, {
-    y: 25,
-    ease: "power1.out",
-    duration: 0.2,
-    opacity: 1,
-    onComplete: () => {
-      modal.classList.add("display-block");
-    },
-  });
-};
-
-const modalAnimationDesativado = (modal) => {
-  modal.classList.add("display-block");
-
-  gsap.to(modal, {
-    y: -25,
-    ease: "power1.out",
-    duration: 0.2,
-    opacity: 0,
-    onComplete: () => {
-      modal.classList.remove("display-none");
-    },
-  });
-};*/
-
 //background para o popUp de configurações(remove o display-none)
 const backgroundPopUpOn = () => {
   backgroundFundoPopUp.classList.remove("display-none");
@@ -139,6 +131,7 @@ const menuConfigOff = () => {
 
 btnConfig.addEventListener("click", () => {
   menuConfigOn();
+  backgroundPopUpOn();
 });
 
 titleClosedConfig.addEventListener("click", () => {
@@ -177,6 +170,48 @@ const btnClosedFormReferencia = function () {
 
 btnClosedOptionForm.addEventListener("click", btnClosedFormReferencia);
 
+/*linkStringFavorita.addEventListener("click", () => {
+  palavraEspecial.classList.remove("display-none");
+  menuConfigOff();
+  backgroundPopUpOn();
+});
+
+closedTitlePalavraEspecial.addEventListener("click", () => {
+  palavraEspecial.classList.add("display-none");
+  menuConfigOn();
+});
+
+const closedBtnPalavraPersonalizada = function () {
+  palavraEspecial.classList.add("display-none");
+  menuConfigOff();
+  backgroundPopUpOff();
+  verificarInputsEstado();
+};
+
+const closedBtnPalavraPersonalizadaReferencia = function () {
+  closedBtnPalavraPersonalizada();
+};
+
+closedBtnPalavraEspecial.addEventListener(
+  "click",
+  closedBtnPalavraPersonalizadaReferencia
+);
+
+const BtnCancelarPalavraPessoalContainer = function () {
+  palavraEspecial.classList.add("display-none");
+  menuConfigOff();
+  backgroundPopUpOff();
+};
+
+const btnCancelarPalavraPessoalReferencia = function () {
+  BtnCancelarPalavraPessoalContainer();
+};
+
+btnCancelarPalavraPessoal.addEventListener(
+  "click",
+  btnCancelarPalavraPessoalReferencia
+);
+*/
 const activeInputPersonalizado_abc = function () {
   inputLowerCase.disabled = false;
   inputLowerCase.style.backgroundColor = "rgba(182, 128, 236, 0.200)";
@@ -256,6 +291,73 @@ iconCheck_abc.addEventListener("click", btnCHeck_abc);
 iconCheckABC.addEventListener("click", btnCHeckABC);
 iconCheckNumber.addEventListener("click", btnCHeckNumber);
 iconCheckSimbolos.addEventListener("click", btnCHeckSimbols);
+
+linkStringFavorita.addEventListener("click", () => {
+  palavraEspecial.classList.remove("display-none");
+  menuConfigOff();
+  backgroundPopUpOn();
+});
+
+closedTitlePalavraEspecial.addEventListener("click", () => {
+  palavraEspecial.classList.add("display-none");
+  menuConfigOn();
+});
+
+const closedBtnPalavraPersonalizada = function () {
+  palavraEspecial.classList.add("display-none");
+  menuConfigOff();
+  backgroundPopUpOff();
+};
+
+const closedBtnPalavraPersonalizadaReferencia = function () {
+  closedBtnPalavraPersonalizada();
+};
+
+closedBtnPalavraEspecial.addEventListener(
+  "click",
+  closedBtnPalavraPersonalizadaReferencia
+);
+
+const BtnCancelarPalavraPessoalContainer = function () {
+  palavraEspecial.classList.add("display-none");
+  menuConfigOff();
+  backgroundPopUpOff();
+};
+
+const btnCancelarPalavraPessoalReferencia = function () {
+  BtnCancelarPalavraPessoalContainer();
+};
+
+btnCancelarPalavraPessoal.addEventListener(
+  "click",
+  btnCancelarPalavraPessoalReferencia
+);
+
+export let stringFinalPersonalizada;
+console.log(stringFinalPersonalizada);
+
+const stringPersonalizada = function (statusStringPersonalizada) {
+  stringFinalPersonalizada = statusStringPersonalizada;
+  console.log(stringFinalPersonalizada);
+};
+
+const confirmarPalavraPersonalizada = function () {
+  palavraEspecial.classList.add("display-none");
+  menuConfigOff();
+  backgroundPopUpOff();
+  let stringPessoal = palavraEspecialValor.value;
+  stringPersonalizada(stringPessoal);
+  palavraEspecialValor.value = "";
+};
+
+const confirmarPalavraPersonalizadaReferencia = function () {
+  confirmarPalavraPersonalizada();
+};
+
+btnConfirmarPalavraEspecial.addEventListener(
+  "click",
+  confirmarPalavraPersonalizadaReferencia
+);
 
 const verificarCaracteresPersonalizados = function (
   lower,
@@ -376,7 +478,7 @@ const senhGeradaPersonalizada = function () {
     };
 
     const newResetGerador = function () {
-      resetGeradorPersonaliado(); 
+      resetGeradorPersonaliado();
       //verificarGeradorPersonalizado = true;
     };
     btnResetGerador.addEventListener("click", newResetGerador);
@@ -402,7 +504,7 @@ const temporizadorUser = function () {
     desativarGerador();
     desativarTemporizador();
     btnIsBack.classList.add("display-none");
-    ativarInterfaceLogin(); 
+    ativarInterfaceLogin();
     desativarBtnVoltar();
     if (isAnimationLogin) {
       return;
@@ -467,6 +569,8 @@ const voltarPagLogin = function () {
   desativarBtnVoltar();
   desativarTemporizador();
   redefinirTemporizador();
+  user.value = "";
+  password.value = "";
 };
 
 export const voltarPagLoginReferncia = function () {
@@ -489,6 +593,7 @@ const linkUserConvidado = function (controleKey) {
     ativarBtnVoltar();
     ativarTemporizador();
     temporizadorUser();
+    //resetGerador();
   }
 };
 
