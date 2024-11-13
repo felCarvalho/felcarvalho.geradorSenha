@@ -4,8 +4,6 @@ import {
   btnConfig,
   desativarBtnVoltar,
   ativarBtnVoltar,
-  btnIsBack,
-  voltarPagLoginReferncia,
 } from "../assets.js/customization.js";
 
 const password = document.querySelector(".login-password");
@@ -135,13 +133,6 @@ export const ativarGerador = () => {
 export const desativarGerador = () => {
   geradorContainer.classList.add("display-none");
   nameAutor.classList.add("display-none");
-}; 
-
-const voltarPagLoginTwo = function () {
-  desativarGerador();
-  ativarInterfaceLogin();
-  desativarBtnVoltar();
-  desativarTemporizador();
 };
 
 export const voltarPagLoginRefernciaTwo = function () {
@@ -165,8 +156,6 @@ const verificarLogin = function ({ userKey, passwordKey }) {
     desativarTemporizador();
     ativarGerador();
     popUpLogin(containerPopUpLoginSucesso);
-    btnIsBack.removeEventListener("click", voltarPagLoginReferncia);
-    btnIsBack.addEventListener("click", voltarPagLoginRefernciaTwo);
     btnConfig.classList.remove("display-none");
   }
 };

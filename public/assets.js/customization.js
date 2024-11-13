@@ -29,7 +29,7 @@ import {
   containerPopUp,
 } from "../assets.js/loginUser.js";
 
-export const btnIsBack = document.querySelector(".btn-back");
+const btnIsBack = document.querySelector(".btn-back");
 const temporizadorInsert = document.querySelector(".temporizador");
 export const linkConvidado = document.querySelector(".link");
 export const btnConfig = document.querySelector(".icon-config-header-open");
@@ -376,7 +376,7 @@ const senhGeradaPersonalizada = function () {
     };
 
     const newResetGerador = function () {
-      resetGeradorPersonaliado();
+      resetGeradorPersonaliado(); 
       //verificarGeradorPersonalizado = true;
     };
     btnResetGerador.addEventListener("click", newResetGerador);
@@ -437,12 +437,6 @@ const temporizadorUser = function () {
 const redefinirTemporizador = function () {
   desativarBtnVoltar();
   clearInterval(interval);
-  temporizadorInsert.textContent = "0:00";
-  if (isAnimationLogin) {
-    return;
-  }
-  verficarAnimaçao(true);
-  popUpLogin(containerPopUp);
 };
 
 const redefinirTemporizadorReferencia = function () {
