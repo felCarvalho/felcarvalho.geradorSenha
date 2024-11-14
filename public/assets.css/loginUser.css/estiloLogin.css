@@ -213,28 +213,23 @@
     transform: translateX(-50%, -50%);
     left: 5%;
     right: 5%;
-    top: 5%;
+    top: 15%;
     backdrop-filter: blur(10px);
     z-index: 10;
     background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    gap: 10px;
-  }
-  .container-animation-login-error .content-icon-info i {
-    margin-top: 2px;
-    color: blueviolet;
-    font-size: 25px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 5px;
   }
   .container-animation-login-error p {
     color: blueviolet;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     font-weight: 400;
     letter-spacing: 1.5px;
+  }
+  .container-animation-login-error p i {
+    margin-right: 5px;
   }
 }
 @media (min-width: 322px) and (max-width: 576px) {
@@ -438,30 +433,24 @@
     border-radius: 5px;
     position: absolute;
     transform: translateX(-50%, -50%);
-    left: 15%;
-    right: 15%;
+    left: 10%;
+    right: 10%;
     top: 20%;
     backdrop-filter: blur(10px);
     z-index: 10;
     background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-  }
-  .container-animation-login-error .content-icon-info i {
-    margin-top: 2px;
-    color: blueviolet;
-    font-size: 25px;
+    text-align: center;
+    padding: 20px 5px;
   }
   .container-animation-login-error p {
     color: blueviolet;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     font-weight: 400;
     letter-spacing: 1.5px;
+  }
+  .container-animation-login-error p i {
+    margin-right: 5px;
   }
 }
 @media (min-width: 576px) and (max-width: 1120px) {
@@ -673,24 +662,18 @@
     backdrop-filter: blur(10px);
     z-index: 10;
     background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 10px;
-  }
-  .container-animation-login-error .content-icon-info i {
-    margin-top: 2px;
-    color: blueviolet;
-    font-size: 25px;
+    text-align: center;
+    padding: 20px 10px;
   }
   .container-animation-login-error p {
     color: blueviolet;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     font-weight: 400;
     letter-spacing: 1.5px;
+  }
+  .container-animation-login-error p i {
+    margin-right: 5px;
   }
 }
 @media (min-width: 1121px) {
@@ -904,24 +887,18 @@
     backdrop-filter: blur(10px);
     z-index: 10;
     background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 10px;
-  }
-  .container-animation-login-error .content-icon-info i {
-    margin-top: 2px;
-    color: blueviolet;
-    font-size: 25px;
+    text-align: center;
+    padding: 20px 10px;
   }
   .container-animation-login-error p {
     color: blueviolet;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     font-weight: 400;
     letter-spacing: 1.5px;
+  }
+  .container-animation-login-error p i {
+    margin-right: 5px;
   }
 }
 

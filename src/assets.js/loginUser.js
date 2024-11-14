@@ -29,6 +29,7 @@ const containerPopUpLoginError = document.querySelector(
   ".container-animation-login-error"
 );
 
+/*
 export const ativarPoUpLogin = function () {
   containerPopUp.classList.remove("display-none");
 };
@@ -44,6 +45,7 @@ export const desativarPoUpLogin = function () {
 const desativarPoUpLoginReferencia = function () {
   desativarPoUpLogin();
 };
+*/
 
 export let isAnimationLogin = false;
 
@@ -55,9 +57,9 @@ export const popUpLogin = function (modal) {
   modal.classList.remove("display-none");
 
   if (isAnimationLogin) {
-    //  verficarAnimaçao(true);
     return;
   }
+
   verficarAnimaçao(true);
 
   gsap.to(modal, {
