@@ -24,8 +24,7 @@ import {
   ativarInterfaceLogin,
   desativarTemporizador,
   popUpLogin,
-  verficarAnimaçao,
-  isAnimationLogin,
+  controleEnter,
   containerPopUp,
   user,
   password,
@@ -158,6 +157,7 @@ tilteBackOptionForm.addEventListener("click", () => {
 });
 
 const btnClosedForm = function () {
+  //controlFormSenhaCLickPersonalizada(true);
   modalOptionCaracteresForm.classList.add("display-none");
   menuConfigOff();
   backgroundPopUpOff();
@@ -170,48 +170,6 @@ const btnClosedFormReferencia = function () {
 
 btnClosedOptionForm.addEventListener("click", btnClosedFormReferencia);
 
-/*linkStringFavorita.addEventListener("click", () => {
-  palavraEspecial.classList.remove("display-none");
-  menuConfigOff();
-  backgroundPopUpOn();
-});
-
-closedTitlePalavraEspecial.addEventListener("click", () => {
-  palavraEspecial.classList.add("display-none");
-  menuConfigOn();
-});
-
-const closedBtnPalavraPersonalizada = function () {
-  palavraEspecial.classList.add("display-none");
-  menuConfigOff();
-  backgroundPopUpOff();
-  verificarInputsEstado();
-};
-
-const closedBtnPalavraPersonalizadaReferencia = function () {
-  closedBtnPalavraPersonalizada();
-};
-
-closedBtnPalavraEspecial.addEventListener(
-  "click",
-  closedBtnPalavraPersonalizadaReferencia
-);
-
-const BtnCancelarPalavraPessoalContainer = function () {
-  palavraEspecial.classList.add("display-none");
-  menuConfigOff();
-  backgroundPopUpOff();
-};
-
-const btnCancelarPalavraPessoalReferencia = function () {
-  BtnCancelarPalavraPessoalContainer();
-};
-
-btnCancelarPalavraPessoal.addEventListener(
-  "click",
-  btnCancelarPalavraPessoalReferencia
-);
-*/
 const activeInputPersonalizado_abc = function () {
   inputLowerCase.disabled = false;
   inputLowerCase.style.backgroundColor = "rgba(182, 128, 236, 0.200)";
@@ -561,6 +519,7 @@ const voltarPagLogin = function () {
   desativarBtnVoltar();
   desativarTemporizador();
   redefinirTemporizador();
+  controleEnter(false);
   user.value = "";
   password.value = "";
 };

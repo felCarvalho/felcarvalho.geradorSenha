@@ -146,6 +146,12 @@ export const voltarPagLoginRefernciaTwo = function () {
   voltarPagLoginTwo();
 };
 
+let controleEnterCLick = false;
+
+export const controleEnter = function (statusClickEnter) {
+  controleEnterCLick = statusClickEnter;
+};
+
 //função de verificar o login de acrodo com os parametrôs escolhidos para efetuar ou não o login.
 const verificarLogin = function ({ userKey, passwordKey }) {
   console.log(`Esse é o usuer: ${userKey}`);
@@ -157,6 +163,7 @@ const verificarLogin = function ({ userKey, passwordKey }) {
   if (valorUser !== userKey || valorPassword !== passwordKey) {
     desativarGerador();
     popUpLogin(containerPopUpLoginError);
+    controleEnter(false);
   } else {
     desativarBtnVoltar();
     desativarInterfaceLogin();
@@ -164,6 +171,7 @@ const verificarLogin = function ({ userKey, passwordKey }) {
     ativarGerador();
     popUpLogin(containerPopUpLoginSucesso);
     btnConfig.classList.remove("display-none");
+    controleEnter(true);
   }
 };
 
@@ -174,8 +182,14 @@ const verificarLoginReferencia = function () {
 
 //evento de clickda função verficarLoginReferencia
 btnLogin.addEventListener("click", verificarLoginReferencia);
-document.addEventListener("keydown", function (e) {
+
+const clickEnter = function (e) {
+  if (controleEnterCLick) {
+    return;
+  }
   if (e.key === "Enter") {
     verificarLogin(login);
   }
-});
+};
+
+document.addEventListener("keydown", clickEnter);
