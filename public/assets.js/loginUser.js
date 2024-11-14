@@ -36,7 +36,7 @@ export const ativarPoUpLogin = function () {
 const ativarPoUpLoginReferencia = function () {
   ativarPoUpLogin();
 };
- 
+
 export const desativarPoUpLogin = function () {
   containerPopUp.classList.add("display-none");
 };
@@ -53,6 +53,13 @@ export const verficarAnimaçao = function (status) {
 
 export const popUpLogin = function (modal) {
   modal.classList.remove("display-none");
+
+  if (isAnimationLogin) {
+    //  verficarAnimaçao(true);
+    return;
+  }
+  verficarAnimaçao(true);
+
   gsap.to(modal, {
     opacity: 1,
     y: 20,
@@ -71,7 +78,7 @@ export const popUpLogin = function (modal) {
         verficarAnimaçao(false);
       },
     });
-  }, 3500);
+  }, 3000);
 };
 
 const login = {

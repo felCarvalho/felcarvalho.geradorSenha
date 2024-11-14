@@ -506,10 +506,6 @@ const temporizadorUser = function () {
     btnIsBack.classList.add("display-none");
     ativarInterfaceLogin();
     desativarBtnVoltar();
-    if (isAnimationLogin) {
-      return;
-    }
-    verficarAnimaçao(true);
     popUpLogin(containerPopUp);
     return;
   }
@@ -521,10 +517,6 @@ const temporizadorUser = function () {
       ativarInterfaceLogin();
       desativarTemporizador();
       desativarBtnVoltar();
-      if (isAnimationLogin) {
-        return;
-      }
-      verficarAnimaçao(true);
       popUpLogin(containerPopUp);
       btnIsBack.classList.add("display-none");
       userConvidadoLoginUnico = 1;
