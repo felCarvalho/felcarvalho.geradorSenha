@@ -715,6 +715,7 @@ body.darkmode {
     letter-spacing: 1.5px;
   }
   .background .container-alert .paragrafo-alert {
+    text-align: left;
     font-size: 15px;
     letter-spacing: 1.5px;
     color: blueviolet;
@@ -1628,12 +1629,13 @@ body.darkmode {
     letter-spacing: 1.5px;
   }
   .background .container-alert .paragrafo-alert {
+    text-align: left;
     font-size: 15px;
     letter-spacing: 1.5px;
     color: blueviolet;
     line-height: 19px;
-    line-break: strict;
-    padding: 10px;
+    line-break: loose;
+    padding-inline: 20px;
   }
   .background .container-buttons-palavra-personalizada {
     display: flex;
@@ -2546,8 +2548,8 @@ body.darkmode {
     letter-spacing: 1.5px;
     color: blueviolet;
     line-height: 19px;
-    line-break: strict;
-    padding: 10px;
+    line-break: normal;
+    padding: 20px;
   }
   .background .container-buttons-palavra-personalizada {
     display: flex;
@@ -3468,7 +3470,7 @@ body.darkmode {
     letter-spacing: 1.5px;
     color: blueviolet;
     line-height: 19px;
-    line-break: strict;
+    line-break: normal;
     padding: 20px;
   }
   .background .container-buttons-palavra-personalizada {
