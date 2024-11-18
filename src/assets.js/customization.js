@@ -14,9 +14,6 @@ import {
   resetGeradorReferencia,
   btnResetGerador,
   resetGerador,
-  body,
-  darkModeAtivado,
-  darkModeDesativado,
 } from "../assets.js/script.js";
 
 import {
@@ -547,7 +544,6 @@ const linkUserConvidado = function (controleKey) {
     ativarTemporizador();
     temporizadorUser();
     desativarContentTheme();
-    // darkModeAtivado();
   }
 };
 
