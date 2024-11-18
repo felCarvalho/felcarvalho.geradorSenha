@@ -695,7 +695,7 @@ body.darkmode {
     transition: all 30ms ease-in-out;
     letter-spacing: 1px;
     user-select: none;
-    background-color: rgba(172, 122, 218, 0.178);
+    background-color: rgba(171, 122, 218, 0.415);
   }
   .background .container-palavra-pessoal .content-input-pessoal .content-input-label input:focus-visible {
     width: 100%;
@@ -794,8 +794,7 @@ body.darkmode {
     z-index: 10;
   }
   .fundo-background-menu {
-    background-color: rgba(194, 193, 193, 0.4509803922);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -1098,6 +1097,12 @@ body.darkmode {
   body.darkmode .background .container-buttons-palavra-personalizada .content-btn-confirmar button:hover i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
+  body.darkmode .container-temporizador {
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .container-temporizador .content-temporizador {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
   body.darkmode .container-btn-back button {
     background-color: rgba(106, 105, 105, 0.788);
     border-radius: 10px;
@@ -1156,12 +1161,12 @@ body.darkmode {
   }
   .borda .display-flex-header .content-dark .button-dark .dark-mode {
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
   }
   .borda .display-flex-header .content-dark .button-dark .sun-mode {
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
   }
   .borda .flex-row {
@@ -1572,7 +1577,7 @@ body.darkmode {
   .container-option-config .sub-content-optin-config .content-input-option .label-input input {
     border-radius: 5px;
     width: 100%;
-    background-color: rgba(172, 122, 218, 0.904);
+    background-color: rgba(171, 122, 218, 0.415);
     padding: 8px;
     color: rgba(145, 49, 235, 0.87);
     transition: all 30ms ease-in-out;
@@ -1896,8 +1901,7 @@ body.darkmode {
     z-index: 10;
   }
   .fundo-background-menu {
-    background-color: rgba(194, 193, 193, 0.4509803922);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -2200,6 +2204,12 @@ body.darkmode {
   body.darkmode .background .container-buttons-palavra-personalizada .content-btn-confirmar button:hover i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
+  body.darkmode .container-temporizador {
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .container-temporizador .content-temporizador {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
   body.darkmode .container-btn-back button {
     background-color: rgba(106, 105, 105, 0.788);
     border-radius: 10px;
@@ -2258,12 +2268,12 @@ body.darkmode {
   }
   .borda .display-flex-header .content-dark .button-dark .dark-mode {
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
   }
   .borda .display-flex-header .content-dark .button-dark .sun-mode {
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
   }
   .borda .flex-row {
@@ -2903,7 +2913,7 @@ body.darkmode {
     transition: all 30ms ease-in-out;
     letter-spacing: 1px;
     user-select: none;
-    background-color: rgba(172, 122, 218, 0.178);
+    background-color: rgba(171, 122, 218, 0.415);
   }
   .background .container-palavra-pessoal .content-input-pessoal .content-input-label input:focus-visible {
     width: 100%;
@@ -3001,8 +3011,7 @@ body.darkmode {
     z-index: 10;
   }
   .fundo-background-menu {
-    background-color: rgba(194, 193, 193, 0.4509803922);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -3283,6 +3292,12 @@ body.darkmode {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-alert .paragrafo-alert {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .background .container-temporizador {
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .background .container-temporizador .content-temporizador {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-buttons-palavra-personalizada .content-btn-cancelar button {
@@ -4117,8 +4132,7 @@ body.darkmode {
     z-index: 10;
   }
   .fundo-background-menu {
-    background-color: rgba(194, 193, 193, 0.4509803922);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -4420,6 +4434,12 @@ body.darkmode {
     background-color: rgba(106, 105, 105, 0.788);
   }
   body.darkmode .background .container-buttons-palavra-personalizada .content-btn-confirmar button:hover i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-temporizador {
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .container-temporizador .content-temporizador {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .container-btn-back button {

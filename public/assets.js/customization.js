@@ -225,6 +225,7 @@ iconPenSimbols.addEventListener("click", activeInputReferenciaSimbols);
 const btnCHeck_abc = function () {
   const valueAtual_abc = inputLowerCase.value;
   inputLowerCase.value = lowerCase;
+  inputLowerCase.disabled = true;
   inputLowerCase.value = valueAtual_abc;
 };
 const btnCHeckABC = function () {
@@ -546,7 +547,7 @@ const linkUserConvidado = function (controleKey) {
     ativarTemporizador();
     temporizadorUser();
     desativarContentTheme();
-   // darkModeAtivado();
+    // darkModeAtivado();
   }
 };
 

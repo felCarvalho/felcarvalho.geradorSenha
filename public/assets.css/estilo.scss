@@ -821,7 +821,7 @@ body.darkmode {
             transition: all 30ms ease-in-out;
             letter-spacing: 1px;
             user-select: none;
-            background-color: rgba(172, 122, 218, 0.178);
+            background-color: rgba(171, 122, 218, 0.415);
             //border: 1px solid black;
           }
 
@@ -960,8 +960,8 @@ body.darkmode {
   }
 
   .fundo-background-menu {
-    background-color: #c2c1c173;
-    backdrop-filter: blur(2px);
+    //background-color: #c2c1c173;
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -1022,9 +1022,9 @@ body.darkmode {
               height: 2px;
               position: absolute;
               margin-top: 29px;
-              background-color:#ffffffe0;
+              background-color: #ffffffe0;
             }
-  
+
             .title::after {
               content: "";
               width: 105px;
@@ -1418,6 +1418,16 @@ body.darkmode {
       }
     }
 
+    .container-temporizador {
+      background-color: rgba(106, 105, 105, 0.788);
+
+      .content-temporizador {
+        color: #ffffffe0;
+        .temporizador {
+        }
+      }
+    }
+
     .container-btn-back {
       button {
         background-color: rgba(106, 105, 105, 0.788);
@@ -1491,13 +1501,13 @@ body.darkmode {
 
           .dark-mode {
             margin-top: 5px;
-            font-size: 20px;
+            font-size: 16px;
             color: #fff;
           }
 
           .sun-mode {
             margin-top: 5px;
-            font-size: 20px;
+            font-size: 16px;
             color: #fff;
           }
         }
@@ -1977,7 +1987,7 @@ body.darkmode {
           input {
             @include border(5px);
             width: 100%;
-            background-color: rgba(172, 122, 218, 0.904);
+            background-color: rgba(171, 122, 218, 0.415);
             padding: 8px;
             color: rgba(145, 49, 235, 0.87);
             transition: all 30ms ease-in-out;
@@ -2363,8 +2373,8 @@ body.darkmode {
   }
 
   .fundo-background-menu {
-    background-color: #c2c1c173;
-    backdrop-filter: blur(2px);
+    //background-color: #c2c1c173;
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -2427,7 +2437,7 @@ body.darkmode {
               margin-top: 33px;
               background-color: #ffffffe0;
             }
-  
+
             .title::after {
               content: "";
               width: 105px;
@@ -2821,6 +2831,16 @@ body.darkmode {
       }
     }
 
+    .container-temporizador {
+      background-color: rgba(106, 105, 105, 0.788);
+
+      .content-temporizador {
+        color: #ffffffe0;
+        .temporizador {
+        }
+      }
+    }
+
     .container-btn-back {
       button {
         background-color: rgba(106, 105, 105, 0.788);
@@ -2894,13 +2914,13 @@ body.darkmode {
 
           .dark-mode {
             margin-top: 5px;
-            font-size: 20px;
+            font-size: 16px;
             color: #fff;
           }
 
           .sun-mode {
             margin-top: 5px;
-            font-size: 20px;
+            font-size: 16px;
             color: #fff;
           }
         }
@@ -3631,7 +3651,7 @@ body.darkmode {
             transition: all 30ms ease-in-out;
             letter-spacing: 1px;
             user-select: none;
-            background-color: rgba(172, 122, 218, 0.178);
+            background-color: rgba(171, 122, 218, 0.415);
             //border: 1px solid black;
           }
 
@@ -3769,8 +3789,8 @@ body.darkmode {
   }
 
   .fundo-background-menu {
-    background-color: #c2c1c173;
-    backdrop-filter: blur(2px);
+    //background-color: #c2c1c173;
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -3833,7 +3853,7 @@ body.darkmode {
               margin-top: 67px;
               background-color: #ffffffe0;
             }
-  
+
             .title::after {
               content: "";
               width: 175px;
@@ -4187,6 +4207,16 @@ body.darkmode {
 
         .paragrafo-alert {
           color: #ffffffe0;
+        }
+      }
+
+      .container-temporizador {
+        background-color: rgba(106, 105, 105, 0.788);
+
+        .content-temporizador {
+          color: #ffffffe0;
+          .temporizador {
+          }
         }
       }
 
@@ -5185,8 +5215,8 @@ body.darkmode {
   }
 
   .fundo-background-menu {
-    background-color: #c2c1c173;
-    backdrop-filter: blur(2px);
+    //background-color: #c2c1c173;
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0px;
     height: 100%;
@@ -5640,6 +5670,16 @@ body.darkmode {
               color: #ffffffe0;
             }
           }
+        }
+      }
+    }
+
+    .container-temporizador {
+      background-color: rgba(106, 105, 105, 0.788);
+
+      .content-temporizador {
+        color: #ffffffe0;
+        .temporizador {
         }
       }
     }
