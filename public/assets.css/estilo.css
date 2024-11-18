@@ -1098,6 +1098,7 @@ body.darkmode {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .container-temporizador {
+    border: 1px solid rgba(106, 105, 105, 0.788);
     background-color: rgba(106, 105, 105, 0.788);
   }
   body.darkmode .container-temporizador .content-temporizador {
@@ -2205,6 +2206,7 @@ body.darkmode {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .container-temporizador {
+    border: 1px solid rgba(106, 105, 105, 0.788);
     background-color: rgba(106, 105, 105, 0.788);
   }
   body.darkmode .container-temporizador .content-temporizador {
@@ -3295,6 +3297,7 @@ body.darkmode {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-temporizador {
+    border: 1px solid rgba(106, 105, 105, 0.788);
     background-color: rgba(106, 105, 105, 0.788);
   }
   body.darkmode .background .container-temporizador .content-temporizador {
@@ -4437,6 +4440,7 @@ body.darkmode {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .container-temporizador {
+    border: 1px solid rgba(106, 105, 105, 0.788);
     background-color: rgba(106, 105, 105, 0.788);
   }
   body.darkmode .container-temporizador .content-temporizador {
