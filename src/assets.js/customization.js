@@ -14,6 +14,9 @@ import {
   resetGeradorReferencia,
   btnResetGerador,
   resetGerador,
+  body,
+  darkModeAtivado,
+  darkModeDesativado,
 } from "../assets.js/script.js";
 
 import {
@@ -62,6 +65,7 @@ export const palavraEspecialValor = document.querySelector(
 const btnConfirmarPalavraEspecial = document.querySelector(
   "#content-btn-confirmar-palavra-personalizada"
 );
+const containerTheme = document.querySelector(".content-dark");
 const inputLowerCase = document.querySelector("#abc");
 const inputUpperCase = document.querySelector("#ABC");
 const inputNumber = document.querySelector("#numeros");
@@ -81,23 +85,28 @@ const verificacaoUpper = /[A-Z]/;
 const verificacaoNumber = /[0-9]/;
 const verificacaoCaracteresEspeciais = /[!@#$%^&*()_+={}\[\]|\\:;"'<>,.?/~]`/;
 
-//função unica para melhorar o entendimento e diminução de codigo onde será executado para facilitar a leitura.
+//função para ativar e desativar o contaianer de de troca de tema
+const desativarContentTheme = function () {
+  containerTheme.classList.add("display-none");
+};
+
+export const ativarContentTheme = function () {
+  containerTheme.classList.remove("display-none");
+};
+
+//função unica para melhorar o entendiment e diminução de codigo onde será executado para facilitar a leitura.
 const verificarInputsEstado = function () {
   inputLowerCase.value = lowerCase;
   inputLowerCase.disabled = true;
-  inputLowerCase.style.backgroundColor = " rgba(171, 122, 218, 0.451";
 
   inputUpperCase.value = upperCase;
   inputUpperCase.disabled = true;
-  inputUpperCase.style.backgroundColor = " rgba(171, 122, 218, 0.451";
 
   inputNumber.value = numberCaractere;
   inputNumber.disabled = true;
-  inputNumber.style.backgroundColor = " rgba(171, 122, 218, 0.451";
 
   inputSimbols.value = simbolosEspecial;
   inputSimbols.disabled = true;
-  inputSimbols.style.backgroundColor = " rgba(171, 122, 218, 0.451";
 };
 
 export const verificarInputsEstadoReferencia = function () {
@@ -172,7 +181,6 @@ btnClosedOptionForm.addEventListener("click", btnClosedFormReferencia);
 
 const activeInputPersonalizado_abc = function () {
   inputLowerCase.disabled = false;
-  inputLowerCase.style.backgroundColor = "rgba(182, 128, 236, 0.200)";
   inputLowerCase.focus();
 };
 
@@ -182,7 +190,6 @@ const activeInputReferencia_abc = function () {
 
 const activeInputPersonalizadosABC = function () {
   inputUpperCase.disabled = false;
-  inputUpperCase.style.backgroundColor = "rgba(182, 128, 236, 0.200)";
   inputUpperCase.focus();
 };
 
@@ -192,7 +199,6 @@ const activeInputReferenciaABC = function () {
 
 const activeInputPersonalizadosNumber = function () {
   inputNumber.disabled = false;
-  inputNumber.style.backgroundColor = "rgba(182, 128, 236, 0.200)";
   inputNumber.focus();
 };
 
@@ -202,7 +208,6 @@ const activeInputReferenciaNumber = function () {
 
 const activeInputPersonalizadosSimbols = function () {
   inputSimbols.disabled = false;
-  inputSimbols.style.backgroundColor = "rgba(182, 128, 236, 0.200)";
   inputSimbols.focus();
 };
 
@@ -220,28 +225,24 @@ iconPenSimbols.addEventListener("click", activeInputReferenciaSimbols);
 const btnCHeck_abc = function () {
   const valueAtual_abc = inputLowerCase.value;
   inputLowerCase.value = lowerCase;
-  inputLowerCase.style.backgroundColor = " rgba(171, 122, 218, 0.451";
   inputLowerCase.value = valueAtual_abc;
 };
 const btnCHeckABC = function () {
   const valueAtualABC = inputUpperCase.value;
   inputUpperCase.value = upperCase;
   inputUpperCase.disabled = true;
-  inputUpperCase.style.backgroundColor = " rgba(171, 122, 218, 0.451";
   inputUpperCase.value = valueAtualABC;
 };
 const btnCHeckNumber = function () {
   const valueAtualNumber = inputNumber.value;
   inputNumber.value = numberCaractere;
   inputNumber.disabled = true;
-  inputNumber.style.backgroundColor = " rgba(171, 122, 218, 0.451";
   inputNumber.value = valueAtualNumber;
 };
 const btnCHeckSimbols = function () {
   const valueAtualSimbols = inputSimbols.value;
   inputSimbols.value = simbolosEspecial;
   inputSimbols.disabled = true;
-  inputSimbols.style.backgroundColor = " rgba(171, 122, 218, 0.451";
   inputSimbols.value = valueAtualSimbols;
 };
 
@@ -544,7 +545,8 @@ const linkUserConvidado = function (controleKey) {
     ativarBtnVoltar();
     ativarTemporizador();
     temporizadorUser();
-    //resetGerador();
+    desativarContentTheme();
+   // darkModeAtivado();
   }
 };
 

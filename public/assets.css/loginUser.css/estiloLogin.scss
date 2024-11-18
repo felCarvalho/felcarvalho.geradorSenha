@@ -33,6 +33,9 @@
   display: none;
 }
 
+$color-text: #fff;
+$background-dark: rgb(70, 69, 69);
+
 @media (max-width: 321px) {
   .container-login {
     position: absolute;
@@ -295,7 +298,148 @@
       }
     }
   }
+
+  body.darkmode {
+    .container-login {
+      background-color: $background-dark;
+      border: 1px solid rgba(106, 105, 105, 0.988);
+      box-shadow: none;
+
+      .container-main-login {
+        .content-img-title {
+          .container-img-login {
+            .img {
+              opacity: 0.9;
+            }
+          }
+
+          .container-title {
+            .title {
+              color: #ffffffe0;
+            }
+          }
+        }
+
+        .login {
+          .container-form {
+            .content-form-input-btn {
+              .label-input {
+                .label {
+                  p {
+                    color: #ffffffe0;
+                  }
+                }
+
+                .input-login {
+                  input {
+                    background-color: rgba(106, 105, 105, 0.788);
+                    color: #ffffffe0;
+                    border: 1px solid rgba(106, 105, 105, 0.988);
+                  }
+
+                  input::placeholder {
+                    color: #ffffffe0;
+                  }
+
+                  input:focus-visible {
+                    background-color: rgba(106, 105, 105, 0.788);
+                    outline: 1.5px solid #cccccc93;
+                  }
+
+                  .icon-visualizar-password {
+                    i {
+                      color: #ffffffe0;
+                    }
+                  }
+
+                  .icon-esconder-password {
+                    i {
+                      color: #ffffffe0;
+                    }
+                  }
+                }
+              }
+
+              .content-btn-login {
+                button {
+                  background-color: rgba(106, 105, 105, 0.788);
+                  color: #ffffffe0;
+                }
+              }
+            }
+          }
+
+          .container-userUndefined {
+            border: 1px solid rgba(106, 105, 105, 0.788);
+            background-color: rgba(106, 105, 105, 0.788);
+            .content-link {
+              .link {
+                color: #ffffffe0;
+              }
+            }
+
+            .content-description-link {
+              .description-title {
+                .title {
+                  color: #ffffffe0;
+                }
+              }
+
+              .description {
+                .paragrafo-description {
+                  strong {
+                    color: #ffffffe0;
+                  }
+
+                  span {
+                    color: #ffffffe0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .container-animation-login {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      p {
+        color: #ffffffe0;
+      }
+    }
+
+    .container-animation-login-sucesso {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      i {
+        color: #ffffffe0;
+      }
+
+      p {
+        color: #ffffffe0;
+      }
+    }
+
+    .container-animation-login-error {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      p {
+        color: #ffffffe0;
+        i {
+          color: #ffffffe0;
+        }
+      }
+    }
+  }
 }
+
+$color-text: #fff;
+$background-dark: rgb(70, 69, 69);
 
 @media (min-width: 322px) and (max-width: 576px) {
   .container-login {
@@ -560,7 +704,148 @@
       }
     }
   }
+
+  body.darkmode {
+    .container-login {
+      background-color: $background-dark;
+      border: 1px solid rgba(106, 105, 105, 0.988);
+      box-shadow: none;
+
+      .container-main-login {
+        .content-img-title {
+          .container-img-login {
+            .img {
+              opacity: 0.9;
+            }
+          }
+
+          .container-title {
+            .title {
+              color: #ffffffe0;
+            }
+          }
+        }
+
+        .login {
+          .container-form {
+            .content-form-input-btn {
+              .label-input {
+                .label {
+                  p {
+                    color: #ffffffe0;
+                  }
+                }
+
+                .input-login {
+                  input {
+                    background-color: rgba(106, 105, 105, 0.788);
+                    color: #ffffffe0;
+                    border: 1px solid rgba(106, 105, 105, 0.988);
+                  }
+
+                  input::placeholder {
+                    color: #ffffffe0;
+                  }
+
+                  input:focus-visible {
+                    background-color: rgba(106, 105, 105, 0.788);
+                    outline: 1.5px solid #cccccc93;
+                  }
+
+                  .icon-visualizar-password {
+                    i {
+                      color: #ffffffe0;
+                    }
+                  }
+
+                  .icon-esconder-password {
+                    i {
+                      color: #ffffffe0;
+                    }
+                  }
+                }
+              }
+
+              .content-btn-login {
+                button {
+                  background-color: rgba(106, 105, 105, 0.788);
+                  color: #ffffffe0;
+                }
+              }
+            }
+          }
+
+          .container-userUndefined {
+            border: 1px solid rgba(106, 105, 105, 0.788);
+            background-color: rgba(106, 105, 105, 0.788);
+            .content-link {
+              .link {
+                color: #ffffffe0;
+              }
+            }
+
+            .content-description-link {
+              .description-title {
+                .title {
+                  color: #ffffffe0;
+                }
+              }
+
+              .description {
+                .paragrafo-description {
+                  strong {
+                    color: #ffffffe0;
+                  }
+
+                  span {
+                    color: #ffffffe0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .container-animation-login {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      p {
+        color: #ffffffe0;
+      }
+    }
+
+    .container-animation-login-sucesso {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      i {
+        color: #ffffffe0;
+      }
+
+      p {
+        color: #ffffffe0;
+      }
+    }
+
+    .container-animation-login-error {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      p {
+        color: #ffffffe0;
+        i {
+          color: #ffffffe0;
+        }
+      }
+    }
+  }
 }
+
+$color-text: #fff;
+$background-dark: rgb(70, 69, 69);
 
 @media (min-width: 576px) and (max-width: 1120px) {
   .container-login {
@@ -827,6 +1112,152 @@
       }
     }
   }
+
+  body.darkmode {
+    .container-login {
+      background-color: $background-dark;
+      border: 1px solid rgba(106, 105, 105, 0.988);
+      box-shadow: none;
+
+      .container-main-login {
+        .content-img-title {
+          .container-img-login {
+            .img {
+              opacity: 0.9;
+            }
+          }
+
+          .container-title {
+            .title {
+              color: #ffffffe0;
+            }
+          }
+        }
+
+        .login {
+          .container-form {
+            .content-form-input-btn {
+              .label-input {
+                .label {
+                  p {
+                    color: #ffffffe0;
+                  }
+                }
+
+                .input-login {
+                  input {
+                    background-color: rgba(106, 105, 105, 0.788);
+                    color: #ffffffe0;
+                    border: 1px solid rgba(106, 105, 105, 0.988);
+                  }
+
+                  input::placeholder {
+                    color: #ffffffe0;
+                  }
+
+                  input:focus-visible {
+                    background-color: rgba(106, 105, 105, 0.788);
+                    outline: 1.5px solid #cccccc93;
+                  }
+
+                  .icon-visualizar-password {
+                    i {
+                      color: #ffffffe0;
+                    }
+                  }
+
+                  .icon-esconder-password {
+                    i {
+                      color: #ffffffe0;
+                    }
+                  }
+                }
+              }
+
+              .content-btn-login {
+                button {
+                  background-color: rgba(106, 105, 105, 0.788);
+                  color: #ffffffe0;
+                }
+              }
+            }
+          }
+
+          .container-userUndefined {
+            border: 1px solid rgba(106, 105, 105, 0.788);
+            background-color: rgba(106, 105, 105, 0.788);
+            .content-link {
+              .link {
+                color: #ffffffe0;
+              }
+            }
+
+            .content-description-link {
+              .description-title {
+                .title {
+                  color: #ffffffe0;
+                }
+              }
+
+              .description {
+                .paragrafo-description {
+                  strong {
+                    color: #ffffffe0;
+                  }
+
+                  span {
+                    color: #ffffffe0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .container-animation-login {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      p {
+        color: #ffffffe0;
+      }
+    }
+
+    .container-animation-login-sucesso {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      i {
+        color: #ffffffe0;
+      }
+
+      p {
+        color: #ffffffe0;
+      }
+    }
+
+    .container-animation-login-error {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      p {
+        color: #ffffffe0;
+        i {
+          color: #ffffffe0;
+        }
+      }
+    }
+  }
+}
+
+$color-text: #fff;
+$background-dark: rgb(70, 69, 69);
+
+body.darkmode {
+  background-color: $background-dark;
+  color: $color-text;
 }
 
 @media (min-width: 1121px) {
@@ -1093,6 +1524,144 @@
 
       i {
         margin-right: 5px;
+      }
+    }
+  }
+
+  body.darkmode {
+    .container-login {
+      background-color: $background-dark;
+      border: 1px solid rgba(106, 105, 105, 0.988);
+      box-shadow: none;
+
+      .container-main-login {
+        .content-img-title {
+          .container-img-login {
+            .img {
+              opacity: 0.9;
+            }
+          }
+
+          .container-title {
+            .title {
+              color: #ffffffe0;
+            }
+          }
+        }
+
+        .login {
+          .container-form {
+            .content-form-input-btn {
+              .label-input {
+                .label {
+                  p {
+                    color: #ffffffe0;
+                  }
+                }
+
+                .input-login {
+                  input {
+                    background-color: rgba(106, 105, 105, 0.788);
+                    color: #ffffffe0;
+                    border: 1px solid rgba(106, 105, 105, 0.988);
+                  }
+
+                  input::placeholder {
+                    color: #ffffffe0;
+                  }
+
+                  input:focus-visible {
+                    background-color: rgba(106, 105, 105, 0.788);
+                    outline: 1.5px solid #cccccc93;
+                  }
+
+                  .icon-visualizar-password {
+                    i {
+                      color: #ffffffe0;
+                    }
+                  }
+
+                  .icon-esconder-password {
+                    i {
+                      color: #ffffffe0;
+                    }
+                  }
+                }
+              }
+
+              .content-btn-login {
+                button {
+                  background-color: rgba(106, 105, 105, 0.788);
+                  color: #ffffffe0;
+                }
+              }
+            }
+          }
+
+          .container-userUndefined {
+            border: 1px solid rgba(106, 105, 105, 0.788);
+            background-color: rgba(106, 105, 105, 0.788);
+            .content-link {
+              .link {
+                color: #ffffffe0;
+              }
+            }
+
+            .content-description-link {
+              .description-title {
+                .title {
+                  color: #ffffffe0;
+                }
+              }
+
+              .description {
+                .paragrafo-description {
+                  strong {
+                    color: #ffffffe0;
+                  }
+
+                  span {
+                    color: #ffffffe0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .container-animation-login {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      p {
+        color: #ffffffe0;
+      }
+    }
+
+    .container-animation-login-sucesso {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      i {
+        color: #ffffffe0;
+      }
+
+      p {
+        color: #ffffffe0;
+      }
+    }
+
+    .container-animation-login-error {
+      background-color: rgba(106, 105, 105, 0.688);
+      box-shadow: none;
+      border: 1px solid rgba(106, 105, 105, 0.688);
+      p {
+        color: #ffffffe0;
+        i {
+          color: #ffffffe0;
+        }
       }
     }
   }

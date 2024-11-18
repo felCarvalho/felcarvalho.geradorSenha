@@ -4,6 +4,7 @@ import {
   btnConfig,
   desativarBtnVoltar,
   ativarBtnVoltar,
+  ativarContentTheme,
 } from "../assets.js/customization.js";
 
 export const password = document.querySelector(".login-password");
@@ -172,6 +173,7 @@ const verificarLogin = function ({ userKey, passwordKey }) {
     desativarTemporizador();
     ativarGerador();
     popUpLogin(containerPopUpLoginSucesso);
+    ativarContentTheme();
     btnConfig.classList.remove("display-none");
     controleEnter(true);
   }
@@ -191,6 +193,7 @@ const clickEnter = function (e) {
   }
   if (e.key === "Enter") {
     verificarLogin(login);
+    ativarContentTheme();
   }
 };
 

@@ -231,6 +231,88 @@
   .container-animation-login-error p i {
     margin-right: 5px;
   }
+  body.darkmode .container-login {
+    background-color: rgb(70, 69, 69);
+    border: 1px solid rgba(106, 105, 105, 0.988);
+    box-shadow: none;
+  }
+  body.darkmode .container-login .container-main-login .content-img-title .container-img-login .img {
+    opacity: 0.9;
+  }
+  body.darkmode .container-login .container-main-login .content-img-title .container-title .title {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .label p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input {
+    background-color: rgba(106, 105, 105, 0.788);
+    color: rgba(255, 255, 255, 0.8784313725);
+    border: 1px solid rgba(106, 105, 105, 0.988);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input::placeholder {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input:focus-visible {
+    background-color: rgba(106, 105, 105, 0.788);
+    outline: 1.5px solid rgba(204, 204, 204, 0.5764705882);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .content-btn-login button {
+    background-color: rgba(106, 105, 105, 0.788);
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined {
+    border: 1px solid rgba(106, 105, 105, 0.788);
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-link .link {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description-title .title {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description strong {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description span {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-sucesso {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login-sucesso i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-sucesso p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-error {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login-error p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-error p i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
 }
 @media (min-width: 322px) and (max-width: 576px) {
   .container-login {
@@ -451,6 +533,88 @@
   }
   .container-animation-login-error p i {
     margin-right: 5px;
+  }
+  body.darkmode .container-login {
+    background-color: rgb(70, 69, 69);
+    border: 1px solid rgba(106, 105, 105, 0.988);
+    box-shadow: none;
+  }
+  body.darkmode .container-login .container-main-login .content-img-title .container-img-login .img {
+    opacity: 0.9;
+  }
+  body.darkmode .container-login .container-main-login .content-img-title .container-title .title {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .label p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input {
+    background-color: rgba(106, 105, 105, 0.788);
+    color: rgba(255, 255, 255, 0.8784313725);
+    border: 1px solid rgba(106, 105, 105, 0.988);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input::placeholder {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input:focus-visible {
+    background-color: rgba(106, 105, 105, 0.788);
+    outline: 1.5px solid rgba(204, 204, 204, 0.5764705882);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .content-btn-login button {
+    background-color: rgba(106, 105, 105, 0.788);
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined {
+    border: 1px solid rgba(106, 105, 105, 0.788);
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-link .link {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description-title .title {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description strong {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description span {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-sucesso {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login-sucesso i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-sucesso p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-error {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login-error p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-error p i {
+    color: rgba(255, 255, 255, 0.8784313725);
   }
 }
 @media (min-width: 576px) and (max-width: 1120px) {
@@ -675,7 +839,94 @@
   .container-animation-login-error p i {
     margin-right: 5px;
   }
+  body.darkmode .container-login {
+    background-color: rgb(70, 69, 69);
+    border: 1px solid rgba(106, 105, 105, 0.988);
+    box-shadow: none;
+  }
+  body.darkmode .container-login .container-main-login .content-img-title .container-img-login .img {
+    opacity: 0.9;
+  }
+  body.darkmode .container-login .container-main-login .content-img-title .container-title .title {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .label p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input {
+    background-color: rgba(106, 105, 105, 0.788);
+    color: rgba(255, 255, 255, 0.8784313725);
+    border: 1px solid rgba(106, 105, 105, 0.988);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input::placeholder {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input:focus-visible {
+    background-color: rgba(106, 105, 105, 0.788);
+    outline: 1.5px solid rgba(204, 204, 204, 0.5764705882);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .content-btn-login button {
+    background-color: rgba(106, 105, 105, 0.788);
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined {
+    border: 1px solid rgba(106, 105, 105, 0.788);
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-link .link {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description-title .title {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description strong {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description span {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-sucesso {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login-sucesso i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-sucesso p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-error {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login-error p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-error p i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
 }
+body.darkmode {
+  background-color: rgb(70, 69, 69);
+  color: #fff;
+}
+
 @media (min-width: 1121px) {
   .container-login {
     position: absolute;
@@ -899,6 +1150,88 @@
   }
   .container-animation-login-error p i {
     margin-right: 5px;
+  }
+  body.darkmode .container-login {
+    background-color: rgb(70, 69, 69);
+    border: 1px solid rgba(106, 105, 105, 0.988);
+    box-shadow: none;
+  }
+  body.darkmode .container-login .container-main-login .content-img-title .container-img-login .img {
+    opacity: 0.9;
+  }
+  body.darkmode .container-login .container-main-login .content-img-title .container-title .title {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .label p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input {
+    background-color: rgba(106, 105, 105, 0.788);
+    color: rgba(255, 255, 255, 0.8784313725);
+    border: 1px solid rgba(106, 105, 105, 0.988);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input::placeholder {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login input:focus-visible {
+    background-color: rgba(106, 105, 105, 0.788);
+    outline: 1.5px solid rgba(204, 204, 204, 0.5764705882);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .content-btn-login button {
+    background-color: rgba(106, 105, 105, 0.788);
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined {
+    border: 1px solid rgba(106, 105, 105, 0.788);
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-link .link {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description-title .title {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description strong {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-login .container-main-login .login .container-userUndefined .content-description-link .description .paragrafo-description span {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-sucesso {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login-sucesso i {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-sucesso p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-error {
+    background-color: rgba(106, 105, 105, 0.688);
+    box-shadow: none;
+    border: 1px solid rgba(106, 105, 105, 0.688);
+  }
+  body.darkmode .container-animation-login-error p {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .container-animation-login-error p i {
+    color: rgba(255, 255, 255, 0.8784313725);
   }
 }
 

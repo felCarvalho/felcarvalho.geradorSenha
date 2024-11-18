@@ -16,7 +16,7 @@ const backdropBlur = document.querySelector(".fundo-blur");
 const modalError = document.querySelector(".modal-error");
 const mensagemError = document.querySelector(".mensage-error");
 const btnClosed = document.querySelector(".modal-closed");
-const btnDarkMode = document.querySelector(".button-dark");
+export const btnDarkMode = document.querySelector(".button-dark");
 const iconDark = document.querySelector(".dark-mode");
 const iconSun = document.querySelector(".sun-mode");
 const modalPasswordCopy = document.querySelector(".container-modal-clipboard");
@@ -199,6 +199,9 @@ export const controlePassword = function () {
 
 newPassword.addEventListener("click", controlePassword);
 
+//variavel para pegar todos os elementos do DOM, util para o realizar trocca entre modo claro e escuro
+export const body = document.body;
+
 export const slider = function () {
   const sliderValue = sliderRangeStyle.value;
   const sliderMin = sliderRangeStyle.min;
@@ -355,21 +358,20 @@ backdropBlur.addEventListener("click", () => {
 });
 
 //function de ativar animação de button modo escuro e claro
-const darkModeAtivado = () => {
+export const darkModeAtivado = () => {
   iconSun.classList.add("display-none");
   iconDark.classList.remove("display-none");
 };
 
 //function de desativar animação de button modo escuro e claro
-const darkModeDesativado = () => {
+export const darkModeDesativado = () => {
   iconDark.classList.add("display-none");
   iconSun.classList.remove("display-none");
 };
 
-//variavel para pegar todos os elementos do DOM
-const body = document.body;
+//função auxilar para desabilitar darkmode no modo convidado de login
 
-btnDarkMode.addEventListener("click", () => {
+const themeSafePass = function () {
   if (body.classList.contains("darkmode")) {
     darkModeAtivado();
     body.classList.remove("darkmode");
@@ -378,7 +380,13 @@ btnDarkMode.addEventListener("click", () => {
     body.classList.add("darkmode");
   }
   slider();
-});
+};
+
+const themeSafePassReferencia = function () {
+  themeSafePass();
+};
+
+btnDarkMode.addEventListener("click", themeSafePassReferencia);
 
 //trocado pelo operador tenario.
 /*if (ToggleOne.checked) {
