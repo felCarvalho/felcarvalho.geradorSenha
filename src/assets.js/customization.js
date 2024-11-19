@@ -280,6 +280,7 @@ closedBtnPalavraEspecial.addEventListener(
 
 const BtnCancelarPalavraPessoalContainer = function () {
   palavraEspecial.classList.add("display-none");
+  palavraEspecialValor.value = "";
   menuConfigOff();
   backgroundPopUpOff();
 };
