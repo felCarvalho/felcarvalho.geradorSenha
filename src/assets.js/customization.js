@@ -104,6 +104,8 @@ const verificarInputsEstado = function () {
 
   inputSimbols.value = simbolosEspecial;
   inputSimbols.disabled = true;
+
+  palavraEspecialValor.value = "";
 };
 
 export const verificarInputsEstadoReferencia = function () {
