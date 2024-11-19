@@ -3,6 +3,8 @@ SafePassApp - Gerador de Senhas Aleatórias
 
 Um App web simples e responsivo para gerar senhas aleatórias, com várias opções de personalização para caracteres e comprimento. Desenvolvido com JavaScript, HTML e CSS (usando Sass para estilização e Tailwind CSS para auxílio na construção do layout dos botões toggle), animações de pop-ups de aviso utilizando GSAP, e ícones do Font Awesome para uma melhor experiência visual.
 
+
+--------------------------------------------------------------------------------------------------------
 * Funcionalidades
 
 Seleção de tipos de caracteres: inclui letras maiúsculas, minúsculas, números e caracteres especiais.
@@ -22,6 +24,7 @@ Pop-ups de aviso animados: utilizando a biblioteca GSAP, os pop-ups de aviso sã
 Ícones: ícones do Font Awesome são usados em diversos elementos da interface para uma melhor visualização e interação.
 
 
+---------------------------------------------------------------------------------------------------------
 * Tecnologias Utilizadas
 
 HTML: para a estrutura do aplicativo.
@@ -37,6 +40,7 @@ Font Awesome: para os ícones na interface.
 Fontes: fonte Poppins importada do Google Fonts.
 
 
+---------------------------------------------------------------------------------------------------------
 * Como Usar
 
 1. Selecione o comprimento da senha usando o input range.
@@ -57,7 +61,7 @@ Fontes: fonte Poppins importada do Google Fonts.
 6. Login: ao acessar sem login, o acesso às configurações de personalização e ao modo escuro será restrito. O uso do gerador de senhas será limitado a 1 minuto por sessão.
 
 
-
+---------------------------------------------------------------------------------------------------------
 * Personalização 
 
 Adição de palavra favorita ou frase: você pode incluir uma palavra, frase, número ou caractere específico de sua escolha na senha gerada.
@@ -69,7 +73,9 @@ Quantidade de caracteres de cada tipo: você pode selecionar a quantidade de car
 
 Ao definir a quantidade de cada tipo de caractere, não serão permitidos caracteres repetidos. Ou seja, ao escolher os tipos de caracteres que devem aparecer na senha, somente um caractere de cada tipo pode ser selecionado.
 
----Instalação---
+
+---------------------------------------------------------------------------------------------------------
+Instalação
 
 Para instalar as dependências, execute:
 
@@ -96,6 +102,7 @@ build: Executa os scripts sass, sassLogin e twind em sequência.
 npm run build
 
 
+----------------------------------------------------------------------------------------------------------
 * Dependências de Desenvolvimento
 
 Este projeto utiliza as seguintes dependências de desenvolvimento:
@@ -110,7 +117,7 @@ sass: ^1.81.0 — Compilador Sass para SCSS.
 
 tailwindcss: ^3.4.14 — Framework utilitário para CSS.
 
-
+----------------------------------------------------------------------------------------------------------
 Como Usar
 
 1. Execute npm run build para compilar e processar todos os arquivos CSS.
