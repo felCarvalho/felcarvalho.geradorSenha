@@ -1060,10 +1060,12 @@ body.darkmode {
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input {
     background-color: rgb(70, 69, 69);
     border-radius: 5px;
+    color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input:focus-visible {
     background-color: rgba(70, 69, 69, 0.4);
     outline: 1.5px solid rgb(70, 69, 69);
+    color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input::placeholder {
     color: rgba(255, 255, 255, 0.8784313725);
@@ -1075,6 +1077,13 @@ body.darkmode {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-alert .paragrafo-alert {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .background .container-temporizador {
+    border: 1px solid rgba(106, 105, 105, 0.788);
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .background .container-temporizador .content-temporizador {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-buttons-palavra-personalizada .content-btn-cancelar button {
@@ -2168,10 +2177,12 @@ body.darkmode {
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input {
     background-color: rgb(70, 69, 69);
     border-radius: 5px;
+    color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input:focus-visible {
     background-color: rgba(70, 69, 69, 0.4);
     outline: 1.5px solid rgb(70, 69, 69);
+    color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input::placeholder {
     color: rgba(255, 255, 255, 0.8784313725);
@@ -2183,6 +2194,13 @@ body.darkmode {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-alert .paragrafo-alert {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .background .container-temporizador {
+    border: 1px solid rgba(106, 105, 105, 0.788);
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .background .container-temporizador .content-temporizador {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-buttons-palavra-personalizada .content-btn-cancelar button {
@@ -3279,10 +3297,12 @@ body.darkmode {
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input {
     background-color: rgb(70, 69, 69);
     border-radius: 5px;
+    color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input:focus-visible {
     background-color: rgba(70, 69, 69, 0.4);
     outline: 1.5px solid rgb(70, 69, 69);
+    color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input::placeholder {
     color: rgba(255, 255, 255, 0.8784313725);
@@ -4402,10 +4422,12 @@ body.darkmode {
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input {
     background-color: rgb(70, 69, 69);
     border-radius: 5px;
+    color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input:focus-visible {
     background-color: rgba(70, 69, 69, 0.4);
     outline: 1.5px solid rgb(70, 69, 69);
+    color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-palavra-pessoal .content-input-pessoal .content-input-label input::placeholder {
     color: rgba(255, 255, 255, 0.8784313725);
@@ -4417,6 +4439,13 @@ body.darkmode {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-alert .paragrafo-alert {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .background .container-temporizador {
+    border: 1px solid rgba(106, 105, 105, 0.788);
+    background-color: rgba(106, 105, 105, 0.788);
+  }
+  body.darkmode .background .container-temporizador .content-temporizador {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .background .container-buttons-palavra-personalizada .content-btn-cancelar button {

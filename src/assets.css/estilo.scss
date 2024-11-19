@@ -1339,11 +1339,13 @@ body.darkmode {
             input {
               background-color: $background-dark;
               @include border(5px);
+              color: #ffffffe0;
             }
 
             input:focus-visible {
               background-color: rgba(70, 69, 69, 0.4);
               outline: 1.5px solid $background-dark;
+              color: #ffffffe0;
             }
 
             input::placeholder {
@@ -1378,6 +1380,17 @@ body.darkmode {
 
         .paragrafo-alert {
           color: #ffffffe0;
+        }
+      }
+
+      .container-temporizador {
+        border: 1px solid rgba(106, 105, 105, 0.788);
+        background-color: rgba(106, 105, 105, 0.788);
+
+        .content-temporizador {
+          color: #ffffffe0;
+          .temporizador {
+          }
         }
       }
 
@@ -2753,11 +2766,13 @@ body.darkmode {
             input {
               background-color: $background-dark;
               @include border(5px);
+              color: #ffffffe0;
             }
 
             input:focus-visible {
               background-color: rgba(70, 69, 69, 0.4);
               outline: 1.5px solid $background-dark;
+              color: #ffffffe0;
             }
 
             input::placeholder {
@@ -2792,6 +2807,17 @@ body.darkmode {
 
         .paragrafo-alert {
           color: #ffffffe0;
+        }
+      }
+
+      .container-temporizador {
+        border: 1px solid rgba(106, 105, 105, 0.788);
+        background-color: rgba(106, 105, 105, 0.788);
+
+        .content-temporizador {
+          color: #ffffffe0;
+          .temporizador {
+          }
         }
       }
 
@@ -4170,11 +4196,13 @@ body.darkmode {
             input {
               background-color: $background-dark;
               @include border(5px);
+              color: #ffffffe0;
             }
 
             input:focus-visible {
               background-color: rgba(70, 69, 69, 0.4);
               outline: 1.5px solid $background-dark;
+              color: #ffffffe0;
             }
 
             input::placeholder {
@@ -5598,11 +5626,13 @@ body.darkmode {
             input {
               background-color: $background-dark;
               @include border(5px);
+              color: #ffffffe0;
             }
 
             input:focus-visible {
               background-color: rgba(70, 69, 69, 0.4);
               outline: 1.5px solid $background-dark;
+              color: #ffffffe0;
             }
 
             input::placeholder {
@@ -5637,6 +5667,17 @@ body.darkmode {
 
         .paragrafo-alert {
           color: #ffffffe0;
+        }
+      }
+
+      .container-temporizador {
+        border: 1px solid rgba(106, 105, 105, 0.788);
+        background-color: rgba(106, 105, 105, 0.788);
+
+        .content-temporizador {
+          color: #ffffffe0;
+          .temporizador {
+          }
         }
       }
 
