@@ -90,23 +90,23 @@
     letter-spacing: 1px;
     width: 100%;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password {
     position: absolute;
-    text-align: center;
-    transform: translateX(-50%, -50%);
     right: 25px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password {
+    text-align: center;
+    transform: translateX(-50%, -50%);
+  }
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password i {
     color: blueviolet;
     padding: 5px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password {
-    position: absolute;
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password {
     text-align: center;
     transform: translateX(-50%, -50%);
-    right: 25px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password i {
     color: blueviolet;
     padding: 5px;
   }
@@ -257,10 +257,10 @@
     background-color: rgba(106, 105, 105, 0.788);
     outline: 1.5px solid rgba(204, 204, 204, 0.5764705882);
   }
-  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
-  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .content-btn-login button {
@@ -394,23 +394,23 @@
     letter-spacing: 1px;
     width: 100%;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password {
     position: absolute;
-    text-align: center;
-    transform: translateX(-50%, -50%);
     right: 25px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password {
+    text-align: center;
+    transform: translateX(-50%, -50%);
+  }
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password i {
     color: blueviolet;
     padding: 5px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password {
-    position: absolute;
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password {
     text-align: center;
     transform: translateX(-50%, -50%);
-    right: 25px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password i {
     color: blueviolet;
     padding: 5px;
   }
@@ -560,10 +560,10 @@
     background-color: rgba(106, 105, 105, 0.788);
     outline: 1.5px solid rgba(204, 204, 204, 0.5764705882);
   }
-  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
-  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .content-btn-login button {
@@ -699,23 +699,24 @@
     letter-spacing: 1px;
     width: 100%;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password {
     position: absolute;
-    text-align: center;
-    transform: translateX(-50%, -50%);
     right: 25px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password {
+    text-align: center;
+    transform: translateX(-50%, -50%);
+  }
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password i {
     color: blueviolet;
     padding: 5px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password {
     position: absolute;
     text-align: center;
     transform: translateX(-50%, -50%);
-    right: 25px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password i {
     color: blueviolet;
     padding: 5px;
   }
@@ -865,10 +866,10 @@
     background-color: rgba(106, 105, 105, 0.788);
     outline: 1.5px solid rgba(204, 204, 204, 0.5764705882);
   }
-  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
-  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .content-btn-login button {
@@ -1008,23 +1009,23 @@ body.darkmode {
     letter-spacing: 1px;
     width: 100%;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password {
     position: absolute;
-    text-align: center;
-    transform: translateX(-50%, -50%);
     right: 25px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password {
+    text-align: center;
+    transform: translateX(-50%, -50%);
+  }
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password i {
     color: blueviolet;
     padding: 5px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password {
-    position: absolute;
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password {
     text-align: center;
     transform: translateX(-50%, -50%);
-    right: 25px;
   }
-  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+  .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password i {
     color: blueviolet;
     padding: 5px;
   }
@@ -1177,10 +1178,10 @@ body.darkmode {
     background-color: rgba(106, 105, 105, 0.788);
     outline: 1.5px solid rgba(204, 204, 204, 0.5764705882);
   }
-  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-visualizar-password i {
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-visualizar-password i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
-  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .icon-esconder-password i {
+  body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .label-input .input-login .container-icons-password .icon-esconder-password i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
   body.darkmode .container-login .container-main-login .login .container-form .content-form-input-btn .content-btn-login button {

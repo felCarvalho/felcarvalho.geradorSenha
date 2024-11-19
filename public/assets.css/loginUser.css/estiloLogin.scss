@@ -126,29 +126,32 @@ $background-dark: rgb(70, 69, 69);
                   width: 100%;
                 }
 
-                .icon-visualizar-password {
+                .container-icons-password {
                   position: absolute;
-                  text-align: center;
-                  transform: translateX(-50%, -50%);
                   right: 25px;
-                  // @include border(50%);
 
-                  i {
-                    color: blueviolet;
-                    padding: 5px;
+                  .icon-visualizar-password {
+                    text-align: center;
+                    transform: translateX(-50%, -50%);
+                    //right: 25px;
+                    // @include border(50%);
+
+                    i {
+                      color: blueviolet;
+                      padding: 5px;
+                    }
                   }
-                }
 
-                .icon-esconder-password {
-                  position: absolute;
-                  text-align: center;
-                  transform: translateX(-50%, -50%);
-                  right: 25px;
-                  // @include border(50%);
+                  .icon-esconder-password {
+                    text-align: center;
+                    transform: translateX(-50%, -50%);
+                    // right: 25px;
+                    // @include border(50%);
 
-                  i {
-                    color: blueviolet;
-                    padding: 5px;
+                    i {
+                      color: blueviolet;
+                      padding: 5px;
+                    }
                   }
                 }
               }
@@ -345,16 +348,17 @@ $background-dark: rgb(70, 69, 69);
                     background-color: rgba(106, 105, 105, 0.788);
                     outline: 1.5px solid #cccccc93;
                   }
-
-                  .icon-visualizar-password {
-                    i {
-                      color: #ffffffe0;
+                  .container-icons-password {
+                    .icon-visualizar-password {
+                      i {
+                        color: #ffffffe0;
+                      }
                     }
-                  }
 
-                  .icon-esconder-password {
-                    i {
-                      color: #ffffffe0;
+                    .icon-esconder-password {
+                      i {
+                        color: #ffffffe0;
+                      }
                     }
                   }
                 }
@@ -532,29 +536,32 @@ $background-dark: rgb(70, 69, 69);
                   width: 100%;
                 }
 
-                .icon-visualizar-password {
+                .container-icons-password {
                   position: absolute;
-                  text-align: center;
-                  transform: translateX(-50%, -50%);
                   right: 25px;
-                  // @include border(50%);
 
-                  i {
-                    color: blueviolet;
-                    padding: 5px;
+                  .icon-visualizar-password {
+                    text-align: center;
+                    transform: translateX(-50%, -50%);
+                    // right: 25px;
+                    // @include border(50%);
+
+                    i {
+                      color: blueviolet;
+                      padding: 5px;
+                    }
                   }
-                }
 
-                .icon-esconder-password {
-                  position: absolute;
-                  text-align: center;
-                  transform: translateX(-50%, -50%);
-                  right: 25px;
-                  // @include border(50%);
+                  .icon-esconder-password {
+                    text-align: center;
+                    transform: translateX(-50%, -50%);
+                    //right: 25px;
+                    // @include border(50%);
 
-                  i {
-                    color: blueviolet;
-                    padding: 5px;
+                    i {
+                      color: blueviolet;
+                      padding: 5px;
+                    }
                   }
                 }
               }
@@ -752,15 +759,17 @@ $background-dark: rgb(70, 69, 69);
                     outline: 1.5px solid #cccccc93;
                   }
 
-                  .icon-visualizar-password {
-                    i {
-                      color: #ffffffe0;
+                  .container-icons-password {
+                    .icon-visualizar-password {
+                      i {
+                        color: #ffffffe0;
+                      }
                     }
-                  }
 
-                  .icon-esconder-password {
-                    i {
-                      color: #ffffffe0;
+                    .icon-esconder-password {
+                      i {
+                        color: #ffffffe0;
+                      }
                     }
                   }
                 }
@@ -940,29 +949,32 @@ $background-dark: rgb(70, 69, 69);
                   width: 100%;
                 }
 
-                .icon-visualizar-password {
+                .container-icons-password {
                   position: absolute;
-                  text-align: center;
-                  transform: translateX(-50%, -50%);
                   right: 25px;
-                  // @include border(50%);
+                  .icon-visualizar-password {
+                    text-align: center;
+                    transform: translateX(-50%, -50%);
+                    //right: 25px;
+                    // @include border(50%);
 
-                  i {
-                    color: blueviolet;
-                    padding: 5px;
+                    i {
+                      color: blueviolet;
+                      padding: 5px;
+                    }
                   }
-                }
 
-                .icon-esconder-password {
-                  position: absolute;
-                  text-align: center;
-                  transform: translateX(-50%, -50%);
-                  right: 25px;
-                  // @include border(50%);
+                  .icon-esconder-password {
+                    position: absolute;
+                    text-align: center;
+                    transform: translateX(-50%, -50%);
+                    //right: 25px;
+                    // @include border(50%);
 
-                  i {
-                    color: blueviolet;
-                    padding: 5px;
+                    i {
+                      color: blueviolet;
+                      padding: 5px;
+                    }
                   }
                 }
               }
@@ -1160,15 +1172,17 @@ $background-dark: rgb(70, 69, 69);
                     outline: 1.5px solid #cccccc93;
                   }
 
-                  .icon-visualizar-password {
-                    i {
-                      color: #ffffffe0;
+                  .container-icons-password {
+                    .icon-visualizar-password {
+                      i {
+                        color: #ffffffe0;
+                      }
                     }
-                  }
 
-                  .icon-esconder-password {
-                    i {
-                      color: #ffffffe0;
+                    .icon-esconder-password {
+                      i {
+                        color: #ffffffe0;
+                      }
                     }
                   }
                 }
@@ -1352,29 +1366,32 @@ body.darkmode {
                   width: 100%;
                 }
 
-                .icon-visualizar-password {
+                .container-icons-password {
                   position: absolute;
-                  text-align: center;
-                  transform: translateX(-50%, -50%);
                   right: 25px;
-                  // @include border(50%);
 
-                  i {
-                    color: blueviolet;
-                    padding: 5px;
+                  .icon-visualizar-password {
+                    text-align: center;
+                    transform: translateX(-50%, -50%);
+                    //right: 25px;
+                    // @include border(50%);
+
+                    i {
+                      color: blueviolet;
+                      padding: 5px;
+                    }
                   }
-                }
 
-                .icon-esconder-password {
-                  position: absolute;
-                  text-align: center;
-                  transform: translateX(-50%, -50%);
-                  right: 25px;
-                  // @include border(50%);
+                  .icon-esconder-password {
+                    text-align: center;
+                    transform: translateX(-50%, -50%);
+                    //right: 25px;
+                    // @include border(50%);
 
-                  i {
-                    color: blueviolet;
-                    padding: 5px;
+                    i {
+                      color: blueviolet;
+                      padding: 5px;
+                    }
                   }
                 }
               }
@@ -1575,15 +1592,17 @@ body.darkmode {
                     outline: 1.5px solid #cccccc93;
                   }
 
-                  .icon-visualizar-password {
-                    i {
-                      color: #ffffffe0;
+                  .container-icons-password {
+                    .icon-visualizar-password {
+                      i {
+                        color: #ffffffe0;
+                      }
                     }
-                  }
 
-                  .icon-esconder-password {
-                    i {
-                      color: #ffffffe0;
+                    .icon-esconder-password {
+                      i {
+                        color: #ffffffe0;
+                      }
                     }
                   }
                 }

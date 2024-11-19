@@ -17,7 +17,7 @@ export const temporizadorConvidadoUser = document.querySelector(
   ".container-temporizador"
 );
 const visualizarPassword = document.querySelector(
-  ".icon-viasualiador-password"
+  ".icon-visualizar-password"
 );
 const esconderPassword = document.querySelector(".icon-esconder-password");
 export const containerPopUp = document.querySelector(
@@ -28,6 +28,40 @@ const containerPopUpLoginSucesso = document.querySelector(
 );
 const containerPopUpLoginError = document.querySelector(
   ".container-animation-login-error"
+);
+const containerIconVisualizarPassword = document.querySelector(
+  ".container-icons-password"
+);
+
+const iconVisualizar = function () {
+  visualizarPassword.classList.add("display-none");
+  esconderPassword.classList.remove("display-none");
+};
+
+const iconEsconder = function () {
+  visualizarPassword.classList.remove("display-none");
+  esconderPassword.classList.add("display-none");
+};
+
+const visualizarPasswordLogin = function () {
+  // const passwordType = password.value;
+
+  if (password.type === "password") {
+    password.type = "text";
+    iconVisualizar();
+  } else {
+    password.type = "password";
+    iconEsconder();
+  }
+};
+
+const visualizarPasswordLoginReferencia = function () {
+  visualizarPasswordLogin();
+};
+
+containerIconVisualizarPassword.addEventListener(
+  "click",
+  visualizarPasswordLoginReferencia
 );
 
 /*
