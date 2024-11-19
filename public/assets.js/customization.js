@@ -14,9 +14,6 @@ import {
   resetGeradorReferencia,
   btnResetGerador,
   resetGerador,
-  body,
-  darkModeAtivado,
-  darkModeDesativado,
 } from "../assets.js/script.js";
 
 import {
@@ -265,6 +262,7 @@ closedTitlePalavraEspecial.addEventListener("click", () => {
 
 const closedBtnPalavraPersonalizada = function () {
   palavraEspecial.classList.add("display-none");
+  palavraEspecialValor.value = "";
   menuConfigOff();
   backgroundPopUpOff();
 };
@@ -547,7 +545,6 @@ const linkUserConvidado = function (controleKey) {
     ativarTemporizador();
     temporizadorUser();
     desativarContentTheme();
-    // darkModeAtivado();
   }
 };
 

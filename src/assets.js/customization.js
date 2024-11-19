@@ -262,6 +262,7 @@ closedTitlePalavraEspecial.addEventListener("click", () => {
 
 const closedBtnPalavraPersonalizada = function () {
   palavraEspecial.classList.add("display-none");
+  palavraEspecialValor.value = "";
   menuConfigOff();
   backgroundPopUpOff();
 };

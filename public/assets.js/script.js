@@ -200,7 +200,7 @@ export const controlePassword = function () {
 newPassword.addEventListener("click", controlePassword);
 
 //variavel para pegar todos os elementos do DOM, util para o realizar trocca entre modo claro e escuro
-export const body = document.body;
+const body = document.body;
 
 export const slider = function () {
   const sliderValue = sliderRangeStyle.value;
@@ -358,19 +358,18 @@ backdropBlur.addEventListener("click", () => {
 });
 
 //function de ativar animação de button modo escuro e claro
-export const darkModeAtivado = () => {
+const darkModeAtivado = () => {
   iconSun.classList.add("display-none");
   iconDark.classList.remove("display-none");
 };
 
 //function de desativar animação de button modo escuro e claro
-export const darkModeDesativado = () => {
+const darkModeDesativado = () => {
   iconDark.classList.add("display-none");
   iconSun.classList.remove("display-none");
 };
 
-//função auxilar para desabilitar darkmode no modo convidado de login
-
+//função auxilar para desabilitar darkmode
 const themeSafePass = function () {
   if (body.classList.contains("darkmode")) {
     darkModeAtivado();
