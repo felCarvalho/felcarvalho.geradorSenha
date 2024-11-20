@@ -1,126 +1,112 @@
----------------------------------------------------------------------------------------------------------------------------------------------------------------
-SafePassApp - Gerador de Senhas Aleatórias
+# SafePassApp: Gerador de Senhas Aleatórias Pessoal
 
-Um App web simples e responsivo para gerar senhas aleatórias, com várias opções de personalização para caracteres e comprimento. Desenvolvido com JavaScript, HTML e CSS (usando Sass para estilização e Tailwind CSS para auxílio na construção do layout dos botões toggle), animações de pop-ups de aviso utilizando GSAP, e ícones do Font Awesome para uma melhor experiência visual.
+Um App web simples e responsivo. Desenvolvido com JavaScript, HTML e CSS (usando Sass para estilização e Tailwind CSS para auxílio na construção do layout dos botões toggle), animações de pop-ups de aviso utilizando GSAP, e ícones do Font Awesome para uma melhor experiência visual.
+<br>
 
+### Funcionalidades
 
---------------------------------------------------------------------------------------------------------
-* Funcionalidades
+<details>
+ <summary> <strong> Seleção de tipos caracteres </strong> </summary>
+ Inclui letras maiúsculas, minúsculas, números e caracteres especiais, atráves de botões toggle.
+</details>
+<br>
+<details>
+<summary><strong>Personalização</strong></summary> Personalize a quantidade de caracteres cada opção disponivel, e também pode optar por adicionar uma palavra personalizada para fazer parte da sua senha aléatoria.
+</details>
+<br>
+<details>
+<summary> <strong> Escolha do comprimento da senha </strong> </summary>
+ Ajustável pelo usuário com um input range com apresentação do valor atual em container ao lado.
+</details>
+<br>
+<details>
+<summary> <strong>Modo escuro</strong> </summary>
+Ativado por meio de um botão de interação do usuário (somente disponível para usuários após o login).
+</details>
+<br>
+<details>
+<summary><strong>Login e restrições</strong></summary> Ao acessar sem login, o usuário pode gerar senhas, mas não terá acesso ao modo escuro nem às configurações de personalização. A utilização é restrita a 1 minuto por sessão.
+</details>
+<br>
+<details>
+<summary> <strong> Pop-ups de aviso animados</strong> </summary> Utilizando a biblioteca GSAP, os pop-ups de aviso são animados para uma experiência mais interativa.
+</details>
+<br>
+<details>
+<summary><strong>Ícones</strong></summary> Icones do Font Awesome são usados em diversos elementos da interface para uma melhor visualização e interação.
+</details>
+<br>
 
-Seleção de tipos de caracteres: inclui letras maiúsculas, minúsculas, números e caracteres especiais.
+### Tecnologias Utilizadas
 
-Escolha do comprimento da senha: ajustável pelo usuário com um input range.
+**HTML:** para a estrutura do aplicativo.
 
-Toggle de caracteres: permite ativar ou desativar rapidamente os tipos de caracteres.
+**CSS:** para estilização, incluindo o uso de _**Sass**_ e _**Tailwind CSS**._
 
-Geração de senhas: a senha gerada é exibida diretamente na tela.
+**JavaScript:** lógica para geração de senhas e interação com o usuário.
 
-Modo escuro: ativado por meio de um botão de interação do usuário (somente disponível para usuários logados).
+**GSAP:** para animações de pop-ups de aviso.
 
-Login e restrições: ao acessar sem login, o usuário pode gerar senhas, mas não terá acesso ao modo escuro nem às configurações de personalização. A utilização é restrita a 1 minuto por sessão.
+**Font Awesome:** para os ícones na interface.
 
-Pop-ups de aviso animados: utilizando a biblioteca GSAP, os pop-ups de aviso são animados para uma experiência mais interativa.
+**Fontes:** fonte Poppins importada do _**Google Fonts**_.
+<br>
 
-Ícones: ícones do Font Awesome são usados em diversos elementos da interface para uma melhor visualização e interação.
+### Como Usar
 
+**1. _Selecione o comprimento da senha usando o input range._**
 
----------------------------------------------------------------------------------------------------------
-* Tecnologias Utilizadas
+**2. _Escolha os tipos de caracteres que deseja incluir (letras maiúsculas, minúsculas, números e caracteres especiais)._**
 
-HTML: para a estrutura do aplicativo.
+**3. _(Opcional) Selecione a quantidade de cada tipo de caractere que deseja incluir na senha._**
 
-CSS: para estilização, incluindo o uso de Sass e Tailwind CSS.
+**3. _(Opcional) Selecione uma palavra personaliza para facilitar a memorização da sua senha._**
 
-JavaScript: lógica para geração de senhas e interação com o usuário.
+**4. _Clique em "Gerar Senha" para criar uma senha aleatória com as especificações escolhidas._**
 
-GSAP: para animações de pop-ups de aviso.
+**5 _A senha gerada será exibida na tela. É possível copiar e usar onde desejar._**
 
-Font Awesome: para os ícones na interface.
+**6. _Login: ao acessar sem login, o acesso às configurações de personalização e ao modo escuro será restrito. O uso do gerador de senhas será limitado a 1 minuto por sessão._**
+<br>
 
-Fontes: fonte Poppins importada do Google Fonts.
+### Restrições de Personalizações
 
+_Ao definir a quantidade de cada tipo de caractere, não serão permitidos caracteres repetidos. Ou seja, ao escolher os tipos de caracteres que devem aparecer na senha, somente um caractere de cada tipo pode ser selecionado._
+<br>
 
----------------------------------------------------------------------------------------------------------
-* Como Usar
+### Instalação
 
-1. Selecione o comprimento da senha usando o input range.
+**Para instalar as dependências, execute:** npm install;
 
+>**sass:** _Compila o arquivo estilo.scss em ( ./src/assets.css/) para CSS._
+__npm run sass__
 
-2. Escolha os tipos de caracteres que deseja incluir (letras maiúsculas, minúsculas, números e caracteres especiais).
+>**sassLogin:** _Compila o arquivo estiloLogin.scss  em ( ./src/assets.css/loginUser.css/) para CSS._
+__npm run sassLogin__
 
+>**twind:** _Processa o arquivo input.css em ( ./src/inputTwind.css/input.css) com Tailwind CSS e gera um arquivo de saída output.css em ( ./src/dist/output.css)_
+__npm run twind__
 
-3. Selecione a quantidade de cada tipo de caractere que deseja incluir na senha.
+>**build:** _Executa os scripts sass, sassLogin e twind em sequência._
+__npm run build__
 
+**Obs:** _utilizar o **--watch** no **package.json** momento do deploy pode causar um loop infinito no momento de executar o npm run build por da sua ferramenta de deploy (fique atento, falo por experiência própria)._
 
-4. Clique em "Gerar Senha" para criar uma senha aleatória com as especificações escolhidas.
-
-
-5. A senha gerada será exibida na tela. É possível copiar e usar onde desejar.
-
-
-6. Login: ao acessar sem login, o acesso às configurações de personalização e ao modo escuro será restrito. O uso do gerador de senhas será limitado a 1 minuto por sessão.
-
-
----------------------------------------------------------------------------------------------------------
-* Personalização 
-
-Adição de palavra favorita ou frase: você pode incluir uma palavra, frase, número ou caractere específico de sua escolha na senha gerada.
-
-Quantidade de caracteres de cada tipo: você pode selecionar a quantidade de caracteres de cada tipo (maiúsculas, minúsculas, números, caracteres especiais).
-
-
-* Restrições de Personalização
-
-Ao definir a quantidade de cada tipo de caractere, não serão permitidos caracteres repetidos. Ou seja, ao escolher os tipos de caracteres que devem aparecer na senha, somente um caractere de cada tipo pode ser selecionado.
-
-
----------------------------------------------------------------------------------------------------------
-Instalação
-
-Para instalar as dependências, execute:
-
-npm install
-
-* Scripts
-
-Os principais scripts definidos no arquivo package.json são:
-
-sass: Compila o arquivo estilo.scss (em ./src/assets.css/) para CSS.
-
-npm run sass
-
-sassLogin: Compila o arquivo estiloLogin.scss (em ./src/assets.css/loginUser.css/) para CSS.
-
-npm run sassLogin
-
-twind: Processa o arquivo input.css (em ./src/inputTwind.css/) com Tailwind CSS e gera um arquivo de saída output.css em ./src/dist/.
-
-npm run twind
-
-build: Executa os scripts sass, sassLogin e twind em sequência.
-
-npm run build
-
-
-----------------------------------------------------------------------------------------------------------
-* Dependências de Desenvolvimento
+### Dependências de Desenvolvimento
 
 Este projeto utiliza as seguintes dependências de desenvolvimento:
 
-@fortawesome/fontawesome-free: ^6.6.0 — Ícones Font Awesome.
+>**@fortawesome/fontawesome-free:** _6.6.0 — Ícones Font Awesome._
 
-autoprefixer: ^10.4.20 — Adiciona prefixos CSS automaticamente para compatibilidade entre navegadores.
+>**autoprefixer:** _10.4.20 — Adiciona prefixos CSS automaticamente para compatibilidade entre navegadores._
 
-postcss: ^8.4.47 — Ferramenta para transformar CSS com plugins.
+>**postcss:** _8.4.47 — Ferramenta para transformar CSS com plugins._
 
-sass: ^1.81.0 — Compilador Sass para SCSS.
+>**sass:** _1.81.0 — Compilador Sass para SCSS._
 
-tailwindcss: ^3.4.14 — Framework utilitário para CSS.
+>**tailwindcss:** _3.4.14 — Framework utilitário para CSS._
 
-----------------------------------------------------------------------------------------------------------
-Como Usar
+**Como Usar o comando build:**
 
-1. Execute npm run build para compilar e processar todos os arquivos CSS.
-
-
-2. Integre os arquivos gerados no seu projeto conforme necessário.
+>**1. _Execute npm run build para compilar e processar todos os arquivos CSS._**
+>**2. _Integre os arquivos gerados no seu projeto conforme necessário._**
