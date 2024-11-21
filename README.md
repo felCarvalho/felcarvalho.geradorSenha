@@ -54,19 +54,19 @@ Ativado por meio de um botão de interação do usuário (somente disponível pa
 
 ### Como Usar
 
-**1. _Selecione o comprimento da senha usando o input range._**
+**1. Selecione o comprimento da senha usando o input range.**
 
-**2. _Escolha os tipos de caracteres que deseja incluir (letras maiúsculas, minúsculas, números e caracteres especiais)._**
+**2. Escolha os tipos de caracteres que deseja incluir (letras maiúsculas, minúsculas, números e caracteres especiais).**
 
-**3. _(Opcional) Selecione a quantidade de cada tipo de caractere que deseja incluir na senha._**
+**3. (Opcional) Selecione a quantidade de cada tipo de caractere que deseja incluir na senha.**
 
-**3. _(Opcional) Selecione uma palavra personaliza para facilitar a memorização da sua senha._**
+**3. (Opcional) Selecione uma palavra personaliza para facilitar a memorização da sua senha.**
 
-**4. _Clique em "Gerar Senha" para criar uma senha aleatória com as especificações escolhidas._**
+**4. Clique em "Gerar Senha" para criar uma senha aleatória com as especificações escolhidas.**
 
-**5 _A senha gerada será exibida na tela. É possível copiar e usar onde desejar._**
+**5 A senha gerada será exibida na tela. É possível copiar e usar onde desejar.**
 
-**6. _Login: ao acessar sem login, o acesso às configurações de personalização e ao modo escuro será restrito. O uso do gerador de senhas será limitado a 1 minuto por sessão._**
+**6. Login: ao acessar sem login, o acesso às configurações de personalização e ao modo escuro será restrito. O uso do gerador de senhas será limitado a 1 minuto por sessão.**
 <br>
 
 ### Restrições de Personalizações
@@ -76,37 +76,37 @@ _Ao definir a quantidade de cada tipo de caractere, não serão permitidos carac
 
 ### Instalação
 
-**Para instalar as dependências, execute:** npm install;
+**Para instalar as dependências, execute:**<br>
+npm install;
 
->**sass:** _Compila o arquivo estilo.scss em ( ./src/assets.css/) para CSS._
-__npm run sass__
+**sass:** Compila o arquivo estilo.scss em ( ./src/assets.css/) para CSS<br>
+npm run sass
 
->**sassLogin:** _Compila o arquivo estiloLogin.scss  em ( ./src/assets.css/loginUser.css/) para CSS._
-__npm run sassLogin__
+**sassLogin:** Compila o arquivo estiloLogin.scss em ( ./src/assets.css/loginUser.css/) para CSS.<br>
+npm run sassLogin
 
->**twind:** _Processa o arquivo input.css em ( ./src/inputTwind.css/input.css) com Tailwind CSS e gera um arquivo de saída output.css em ( ./src/dist/output.css)_
-__npm run twind__
+> **twind:** Processa o arquivo input.css em ( ./src/inputTwind.css/input.css) com Tailwind CSS e gera um arquivo de saída output.css em ( ./src/dist/output.css)<br>
+> npm run twind
 
->**build:** _Executa os scripts sass, sassLogin e twind em sequência._
-__npm run build__
+**build:** Executa os scripts sass, sassLogin e twind em sequência.<br>
+npm run build
 
-**Obs:** _utilizar o **--watch** no **package.json** momento do deploy pode causar um loop infinito no momento de executar o npm run build por da sua ferramenta de deploy (fique atento, falo por experiência própria)._
+**Obs:** utilizar o **--watch** no **package.json** momento do deploy pode causar um loop infinito no momento de executar o npm run build por da sua ferramenta de deploy (fique atento).
 
 ### Dependências de Desenvolvimento
 
 Este projeto utiliza as seguintes dependências de desenvolvimento:
 
->**@fortawesome/fontawesome-free:** _6.6.0 — Ícones Font Awesome._
+> **@fortawesome/fontawesome-free:** 6.6.0 — Ícones Font Awesome.
 
->**autoprefixer:** _10.4.20 — Adiciona prefixos CSS automaticamente para compatibilidade entre navegadores._
+> **autoprefixer:** 10.4.20 — Adiciona prefixos CSS automaticamente para compatibilidade entre navegadores.
 
->**postcss:** _8.4.47 — Ferramenta para transformar CSS com plugins._
+> **postcss:** 8.4.47 — Ferramenta para transformar CSS com plugins.
 
->**sass:** _1.81.0 — Compilador Sass para SCSS._
+> **sass:** \_1.81.0 — Compilador Sass para SCSS.
 
->**tailwindcss:** _3.4.14 — Framework utilitário para CSS._
+> **tailwindcss:** 3.4.14 — Framework utilitário para CSS.
 
 **Como Usar o comando build:**
 
->**1. _Execute npm run build para compilar e processar todos os arquivos CSS._**
->**2. _Integre os arquivos gerados no seu projeto conforme necessário._**
+> **1. Execute npm run build para compilar e processar todos os arquivos CSS.** >**2. Integre os arquivos gerados no seu projeto conforme necessário.**
