@@ -85,8 +85,8 @@ npm run sass
 **sassLogin:** Compila o arquivo estiloLogin.scss em ( ./src/assets.css/loginUser.css/) para CSS.<br>
 npm run sassLogin
 
-> **twind:** Processa o arquivo input.css em ( ./src/inputTwind.css/input.css) com Tailwind CSS e gera um arquivo de saída output.css em ( ./src/dist/output.css)<br>
-> npm run twind
+ **twind:** Processa o arquivo input.css em ( ./src/inputTwind.css/input.css) com Tailwind CSS e gera um arquivo de saída output.css em ( ./src/dist/output.css)<br>
+ npm run twind
 
 **build:** Executa os scripts sass, sassLogin e twind em sequência.<br>
 npm run build
@@ -103,7 +103,7 @@ Este projeto utiliza as seguintes dependências de desenvolvimento:
 
 > **postcss:** 8.4.47 — Ferramenta para transformar CSS com plugins.
 
-> **sass:** \_1.81.0 — Compilador Sass para SCSS.
+> **sass:** 1.81.0 — Compilador Sass para SCSS.
 
 > **tailwindcss:** 3.4.14 — Framework utilitário para CSS.
 
