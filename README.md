@@ -109,4 +109,5 @@ Este projeto utiliza as seguintes dependências de desenvolvimento:
 
 **Como Usar o comando build:**
 
-> **1. Execute npm run build para compilar e processar todos os arquivos CSS.** >**2. Integre os arquivos gerados no seu projeto conforme necessário.**
+> **1. Execute npm run build para compilar e processar todos os arquivos CSS.** <br>
+> **2. Integre os arquivos gerados no seu projeto conforme necessário.**
