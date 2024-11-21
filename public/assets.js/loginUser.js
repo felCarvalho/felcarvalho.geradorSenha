@@ -80,11 +80,11 @@ const desativarPoUpLoginReferencia = function () {
 };
 */
 
-export let isAnimationLogin = false;
+//export let isAnimationLogin = false;
 
-export const verficarAnimaçao = function (status) {
-  isAnimationLogin = status;
-};
+//export const verficarAnimaçao = function (status) {
+//  isAnimationLogin = status;
+//};
 
 export const popUpLogin = function (modal) {
   modal.classList.remove("display-none");
