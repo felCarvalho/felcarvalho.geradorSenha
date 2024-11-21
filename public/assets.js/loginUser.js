@@ -90,10 +90,10 @@ export const popUpLogin = function (modal) {
   modal.classList.remove("display-none");
   gsap.killTweensOf(modal);
 
-  //gsap.killTweensOf(modal);
+  gsap.killTweensOf(modal);
   /*if (isAnimationLogin) {
     return;
-  }*/
+  }**/
 
   //verficarAnimaçao(true);
 
