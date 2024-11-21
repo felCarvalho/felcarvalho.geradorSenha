@@ -16,9 +16,7 @@ const btnLogin = document.querySelector(".btn-login");
 export const temporizadorConvidadoUser = document.querySelector(
   ".container-temporizador"
 );
-const visualizarPassword = document.querySelector(
-  ".icon-visualizar-password"
-);
+const visualizarPassword = document.querySelector(".icon-visualizar-password");
 const esconderPassword = document.querySelector(".icon-esconder-password");
 export const containerPopUp = document.querySelector(
   ".container-animation-login"
@@ -90,18 +88,21 @@ export const verficarAnimaçao = function (status) {
 
 export const popUpLogin = function (modal) {
   modal.classList.remove("display-none");
+  gsap.killTweensOf(modal);
 
-  if (isAnimationLogin) {
+  //gsap.killTweensOf(modal);
+  /*if (isAnimationLogin) {
     return;
-  }
+  }*/
 
-  verficarAnimaçao(true);
+  //verficarAnimaçao(true);
 
   gsap.to(modal, {
     opacity: 1,
     y: 20,
     ease: "power4.out",
     duration: 1.5,
+    overwrite: "auto",
   });
 
   setTimeout(() => {
@@ -112,8 +113,9 @@ export const popUpLogin = function (modal) {
       duration: 1.5,
       onComplete: () => {
         modal.classList.add("display-none");
-        verficarAnimaçao(false);
+        // verficarAnimaçao(false);
       },
+      overwrite: "auto",
     });
   }, 3000);
 };
@@ -200,7 +202,7 @@ const verificarLogin = function ({ userKey, passwordKey }) {
   if (valorUser !== userKey || valorPassword !== passwordKey) {
     desativarGerador();
     popUpLogin(containerPopUpLoginError);
-    controleEnter(false);
+    //controleEnter(false);
   } else {
     desativarBtnVoltar();
     desativarInterfaceLogin();
@@ -209,7 +211,7 @@ const verificarLogin = function ({ userKey, passwordKey }) {
     popUpLogin(containerPopUpLoginSucesso);
     ativarContentTheme();
     btnConfig.classList.remove("display-none");
-    controleEnter(true);
+    //controleEnter(true);
   }
 };
 
