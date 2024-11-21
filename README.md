@@ -79,10 +79,10 @@ _Ao definir a quantidade de cada tipo de caractere, não serão permitidos carac
 **Para instalar as dependências, execute:**<br>
 npm install;
 
-**sass:** Compila o arquivo estilo.scss em ( ./src/assets.css/) para CSS<br>
+**sass:** Compila o arquivo estilo.scss em ( ./src/assets.css/estilo.css) para CSS<br>
 npm run sass
 
-**sassLogin:** Compila o arquivo estiloLogin.scss em ( ./src/assets.css/loginUser.css/) para CSS.<br>
+**sassLogin:** Compila o arquivo estiloLogin.scss em ( ./src/assets.css/loginUser.css/estiloLogin.css) para CSS.<br>
 npm run sassLogin
 
  **twind:** Processa o arquivo input.css em ( ./src/inputTwind.css/input.css) com Tailwind CSS e gera um arquivo de saída output.css em ( ./src/dist/output.css)<br>
