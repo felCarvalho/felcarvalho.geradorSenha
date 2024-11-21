@@ -97,7 +97,7 @@ export const popUpLogin = function (modal) {
 
   //verficarAnimaçao(true);
 
-  gsap.to(modal, {
+  gsap.from(modal, {
     opacity: 1,
     y: 20,
     ease: "power4.out",
