@@ -88,21 +88,18 @@ export const verficarAnimaçao = function (status) {
 
 export const popUpLogin = function (modal) {
   modal.classList.remove("display-none");
-  gsap.killTweensOf(modal);
 
-  //gsap.killTweensOf(modal);
-  /*if (isAnimationLogin) {
+  if (isAnimationLogin) {
     return;
-  }*/
+  }
 
-  //verficarAnimaçao(true);
+  verficarAnimaçao(true);
 
   gsap.to(modal, {
     opacity: 1,
     y: 20,
     ease: "power4.out",
     duration: 1.5,
-    overwrite: "auto",
   });
 
   setTimeout(() => {
@@ -113,9 +110,8 @@ export const popUpLogin = function (modal) {
       duration: 1.5,
       onComplete: () => {
         modal.classList.add("display-none");
-        // verficarAnimaçao(false);
+        verficarAnimaçao(false);
       },
-      overwrite: "auto",
     });
   }, 3000);
 };
