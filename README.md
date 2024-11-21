@@ -91,7 +91,7 @@ npm run sassLogin
 **build:** Executa os scripts sass, sassLogin e twind em sequência.<br>
 npm run build
 
-**Obs:** utilizar o **--watch** no **package.json** momento do deploy pode causar um loop infinito no momento de executar o npm run build por da sua ferramenta de deploy (fique atento).
+**Obs:** utilizar o **--watch** no **package.json** momento do deploy pode causar um loop infinito no momento de executar o npm run build por parte da sua ferramenta de deploy (fique atento).
 
 ### Dependências de Desenvolvimento
 
