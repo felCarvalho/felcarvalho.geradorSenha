@@ -714,6 +714,27 @@ body.darkmode {
     }
   }
 
+  .content-tag-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+
+    .content-icon-info {
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .felcarvalho {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+
   .container-btn-back {
     font-family: "poppins";
     font-size: 15px;
@@ -1442,6 +1463,16 @@ body.darkmode {
       }
     }
 
+    .content-tag-name {
+      .content-icon-info {
+        color: #ffffffe0;
+      }
+
+      .felcarvalho {
+        color: #ffffffe0;
+      }
+    }
+
     .container-btn-back {
       button {
         background-color: rgba(106, 105, 105, 0.788);
@@ -1461,10 +1492,6 @@ body.darkmode {
   }
   .fundo-blur {
     background-color: rgba(1, 1, 1, 0.744);
-  }
-
-  .content-tag-name {
-    color: #ffffffe0;
   }
 
   .fundo-background-menu {
@@ -2138,6 +2165,27 @@ body.darkmode {
         margin-top: 4px;
         font-size: 15px;
       }
+    }
+  }
+
+  .content-tag-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+
+    .content-icon-info {
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .felcarvalho {
+      font-weight: 600;
+      font-size: 18px;
     }
   }
 
@@ -2869,6 +2917,16 @@ body.darkmode {
       }
     }
 
+    .content-tag-name {
+      .content-icon-info {
+        color: #ffffffe0;
+      }
+
+      .felcarvalho {
+        color: #ffffffe0;
+      }
+    }
+
     .container-btn-back {
       button {
         background-color: rgba(106, 105, 105, 0.788);
@@ -2888,10 +2946,6 @@ body.darkmode {
   }
   .fundo-blur {
     background-color: rgba(1, 1, 1, 0.744);
-  }
-
-  .content-tag-name {
-    color: #ffffffe0;
   }
 
   .fundo-background-menu {
@@ -3569,6 +3623,27 @@ body.darkmode {
         margin-top: 4px;
         font-size: 15px;
       }
+    }
+  }
+
+  .content-tag-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+
+    .content-icon-info {
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .felcarvalho {
+      font-weight: 600;
+      font-size: 18px;
     }
   }
 
@@ -4288,6 +4363,16 @@ body.darkmode {
       }
     }
 
+    .content-tag-name {
+      .content-icon-info {
+        color: #ffffffe0;
+      }
+
+      .felcarvalho {
+        color: #ffffffe0;
+      }
+    }
+
     .container-btn-back {
       button {
         background-color: rgba(106, 105, 105, 0.788);
@@ -4307,10 +4392,6 @@ body.darkmode {
   }
   .fundo-blur {
     background-color: rgba(1, 1, 1, 0.744);
-  }
-
-  .content-tag-name {
-    color: #ffffffe0;
   }
 
   .fundo-background-menu {
@@ -5002,6 +5083,27 @@ body.darkmode {
     }
   }
 
+  .content-tag-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+
+    .content-icon-info {
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .felcarvalho {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+
   .container-btn-back {
     font-family: "poppins";
     font-size: 15px;
@@ -5234,32 +5336,25 @@ body.darkmode {
         }
       }
     }
-  }
 
-  .fundo-blur {
-    position: fixed;
-    top: 0px;
-    backdrop-filter: blur(20px);
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-  }
+    .fundo-blur {
+      position: fixed;
+      top: 0px;
+      backdrop-filter: blur(20px);
+      height: 100%;
+      width: 100%;
+      z-index: 10;
+    }
 
-  .fundo-background-menu {
-    //background-color: #c2c1c173;
-    backdrop-filter: blur(10px);
-    position: fixed;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    z-index: 7;
-  }
-
-  .content-tag-name {
-    text-align: center;
-    color: blueviolet;
-    font-weight: 600;
-    font-size: 20px;
+    .fundo-background-menu {
+      //background-color: #c2c1c173;
+      backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: 7;
+    }
   }
 
   //MODO ESCURO PARA DESKTOP
@@ -5729,6 +5824,16 @@ body.darkmode {
       }
     }
 
+    .content-tag-name {
+      .content-icon-info {
+        color: #ffffffe0;
+      }
+
+      .felcarvalho {
+        color: #ffffffe0;
+      }
+    }
+
     .container-btn-back {
       button {
         background-color: rgba(106, 105, 105, 0.788);
@@ -5748,10 +5853,6 @@ body.darkmode {
   }
   .fundo-blur {
     background-color: rgba(1, 1, 1, 0.744);
-  }
-
-  .content-tag-name {
-    color: #ffffffe0;
   }
 
   .fundo-background-menu {

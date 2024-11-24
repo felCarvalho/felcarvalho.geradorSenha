@@ -585,6 +585,24 @@ body.darkmode {
     margin-top: 1px;
     font-size: 15px;
   }
+  .content-tag-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+  }
+  .content-tag-name .content-icon-info {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .content-tag-name .felcarvalho {
+    font-weight: 600;
+    font-size: 18px;
+  }
   .container-btn-back {
     font-family: "poppins";
     font-size: 15px;
@@ -1113,6 +1131,12 @@ body.darkmode {
   body.darkmode .container-temporizador .content-temporizador {
     color: rgba(255, 255, 255, 0.8784313725);
   }
+  body.darkmode .content-tag-name .content-icon-info {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .content-tag-name .felcarvalho {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
   body.darkmode .container-btn-back button {
     background-color: rgba(106, 105, 105, 0.788);
     border-radius: 10px;
@@ -1127,9 +1151,6 @@ body.darkmode {
   }
   .fundo-blur {
     background-color: rgba(1, 1, 1, 0.744);
-  }
-  .content-tag-name {
-    color: rgba(255, 255, 255, 0.8784313725);
   }
 }
 @media (min-width: 322px) and (max-width: 576px) {
@@ -1702,6 +1723,24 @@ body.darkmode {
     margin-top: 4px;
     font-size: 15px;
   }
+  .content-tag-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+  }
+  .content-tag-name .content-icon-info {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .content-tag-name .felcarvalho {
+    font-weight: 600;
+    font-size: 18px;
+  }
   .container-btn-back {
     font-family: "poppins";
     font-size: 15px;
@@ -2230,6 +2269,12 @@ body.darkmode {
   body.darkmode .container-temporizador .content-temporizador {
     color: rgba(255, 255, 255, 0.8784313725);
   }
+  body.darkmode .content-tag-name .content-icon-info {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .content-tag-name .felcarvalho {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
   body.darkmode .container-btn-back button {
     background-color: rgba(106, 105, 105, 0.788);
     border-radius: 10px;
@@ -2244,9 +2289,6 @@ body.darkmode {
   }
   .fundo-blur {
     background-color: rgba(1, 1, 1, 0.744);
-  }
-  .content-tag-name {
-    color: rgba(255, 255, 255, 0.8784313725);
   }
 }
 @media (min-width: 577px) and (max-width: 1120px) {
@@ -2823,6 +2865,24 @@ body.darkmode {
     margin-top: 4px;
     font-size: 15px;
   }
+  .content-tag-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+  }
+  .content-tag-name .content-icon-info {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .content-tag-name .felcarvalho {
+    font-weight: 600;
+    font-size: 18px;
+  }
   .container-btn-back {
     font-family: "poppins";
     font-size: 18px;
@@ -3343,6 +3403,12 @@ body.darkmode {
   body.darkmode .background .container-buttons-palavra-personalizada .content-btn-confirmar button:hover i {
     color: rgba(255, 255, 255, 0.8784313725);
   }
+  body.darkmode .content-tag-name .content-icon-info {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .content-tag-name .felcarvalho {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
   body.darkmode .container-btn-back button {
     background-color: rgba(106, 105, 105, 0.788);
     border-radius: 10px;
@@ -3357,9 +3423,6 @@ body.darkmode {
   }
   .fundo-blur {
     background-color: rgba(1, 1, 1, 0.744);
-  }
-  .content-tag-name {
-    color: rgba(255, 255, 255, 0.8784313725);
   }
 }
 body.darkmode {
@@ -3948,6 +4011,24 @@ body.darkmode {
     margin-top: 4px;
     font-size: 15px;
   }
+  .content-tag-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+  }
+  .content-tag-name .content-icon-info {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .content-tag-name .felcarvalho {
+    font-weight: 600;
+    font-size: 18px;
+  }
   .container-btn-back {
     font-family: "poppins";
     font-size: 15px;
@@ -4146,7 +4227,7 @@ body.darkmode {
     margin-right: 8px;
     color: #fff;
   }
-  .fundo-blur {
+  .background .fundo-blur {
     position: fixed;
     top: 0px;
     backdrop-filter: blur(20px);
@@ -4154,19 +4235,13 @@ body.darkmode {
     width: 100%;
     z-index: 10;
   }
-  .fundo-background-menu {
+  .background .fundo-background-menu {
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0px;
     height: 100%;
     width: 100%;
     z-index: 7;
-  }
-  .content-tag-name {
-    text-align: center;
-    color: blueviolet;
-    font-weight: 600;
-    font-size: 20px;
   }
   body.darkmode {
     background-color: rgb(70, 69, 69);
@@ -4475,6 +4550,12 @@ body.darkmode {
   body.darkmode .container-temporizador .content-temporizador {
     color: rgba(255, 255, 255, 0.8784313725);
   }
+  body.darkmode .content-tag-name .content-icon-info {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+  body.darkmode .content-tag-name .felcarvalho {
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
   body.darkmode .container-btn-back button {
     background-color: rgba(106, 105, 105, 0.788);
     border-radius: 10px;
@@ -4489,9 +4570,6 @@ body.darkmode {
   }
   .fundo-blur {
     background-color: rgba(1, 1, 1, 0.744);
-  }
-  .content-tag-name {
-    color: rgba(255, 255, 255, 0.8784313725);
   }
 }
 
